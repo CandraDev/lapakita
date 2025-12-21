@@ -1,17 +1,4 @@
-<div class="flex items-center h-full gap-2">
-    <div class="flex-1">
-        <input type="text" class="h-9 w-full bg-white rounded-sm border-slate-300 border-1 ps-3 text-sm "
-            placeholder="Belanja apa hari ini?"
-        >
-    </div>
-    <div>
-        <button class="px-2 bg-sky-500 h-8.5 text-xs font-medium text-white rounded-md shadow flex items-center justify-center gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="15" height="15" viewBox="0 0 24 24">
-                <path
-                    d="M10.2071 22H17.2071C19.2771 22 20.9571 20.32 20.9571 18.26L20.9971 5.75C20.9971 3.68 19.3171 2 17.2471 2H10.2471C8.66713 2 7.24713 3 6.71713 4.48C6.47713 5.13 6.81713 5.85 7.46713 6.08C8.11713 6.32 8.83713 5.98 9.06713 5.33C9.24713 4.83 9.71713 4.5 10.2471 4.5H17.2471C17.9371 4.5 18.4971 5.06 18.4971 5.74L18.4571 18.25C18.4571 18.94 17.8971 19.5 17.2071 19.5H10.2071C9.67713 19.5 9.20713 19.16 9.02713 18.67C8.79713 18.02 8.07713 17.69 7.42713 17.92C6.77713 18.16 6.44713 18.87 6.67713 19.52C7.20713 21 8.62713 22 10.2071 22ZM11.32 10.77H3.25C2.56 10.77 2 11.33 2 12.02C2 12.71 2.56 13.27 3.25 13.27H11.31L9.73 14.6C9.21 15.04 9.14 15.83 9.58 16.36C10.02 16.88 10.81 16.95 11.34 16.51L15.55 12.97L15.7 12.82C16.15 12.29 16.08 11.5 15.55 11.06L11.35 7.53003C10.82 7.08003 10.03 7.15003 9.59 7.68003C9.14 8.21003 9.21 9.00003 9.74 9.44003L11.32 10.77Z">
-                </path>
-            </svg>
-            Masuk
-        </button>
-    </div>
+<div class="flex-1">
+    <input type="text" class="h-9 w-full bg-white rounded-sm border-slate-300 border-1 ps-3 text-sm "
+        placeholder="Belanja apa hari ini?">
 </div>
