@@ -17,6 +17,7 @@
 <body>
     @livewire('home.navbar')
     @livewire('home.carousel')
+    @livewire('home.profile-card')
     @yield('content')
 </body>
 
