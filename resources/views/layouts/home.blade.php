@@ -15,7 +15,8 @@
 </head>
 
 <body>
-    @livewire('navbar')
+    @livewire('home.navbar')
+    @livewire('home.carousel')
     @yield('content')
 </body>
 

@@ -8,6 +8,6 @@ class NavSearch extends Component
 {
     public function render()
     {
-        return view('livewire.nav-search');
+        return view('livewire.home.navbar.nav-search');
     }
 }

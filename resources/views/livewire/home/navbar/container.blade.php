@@ -1,5 +1,5 @@
-<div style="background-image: url('{{ asset('gui/header.png') }}');" class="relative z-40">
-    <div class="w-full px-2 md:h-auto lg:max-w-6xl lg:mx-auto">
+<div style="background-image: url('{{ asset('gui/header.png') }}');" class="relative z-40 shadow">
+    <div class="w-full p-2 md:h-auto lg:max-w-6xl lg:mx-auto">
 
         <div class="hidden lg:flex items-center mx-3 justify-between gap-2 text-[9pt] text-slate-700 pt-1">
             <div class="flex justify-start">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center h-full gap-2 md:h-15 lg:py-10">
+        <div class="flex items-center h-full gap-2 md:h-15 lg:py-8">
             <div class="hidden lg:flex mx-2">
                 <img src="{{ asset('logo/lapakita-main.png') }}" class="h-11">
             </div>
