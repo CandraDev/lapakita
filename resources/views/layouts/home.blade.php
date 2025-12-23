@@ -18,6 +18,7 @@
     @livewire('home.navbar')
     @livewire('home.carousel')
     @livewire('home.profile-card')
+    @livewire('home.featured-train')
     @yield('content')
 </body>
 
