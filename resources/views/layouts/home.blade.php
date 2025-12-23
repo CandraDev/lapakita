@@ -19,6 +19,7 @@
     @livewire('home.carousel')
     @livewire('home.profile-card')
     @livewire('home.featured-train')
+    @livewire('home.flashsale')
     @yield('content')
 </body>
 
