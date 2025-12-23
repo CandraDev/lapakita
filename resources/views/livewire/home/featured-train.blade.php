@@ -1,4 +1,4 @@
-<div class="w-full flex items-center px-5 gap-3 overflow-x-scroll pb-3 no-scrollbar ">
+<div class="w-full flex items-center px-5 gap-3 overflow-x-scroll pb-3 no-scrollbar lg:hidden ">
     <style>
         /* Hide scrollbar but keep scroll */
         .no-scrollbar::-webkit-scrollbar {
@@ -12,7 +12,7 @@
             /* Firefox */
         }
     </style>
-    
+
     <div>
         <div class="w-12 h-12 bg-sky-100 rounded-full mb-1">
 
