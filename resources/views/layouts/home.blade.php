@@ -20,6 +20,7 @@
     @livewire('home.profile-card')
     @livewire('home.featured-train')
     @livewire('home.flashsale')
+    @livewire('home.products')
     @yield('content')
 </body>
 
