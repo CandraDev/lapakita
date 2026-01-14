@@ -1,7 +1,7 @@
-<div style="background-image: url('{{ asset('gui/header.png') }}');" class="relative z-40 shadow">
+{{-- <div style="background-image: url('{{ asset('gui/header.png') }}');" class="fixed top-0 right-0 left-0 z-40 shadow">
     <div class="w-full p-2 md:h-auto lg:max-w-6xl lg:mx-auto">
 
-        <div class="hidden lg:flex items-center mx-3 justify-between gap-2 text-[9pt] text-slate-700 pt-1">
+        <div class="hidden relative z-40 lg:flex items-center mx-3 justify-between gap-2 text-[9pt] text-slate-700 pt-1">
             <div class="flex justify-start">
                 <div class="relative group hidden lg:block">
                     <!-- Trigger -->
@@ -203,5 +203,155 @@
             </div>
         </div>
 
+    </div>
+</div> --}}
+<!-- TOP BAR -->
+{{-- --}}
+
+<!-- MAIN NAV (Sticky) -->
+<div class="bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] z-40 sticky top-0" style="background-image: url('{{ asset('gui/header.png') }}');">
+    <div class="w-full p-2 md:h-auto lg:max-w-6xl lg:mx-auto flex items-center gap-2 lg:p-4 justify-between">
+
+        <!-- Logo -->
+        <div class="hidden lg:flex mx-2">
+            <img src="{{ asset('logo/lapakita-main.png') }}" class="h-11">
+        </div>
+
+        <!-- Search -->
+        @livewire('nav-search')
+
+        <!-- Login/Profile -->
+        <div class="flex gap-2 items-center">
+            @guest
+                <a href="{{ route('auth.login') }}"
+                    class="px-2 bg-sky-500 h-8.5 text-xs font-medium text-white rounded-md shadow flex items-center justify-center gap-1">
+                    Masuk
+                </a>
+                <a href="{{ route('auth.register') }}"
+                    class="hidden px-2 bg-white/70 border-sky-500 border-2 h-8.5 text-xs font-bold text-sky-500 rounded-xl shadow sm:flex items-center justify-center gap-1">
+                    Daftar
+                </a>
+            @else
+                <button
+                    class="hidden lg:flex items-center gap-2 text-gray-800 px-3 py-2 rounded-md hover:bg-gray-100/70 hover:text-sky-500 transition">
+                    <span class="text-sm font-semibold">
+                        Rp. 0
+                    </span>
+                </button>
+
+                <div class="relative group hidden lg:block">
+                    <button
+                        class="flex items-center gap-2 text-gray-800 px-3 py-2 rounded-md hover:bg-gray-100/70 hover:text-sky-500 transition">
+                        <a href="/member/profile" class="account__wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24">
+                                <path
+                                    d="M17.0071 7C17.0071 9.76142 14.7655 12 12.0002 12C9.23497 12 6.9933 9.76142 6.9933 7C6.9933 4.23858 9.23497 2 12.0002 2C14.7655 2 17.0071 4.23858 17.0071 7ZM20.8422 18.6695C21.453 20.2795 20.2113 21.9995 18.4789 21.9995H5.52106C3.78867 21.9995 2.54695 20.2795 3.1578 18.6695C4.12914 16.1095 6.44233 13.0195 12 13.0195C17.5577 13.0195 19.8709 16.1095 20.8422 18.6695Z" />
+                            </svg>
+                        </a>
+                        <span class="text-sm font-semibold">{{ Str::ucfirst(Auth::user()->name) }}</span>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div
+                        class="absolute right-0 mt-1 w-40 z-50 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Profil Saya</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Pesanan</a>
+                        <form method="POST" action="{{ route('auth.logout') }}">
+                            @csrf
+                            <button type="submit"
+                                class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Keluar</button>
+                        </form>
+                    </div>
+                </div>
+            @endguest
+        </div>
+    </div>
+
+    <!-- Kategori -->
+    <div class="hidden w-full p-2 pb-4 md:h-7 lg:max-w-6xl lg:mx-auto  items-center gap-2  justify-between lg:flex mx-3 mb-1 relative z-20">
+        <div class="relative group">
+
+            <!-- Trigger -->
+            <div
+                class="h-7 rounded text-slate-600 cursor-pointer
+            hover:text-sky-400 flex items-center text-sm gap-1">
+                <svg width="15" height="15" type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#currentColor" d="M17.3 21.7a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z"></path>
+                    <path fill="#currentColor"
+                        d="M9 13H4.5a2 2 0 0 0-2 2v4.5c0 1.1.9 2 2 2H9a2 2 0 0 0 2-2V15a2 2 0 0 0-2-2Z"></path>
+                    <path fill="#currentColor"
+                        d="M9 2.5H4.5a2 2 0 0 0-2 2V9c0 1.1.9 2 2 2H9a2 2 0 0 0 2-2V4.5a2 2 0 0 0-2-2Z"></path>
+                    <path fill="#currentColor"
+                        d="M19.5 2.5H15a2 2 0 0 0-2 2V9c0 1.1.9 2 2 2h4.5a2 2 0 0 0 2-2V4.5a2 2 0 0 0-2-2Z"></path>
+                </svg>
+                Kategori
+            </div>
+
+            <!-- Dropdown -->
+            <div
+                class="absolute left-0 top-full mt-2 w-[600px]
+                    bg-white rounded-lg shadow-md
+                    opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible
+                    transition-all duration-200 z-50">
+
+                <div class="flex">
+
+                    <!-- LEFT: CATEGORY SIDEBAR -->
+                    <div class="w-48 bg-sky-50">
+                        <ul class="text-sm">
+
+                            <li class="group/item">
+                                <a href="#"
+                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500">
+                                    Elektronik
+                                </a>
+                            </li>
+
+                            <li class="group/item">
+                                <a href="#"
+                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500">
+                                    Fashion
+                                </a>
+                            </li>
+
+                            <li class="group/item">
+                                <a href="#"
+                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500">
+                                    Rumah Tangga
+                                </a>
+                            </li>
+
+                            <li class="group/item">
+                                <a href="#"
+                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500">
+                                    Makanan
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- RIGHT: SUB CATEGORY -->
+                    <div class="flex-1 p-4">
+                        <div class="grid grid-cols-3 gap-4 text-sm">
+
+                            <a href="#" class="hover:text-sky-500">Handphone</a>
+                            <a href="#" class="hover:text-sky-500">Laptop</a>
+                            <a href="#" class="hover:text-sky-500">Aksesoris</a>
+
+                            <a href="#" class="hover:text-sky-500">TV</a>
+                            <a href="#" class="hover:text-sky-500">Audio</a>
+                            <a href="#" class="hover:text-sky-500">Kamera</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
     </div>
 </div>

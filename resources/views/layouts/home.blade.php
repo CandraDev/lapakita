@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    @livewire('home.topbar')
     @livewire('home.navbar')
     @livewire('home.carousel')
     @livewire('home.profile-card')
