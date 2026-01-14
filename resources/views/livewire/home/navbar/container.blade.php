@@ -65,7 +65,7 @@
                 @else
                     <!-- Authenticated User Dropdown -->
                     <button
-                        class="flex items-center gap-2  text-gray-800 px-3 py-2 rounded-md  hover:bg-gray-100/70 hover:text-sky-500 transition ">
+                        class="hidden lg:flex items-center gap-2  text-gray-800 px-3 py-2 rounded-md  hover:bg-gray-100/70 hover:text-sky-500 transition ">
                         <span class="text-sm font-semibold">
                             <div class="w-30">
                                 <a class="inline-block">
