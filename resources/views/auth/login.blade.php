@@ -205,14 +205,15 @@
             </h1>
 
             <!-- FORM -->
-            <form class="max-w-sm md:max-w-md lg:max-w-lg mx-auto space-y-6">
-
+            <form method="POST" action="{{ route('auth.login') }}"
+                class="max-w-sm md:max-w-md lg:max-w-lg mx-auto space-y-6">
+                @csrf
                 <!-- Email -->
                 <div>
                     <label class="block text-white/90 mb-2 text-sm">
                         Email
                     </label>
-                    <input type="email" placeholder="email@contoh.com"
+                    <input type="email" name="email" placeholder="email@contoh.com" value="{{ old('email') }}"
                         class="w-full px-4 py-3 rounded-xl
                                bg-white/30 backdrop-blur
                                border border-white/50
@@ -225,7 +226,7 @@
                     <label class="block text-white/90 mb-2 text-sm">
                         Kata Sandi
                     </label>
-                    <input type="password" placeholder="••••••••"
+                    <input type="password" name="password" placeholder="••••••••"
                         class="w-full px-4 py-3 rounded-xl
                                bg-white/30 backdrop-blur
                                border border-white/50
@@ -244,6 +245,15 @@
                         Lupa kata sandi?
                     </a>
                 </div>
+
+                @if ($errors->any())
+                    <div
+                        class="mb-6 rounded-xl
+                bg-red-500/20 border border-red-400/40
+                text-red-100 text-sm px-4 py-3">
+                        {{ $errors->first() }}
+                    </div>
+                @endif
 
                 <!-- Button -->
                 <button type="submit"

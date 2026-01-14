@@ -219,6 +219,7 @@
                         Nama Lengkap
                     </label>
                     <input type="text" name="name" placeholder="Nama lengkap"
+                        value="{{ old('name') }}"
                         class="w-full px-4 py-3 rounded-xl
                                bg-white/30 backdrop-blur
                                border border-white/50
@@ -232,6 +233,7 @@
                         Email
                     </label>
                     <input type="email" name="email" placeholder="email@contoh.com"
+                        value="{{ old('email') }}"
                         class="w-full px-4 py-3 rounded-xl
                                bg-white/30 backdrop-blur
                                border border-white/50
@@ -248,14 +250,14 @@
                     <div class="relative">
                         <input id="password" type="password" name="password" placeholder="••••••••"
                             class="w-full px-4 py-3 pr-12 rounded-xl
-                   bg-white/30 backdrop-blur
-                   border border-white/50
-                   text-white placeholder-white/60
-                   focus:outline-none focus:ring-2 focus:ring-sky-400">
+                                bg-white/30 backdrop-blur
+                                border border-white/50
+                                text-white placeholder-white/60
+                                focus:outline-none focus:ring-2 focus:ring-sky-400">
 
                         <button type="button" onclick="togglePassword('password', this)"
                             class="absolute inset-y-0 right-4 flex items-center
-                   text-white/70 hover:text-white transition">
+                                text-white/70 hover:text-white transition">
 
                             <!-- Eye -->
                             <svg class="w-5 h-5 eye-open" fill="none" stroke="currentColor" stroke-width="2"
@@ -263,9 +265,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5
-                       c4.478 0 8.268 2.943 9.542 7
-                       -1.274 4.057-5.064 7-9.542 7
-                       -4.477 0-8.268-2.943-9.542-7z" />
+                                    c4.478 0 8.268 2.943 9.542 7
+                                    -1.274 4.057-5.064 7-9.542 7
+                                    -4.477 0-8.268-2.943-9.542-7z" />
                             </svg>
 
                             <!-- Eye Off -->
@@ -275,8 +277,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M10.584 10.587a3 3 0 004.243 4.243" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.223 6.223A9.97 9.97 0 0112 5
-                       c4.478 0 8.268 2.943 9.543 7
-                       a9.97 9.97 0 01-2.132 3.368" />
+                                        c4.478 0 8.268 2.943 9.543 7
+                                        a9.97 9.97 0 01-2.132 3.368" />
                             </svg>
                         </button>
                     </div>
@@ -292,14 +294,14 @@
                         <input id="password_confirmation" type="password" name="password_confirmation"
                             placeholder="••••••••"
                             class="w-full px-4 py-3 pr-12 rounded-xl
-                   bg-white/30 backdrop-blur
-                   border border-white/50
-                   text-white placeholder-white/60
-                   focus:outline-none focus:ring-2 focus:ring-sky-400">
+                                bg-white/30 backdrop-blur
+                                border border-white/50
+                                text-white placeholder-white/60
+                                focus:outline-none focus:ring-2 focus:ring-sky-400">
 
                         <button type="button" onclick="togglePassword('password_confirmation', this)"
                             class="absolute inset-y-0 right-4 flex items-center
-                   text-white/70 hover:text-white transition">
+                            text-white/70 hover:text-white transition">
 
                             <!-- Eye -->
                             <svg class="w-5 h-5 eye-open" fill="none" stroke="currentColor" stroke-width="2"
@@ -307,9 +309,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5
-                       c4.478 0 8.268 2.943 9.542 7
-                       -1.274 4.057-5.064 7-9.542 7
-                       -4.477 0-8.268-2.943-9.542-7z" />
+                                        c4.478 0 8.268 2.943 9.542 7
+                                        -1.274 4.057-5.064 7-9.542 7
+                                        -4.477 0-8.268-2.943-9.542-7z" />
                             </svg>
 
                             <!-- Eye Off -->
@@ -319,19 +321,28 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M10.584 10.587a3 3 0 004.243 4.243" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.223 6.223A9.97 9.97 0 0112 5
-                       c4.478 0 8.268 2.943 9.543 7
-                       a9.97 9.97 0 01-2.132 3.368" />
+                                    c4.478 0 8.268 2.943 9.543 7
+                                    a9.97 9.97 0 01-2.132 3.368" />
                             </svg>
                         </button>
                     </div>
                 </div>
+
+                @if ($errors->any())
+                    <div
+                        class="mb-6 rounded-xl
+                        bg-red-500/20 border border-red-400/40
+                        text-red-100 text-sm px-4 py-3">
+                        {{ $errors->first() }}
+                    </div>
+                @endif
 
 
 
                 <!-- Button -->
                 <button type="submit"
                     class="w-full py-3 rounded-xl
-                           bg-blue-700 hover:bg-blue-900
+                           bg-sky-500 hover:bg-sky-600
                            text-white font-semibold
                            shadow-lg shadow-sky-500/40
                            transition duration-200">
