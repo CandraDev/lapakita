@@ -60,7 +60,8 @@
                     </svg>
                     Masuk
                 </a>
-                <button
+                <a
+                    href="{{ route('auth.register') }}"
                     class="hidden px-2 bg-white/70 border-sky-500 border-2  h-8.5 text-xs font-bold text-sky-500 rounded-xl shadow sm:flex items-center justify-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="15" height="15"
                         viewBox="0 0 24 24">
@@ -69,7 +70,7 @@
                         </path>
                     </svg>
                     Daftar
-                </button>
+                </a>
             </div>
         </div>
         <div class="hidden lg:flex mx-3 mb-1 relative z-50">
