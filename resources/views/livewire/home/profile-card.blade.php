@@ -7,8 +7,8 @@
         <p class="text-[7pt] text-gray-600">Masuk untuk coba semua fitur, yuk!</p>
     </div>
     <div>
-        <button class="bg-sky-500 w-24 h-8 rounded-lg shadow font-bold text-white text-shadow">
+        <a href="{{ route('auth.login') }}" class="flex items-center justify-center bg-sky-500 w-24 h-8 rounded-lg shadow font-bold text-white text-shadow">
             Masuk
-        </button>
+        </a>
     </div>
 </div>

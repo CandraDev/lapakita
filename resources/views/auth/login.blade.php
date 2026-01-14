@@ -284,7 +284,7 @@
                 <!-- Register -->
                 <p class="text-center text-white/80 text-sm">
                     Belum punya akun?
-                    <a href="{{ route('register') }}" class="text-sky-300 hover:text-white font-semibold">
+                    <a href="{{ route('auth.register') }}" class="text-sky-300 hover:text-white font-semibold">
                         Daftar
                     </a>
                 </p>

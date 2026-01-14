@@ -210,7 +210,7 @@
             </h1>
 
             <!-- FORM -->
-            <form class="max-w-sm md:max-w-md mx-auto space-y-6" method="POST" action="{{ route('register') }}">
+            <form class="max-w-sm md:max-w-md mx-auto space-y-6" method="POST" action="{{ route('auth.register') }}">
                 @csrf
 
                 <!-- Nama Lengkap -->
@@ -367,7 +367,7 @@
                 <!-- Login -->
                 <p class="text-center text-white/80 text-sm">
                     Sudah punya akun?
-                    <a href="{{ route('login') }}" class="text-sky-300 hover:text-white font-semibold">
+                    <a href="{{ route('auth.login') }}" class="text-sky-300 hover:text-white font-semibold">
                         Masuk
                     </a>
                 </p>

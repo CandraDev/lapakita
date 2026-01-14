@@ -49,7 +49,8 @@
             </div>
             @livewire('nav-search')
             <div class="flex gap-2">
-                <button
+                <a
+                    href="{{ route('auth.login') }}"
                     class="px-2 bg-sky-500 h-8.5 text-xs font-medium text-white rounded-md shadow flex items-center justify-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="15" height="15"
                         viewBox="0 0 24 24">
@@ -58,7 +59,7 @@
                         </path>
                     </svg>
                     Masuk
-                </button>
+                </a>
                 <button
                     class="hidden px-2 bg-white/70 border-sky-500 border-2  h-8.5 text-xs font-bold text-sky-500 rounded-xl shadow sm:flex items-center justify-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="15" height="15"
