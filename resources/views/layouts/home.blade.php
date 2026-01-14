@@ -19,6 +19,12 @@
     @livewire('home.carousel')
     @livewire('home.profile-card')
     @livewire('home.featured-train')
+    @if (is_null(Auth::user()->email_verified_at))
+        @livewire('home.alert', [
+            'message' => 'Cek email Anda untuk konfirmasi email!',
+            'type' => 'warning',
+        ])
+    @endif
     @livewire('home.flashsale')
     @livewire('home.products')
     @yield('content')
