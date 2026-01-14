@@ -98,7 +98,7 @@ class AuthController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended('home');
+        return redirect()->route('home');
     }
 
     /**
@@ -111,6 +111,6 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('login');
+        return redirect()->route('auth.login');
     }
 }

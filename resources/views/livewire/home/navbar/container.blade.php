@@ -48,30 +48,73 @@
                 <img src="{{ asset('logo/lapakita-main.png') }}" class="h-11">
             </div>
             @livewire('nav-search')
-            <div class="flex gap-2">
+            <div class="flex gap-2 items-center">
+
                 @guest
+                    <!-- Guest Buttons -->
                     <a href="{{ route('auth.login') }}"
                         class="px-2 bg-sky-500 h-8.5 text-xs font-medium text-white rounded-md shadow flex items-center justify-center gap-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="15" height="15"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M10.2071 22H17.2071C19.2771 22 20.9571 20.32 20.9571 18.26L20.9971 5.75C20.9971 3.68 19.3171 2 17.2471 2H10.2471C8.66713 2 7.24713 3 6.71713 4.48C6.47713 5.13 6.81713 5.85 7.46713 6.08C8.11713 6.32 8.83713 5.98 9.06713 5.33C9.24713 4.83 9.71713 4.5 10.2471 4.5H17.2471C17.9371 4.5 18.4971 5.06 18.4971 5.74L18.4571 18.25C18.4571 18.94 17.8971 19.5 17.2071 19.5H10.2071C9.67713 19.5 9.20713 19.16 9.02713 18.67C8.79713 18.02 8.07713 17.69 7.42713 17.92C6.77713 18.16 6.44713 18.87 6.67713 19.52C7.20713 21 8.62713 22 10.2071 22ZM11.32 10.77H3.25C2.56 10.77 2 11.33 2 12.02C2 12.71 2.56 13.27 3.25 13.27H11.31L9.73 14.6C9.21 15.04 9.14 15.83 9.58 16.36C10.02 16.88 10.81 16.95 11.34 16.51L15.55 12.97L15.7 12.82C16.15 12.29 16.08 11.5 15.55 11.06L11.35 7.53003C10.82 7.08003 10.03 7.15003 9.59 7.68003C9.14 8.21003 9.21 9.00003 9.74 9.44003L11.32 10.77Z">
-                            </path>
-                        </svg>
+                        <!-- icon -->
                         Masuk
                     </a>
                     <a href="{{ route('auth.register') }}"
                         class="hidden px-2 bg-white/70 border-sky-500 border-2  h-8.5 text-xs font-bold text-sky-500 rounded-xl shadow sm:flex items-center justify-center gap-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="15" height="15"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M10.2071 22H17.2071C19.2771 22 20.9571 20.32 20.9571 18.26L20.9971 5.75C20.9971 3.68 19.3171 2 17.2471 2H10.2471C8.66713 2 7.24713 3 6.71713 4.48C6.47713 5.13 6.81713 5.85 7.46713 6.08C8.11713 6.32 8.83713 5.98 9.06713 5.33C9.24713 4.83 9.71713 4.5 10.2471 4.5H17.2471C17.9371 4.5 18.4971 5.06 18.4971 5.74L18.4571 18.25C18.4571 18.94 17.8971 19.5 17.2071 19.5H10.2071C9.67713 19.5 9.20713 19.16 9.02713 18.67C8.79713 18.02 8.07713 17.69 7.42713 17.92C6.77713 18.16 6.44713 18.87 6.67713 19.52C7.20713 21 8.62713 22 10.2071 22ZM11.32 10.77H3.25C2.56 10.77 2 11.33 2 12.02C2 12.71 2.56 13.27 3.25 13.27H11.31L9.73 14.6C9.21 15.04 9.14 15.83 9.58 16.36C10.02 16.88 10.81 16.95 11.34 16.51L15.55 12.97L15.7 12.82C16.15 12.29 16.08 11.5 15.55 11.06L11.35 7.53003C10.82 7.08003 10.03 7.15003 9.59 7.68003C9.14 8.21003 9.21 9.00003 9.74 9.44003L11.32 10.77Z">
-                            </path>
-                        </svg>
+                        <!-- icon -->
                         Daftar
                     </a>
+                @else
+                    <!-- Authenticated User Dropdown -->
+                    <button
+                        class="flex items-center gap-2  text-gray-800 px-3 py-2 rounded-md  hover:bg-gray-100/70 hover:text-sky-500 transition ">
+                        <span class="text-sm font-semibold">
+                            <div class="w-30">
+                                <a class="inline-block">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="inline-block me-2">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.0058 12.5C14.0058 14.15 15.3565 15.5 17.0074 15.5H20.009V17.5C20.009 18.88 18.8884 20 17.5076 20H5.50132C4.12059 20 3 18.88 3 17.5V7.5C3 6.12 4.12059 5 5.50132 5H17.5076C18.8884 5 20.009 6.12 20.009 7.5V9.5H17.0074C15.3565 9.5 14.0058 10.85 14.0058 12.5ZM15.0063 12.5002C15.0063 11.4002 15.9068 10.5002 17.0074 10.5002V10.4902H20.6193C21.3797 10.4902 22 11.1102 22 11.8702V13.1202C22 13.8802 21.3797 14.5002 20.6193 14.5002H17.0074C15.9068 14.5002 15.0063 13.6002 15.0063 12.5002ZM18.0079 12.5002C18.0079 13.0502 17.5577 13.5002 17.0074 13.5002C16.4571 13.5002 16.0068 13.0502 16.0068 12.5002C16.0068 11.9502 16.4571 11.5002 17.0074 11.5002C17.5577 11.5002 18.0079 11.9502 18.0079 12.5002Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    Rp. 0
+                                </a>
+                            </div>
+                        </span>
+
+                    </button>
+
+                    <div class="relative group hidden lg:block">
+                        <button
+                            class="flex items-center gap-2  text-gray-800 px-3 py-2 rounded-md  hover:bg-gray-100/70 hover:text-sky-500 transition ">
+                            <a href="/member/profile" class="account__wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    preserveAspectRatio="xMidYMid meet" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.0071 7C17.0071 9.76142 14.7655 12 12.0002 12C9.23497 12 6.9933 9.76142 6.9933 7C6.9933 4.23858 9.23497 2 12.0002 2C14.7655 2 17.0071 4.23858 17.0071 7ZM20.8422 18.6695C21.453 20.2795 20.2113 21.9995 18.4789 21.9995H5.52106C3.78867 21.9995 2.54695 20.2795 3.1578 18.6695C4.12914 16.1095 6.44233 13.0195 12 13.0195C17.5577 13.0195 19.8709 16.1095 20.8422 18.6695Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <span class="text-sm font-semibold">{{ Str::ucfirst(Auth::user()->name) }}</span>
+
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute right-0 mt-1 w-40 z-70 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Profil
+                                Saya</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Pesanan</a>
+                            <form method="POST" action="{{ route('auth.logout') }}">
+                                @csrf
+                                <button type="submit"
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Keluar</button>
+                            </form>
+                        </div>
+                    </div>
                 @endguest
+
             </div>
+
         </div>
         <div class="hidden lg:flex mx-3 mb-1 relative z-50">
             <div class="relative group">
