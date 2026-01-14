@@ -61,10 +61,10 @@ class AuthController extends Controller
             'email'    => $request->email,
             'password' => Hash::make($request->password),
         ]);
-
+        $user->sendEmailVerificationNotification();
         Auth::login($user);
 
-        return redirect()->route('home'); // ganti sesuai kebutuhan
+        return redirect()->route('verification.notice'); // ganti sesuai kebutuhan
     }
 
     /**

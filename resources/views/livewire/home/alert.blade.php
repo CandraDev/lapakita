@@ -8,7 +8,7 @@
     @if ($type === 'error') bg-red-100 text-red-800 @endif
     transition-all duration-300">
 
-            <span>{{ $message }}</span>
+            <span>{!! $message !!}</span>
 
             <button wire:click="dismiss" class="ml-4 font-bold hover:text-gray-600">✕</button>
         </div>

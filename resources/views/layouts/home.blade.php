@@ -22,7 +22,7 @@
     @auth
         @if (is_null(Auth::user()->email_verified_at))
             @livewire('home.alert', [
-                'message' => 'Cek email Anda untuk konfirmasi email!',
+                'message' => 'Anda belum melakukan <a href="'.route('verification.notice').'" class="underline">konfirmasi email</a>. Konfirmasi sekarang untuk mengakses seluruh fitur Lapakita!',
                 'type' => 'warning',
             ])
         @endif
