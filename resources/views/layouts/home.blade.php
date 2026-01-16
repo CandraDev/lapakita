@@ -31,6 +31,7 @@
     @livewire('home.flashsale')
     @livewire('home.products')
     @yield('content')
+    @livewire('mobile.main-bottom-nav')
 </body>
 
 </html>
