@@ -1,5 +1,11 @@
-<div class="sticky bottom-0 right-0 left-0 h-14 bg-sky-50 flex justify-around items-center text-sky-800 text-xs lg:hidden">
-    <div class="flex justify-center items-center flex-col">
+<div
+    class="sticky bottom-0 right-0 left-0 h-14 bg-sky-50 flex justify-around items-center text-sky-800 text-xs lg:hidden">
+    @php
+        $activeClass = 'text-gray-600';
+        $inactiveClass = 'text-sky-800';
+    @endphp
+
+    <a class="flex justify-center items-center flex-col {{ request()->routeIs('home') ? $activeClass : $inactiveClass }}" href="{{ route('home') }}" >
         <svg viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -13,8 +19,8 @@
             </g>
         </svg>
         Home
-    </div>
-    <div class="flex justify-center items-center flex-col">
+    </a>
+    <div class="flex justify-center items-center flex-col ">
         <svg viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -35,7 +41,7 @@
         </svg>
         Cart
     </div>
-    <div class="flex justify-center items-center flex-col">
+    <a class="flex justify-center items-center flex-col {{ request()->routeIs('auth.profile') ? $activeClass : $inactiveClass }}"" href="{{ route('auth.profile') }}">
         <svg viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -52,5 +58,5 @@
             </g>
         </svg>
         Profile
-    </div>
+    </a>
 </div>
