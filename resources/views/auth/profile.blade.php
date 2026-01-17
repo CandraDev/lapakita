@@ -32,8 +32,8 @@
         </div>
 
         <div class="text-center px-4">
-            <h2 class="font-semibold  text-sky-600">Masuk</h2>
-            <p class="text-sm text-gray-500">Tidak punya akun? <a class="text-sky-600">Daftar</a></p>
+            <a class="font-semibold  text-sky-600" href={{ route('auth.login') }}>Masuk</a>
+            <p class="text-sm text-gray-500">Tidak punya akun? <a class="text-sky-600" href={{ route('auth.register') }}>Daftar</a></p>
         </div>
 
     </div>
