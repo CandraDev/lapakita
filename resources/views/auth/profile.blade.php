@@ -16,6 +16,7 @@
 
 
 <body class="bg-sky-50">
+    <a href="{{ url()->previous() }}" class="absolute z-20 w-7 h-7 bg-white rounded-full text-center top-3 left-2 shadow">x</a>
     <div class="w-full h-35 bg-sky-200"
         style="background-image: url('{{ asset('gui/header.png') }}'); object-fit: contain;">
     </div>
@@ -60,8 +61,8 @@
         </a>
         <a class="w-full bg-white h-13 flex items-center border-t border-gray-200">
             <div class="flex items-center justify-center w-14">
-                <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" id="store" class="icon glyph"
-                    fill="#858585">
+                <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" id="store"
+                    class="icon glyph" fill="#858585">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
