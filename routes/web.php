@@ -37,8 +37,8 @@ Route::middleware('auth')->group(function () {
         return back()->with('message', 'Link verifikasi sudah dikirim ulang.');
     })->middleware('throttle:6,1')->name('verification.send');
 
+    Route::get('/account', [AuthController::class, 'showAccount'])->name('auth.account');
 });
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('auth.logout');
-
 Route::get('/profile', [AuthController::class, 'showProfile'])->name('auth.profile');

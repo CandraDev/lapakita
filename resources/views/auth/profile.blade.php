@@ -39,6 +39,7 @@
                         href={{ route('auth.login') }}>Daftar</a></p>
             @else
                 <span class="font-semibold ">{{ Auth::user()->name }}</span><a
+                    href={{ route('auth.account') }}
                     class="text-xs font-bold ms-1 text-sky-600 align-top">Ubah <div
                         class="h-1.5 w-1.5 bg-red-500 rounded-full inline-block align-middle shadow"></div></a>
                 <span class="font-sm text-xs block text-sky-800 ">{{ Auth::user()->email }}</span></a>

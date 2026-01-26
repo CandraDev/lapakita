@@ -33,6 +33,11 @@ class AuthController extends Controller
         return view('auth.profile');
     }
 
+    public function showAccount()
+    {
+        return view('auth.account.index');
+    }
+
     /**
      * Handle Register
      */
