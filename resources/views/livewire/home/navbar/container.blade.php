@@ -298,6 +298,22 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+                                <div class="flex items-center justify-center w-10">
+                                    <svg class="text-sky-600" width="24" height="24" aria-hidden="true"
+                                        aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 8.5V2.05C20.14 2.28 21 3.29 21 4.5V19.5C21 20.88 19.88 22 18.5 22H7.5C6.12 22 5 20.88 5 19.5V18H4.25C3.56 18 3 17.44 3 16.75C3 16.06 3.56 15.5 4.25 15.5H5V8.5H4.25C3.56 8.5 3 7.94 3 7.25C3 6.56 3.56 6 4.25 6H5V4.5C5 3.12 6.12 2 7.5 2H12V8.5C12 9.33 12.67 10 13.5 10C13.9 10 14.28 9.84 14.56 9.56L15.5 8.62L16.44 9.56C16.73 9.84 17.1 10 17.5 10C18.33 10 19 9.33 19 8.5ZM8 19C8 19.55 8.45 20 9 20H17C17.55 20 18 19.55 18 19C18 18.45 17.55 18 17 18H9C8.45 18 8 18.45 8 19ZM15.5 7.2L17.15 8.85C17.46 9.17 18 8.95 18 8.5V2H13V8.5C13 8.94 13.54 9.16 13.85 8.85L15.5 7.2Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-sky-600">Menjadi Penjual
+                                        <span class="inline-block w-1 h-1 rounded-full bg-sky-500 shadow shadow-sky-500 align-middle ms-1"></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
