@@ -35,7 +35,7 @@
         <div class="text-center px-4 pb-1">
             @guest
                 <a class="font-semibold  text-sky-600" href={{ route('auth.login') }}>Masuk</a>
-                <p class="text-sm text-gray-500 mb-4">Tidak punya akun? <a class="text-sky-600"
+                <p class="text-sm text-gray-400 mb-4">Tidak punya akun? <a class="text-sky-600"
                         href={{ route('auth.login') }}>Daftar</a></p>
             @else
                 <span class="font-semibold ">{{ Auth::user()->name }}</span><a
@@ -50,7 +50,7 @@
                     <div class="px-3 py-1.5">
                         <div class="text-gray-600 mb-0.5">LapakiPay</div>
                         <div>
-                            <svg viewBox="0 0 24 24" class="text-gray-600 h-6.5 w-6.5 inline-block mr-1" fill="none"
+                            <svg viewBox="0 0 24 24" class="text-gray-400 h-6.5 w-6.5 inline-block mr-1" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -72,7 +72,7 @@
                     <div class="px-3 py-1.5">
                         <div class="text-gray-600 mb-0.5">Tier</div>
                         <div>
-                            <svg viewBox="0 0 24 24" class="text-gray-500 h-6.5 w-6.5 inline-block" fill="none"
+                            <svg viewBox="0 0 24 24" class="text-gray-400 h-6.5 w-6.5 inline-block" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -88,7 +88,7 @@
                     <div class="px-3 py-1.5">
                         <div class="text-gray-600 mb-0.5">Poin</div>
                         <div>
-                            <svg fill="currentColor" class="text-gray-500 w-5 h-5 inline-block mr-2" height="200px"
+                            <svg fill="currentColor" class="text-gray-400 w-5 h-5 inline-block mr-2" height="200px"
                                 width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 491.52 491.52" xml:space="preserve">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -109,7 +109,7 @@
                     <div class="px-3 py-1.5">
                         <div class="text-gray-600 mb-0.5">Lapak Saya</div>
                         <div class="flex">
-                            <svg viewBox="0 0 24 24" class="text-gray-500 w-6 h-6 inline-block"
+                            <svg viewBox="0 0 24 24" class="text-gray-400 w-6 h-6 inline-block"
                                 xmlns="http://www.w3.org/2000/svg" id="store" class="icon glyph" fill="currentColor">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -135,8 +135,8 @@
         <div class="w-full bg-white h-30 -mt-9 mb-10 px-4 py-3">
             <div class="flex mb-4">
                 <div class="flex-1 ">Transaksi Belanja</div>
-                <div class="text-xs mt-2 text-gray-600">Lihat Semua
-                    <svg class="inline-block w-3 h-3 text-gray-600" aria-hidden="true" type="image/svg+xml"
+                <div class="text-xs mt-2 text-gray-400">Lihat Semua
+                    <svg class="inline-block w-3 h-3 text-gray-400" aria-hidden="true" type="image/svg+xml"
                         viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M8.49 8.15532L13.69 12.0053L8.49 15.8353C8.22 16.0353 8.05 16.3153 8.01 16.6353C7.97 16.9553 8.05 17.2653 8.26 17.5253C8.68 18.0553 9.47 18.1553 10.01 17.7553L16.51 12.9653C16.82 12.7353 17 12.3753 17 12.0053C17 11.6353 16.82 11.2753 16.51 11.0453L10.01 6.24532C9.79 6.08532 9.53 5.99532 9.25 5.99532C8.86 5.99532 8.5 6.16532 8.26 6.46532C8.06 6.72532 7.97 7.03532 8.01 7.35532C8.05 7.67532 8.22 7.95532 8.49 8.15532Z">
@@ -146,7 +146,7 @@
             </div>
             <div class="flex justify-around">
                 <div class="flex items-center justify-center flex-col">
-                    <svg width="32" height="32" class="w-8 h-8 text-gray-500" aria-hidden="true"
+                    <svg width="32" height="32" class="w-8 h-8 text-gray-400" aria-hidden="true"
                         type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M19.5 4C20.88 4 22 5.12 22 6.5V16C22 18.76 19.76 21 17 21C14.95 21 13.19 19.76 12.42 18H4.5C3.12 18 2 16.88 2 15.5V6.5C2 5.12 3.12 4 4.5 4H19.5ZM3.8 15.5C3.8 15.89 4.11 16.2 4.5 16.2H12.02C12.02 16.165 12.015 16.1325 12.01 16.1C12.005 16.0675 12 16.035 12 16C12 15.66 12.03 15.32 12.1 15H6.91C6.96 14.84 7 14.68 7 14.5C7 13.67 6.33 13 5.5 13C5.32 13 5.16 13.03 5 13.09V8.91C5.16 8.96 5.32 9 5.5 9C6.33 9 7 8.33 7 7.5C7 7.32 6.97 7.16 6.91 7H17.09C17.04 7.16 17 7.32 17 7.5C17 8.33 17.67 9 18.5 9C18.68 9 18.84 8.97 19 8.91V11.42C19.44 11.62 19.84 11.88 20.2 12.19V6.5C20.2 6.11 19.89 5.8 19.5 5.8H4.5C4.11 5.8 3.8 6.11 3.8 6.5V15.5ZM10 11C10 12.1 10.9 13 12 13C13.1 13 14 12.1 14 11C14 9.9 13.1 9 12 9C10.9 9 10 9.9 10 11ZM13 16C13 18.21 14.79 20 17 20C19.21 20 21 18.21 21 16C21 13.79 19.21 12 17 12C14.79 12 13 13.79 13 16ZM18.5501 17.9698C18.6301 17.9998 18.7001 18.0198 18.7801 18.0198V18.0098C18.9701 18.0098 19.1401 17.9098 19.2301 17.7398C19.3501 17.4998 19.2601 17.1898 19.0101 17.0698L17.3101 16.1998V13.5098C17.3101 13.2298 17.0901 13.0098 16.8101 13.0098C16.5301 13.0098 16.3101 13.2298 16.3101 13.5098V16.5098C16.3101 16.6998 16.4101 16.8798 16.5801 16.9598L18.5501 17.9698Z">
@@ -157,7 +157,7 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center flex-col">
-                    <svg width="32" height="32" class="w-8 h-8 text-gray-500" aria-hidden="true"
+                    <svg width="32" height="32" class="w-8 h-8 text-gray-400" aria-hidden="true"
                         aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center flex-col">
-                    <svg width="32" height="32" class="w-8 h-8 text-gray-500" aria-hidden="true"
+                    <svg width="32" height="32" class="w-8 h-8 text-gray-400" aria-hidden="true"
                         type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M19.5 2H4.5C3.12 2 2 3.12 2 4.5V7H22V4.5C22 3.12 20.88 2 19.5 2ZM18.7099 14.9795L16.5899 17.9695L15.2599 16.4195C15.0799 16.2095 14.7699 16.1895 14.5599 16.3695C14.4599 16.4595 14.3999 16.5795 14.3899 16.7095C14.3799 16.8395 14.4199 16.9695 14.5099 17.0695L16.2599 19.0995C16.3499 19.2095 16.4899 19.2695 16.6399 19.2695H16.6599C16.8099 19.2695 16.9499 19.1895 17.0399 19.0595L19.5299 15.5595C19.6099 15.4495 19.6399 15.3195 19.6199 15.1895C19.5999 15.0595 19.5299 14.9395 19.4199 14.8695C19.1999 14.7095 18.8799 14.7595 18.7199 14.9895L18.7099 14.9795ZM15 8H21V14.03C21.62 14.86 22 15.88 22 17C22 19.76 19.76 22 17 22C15.88 22 14.86 21.62 14.03 21H5.4C4.08 21 3 19.93 3 18.6V8H9V9.25C9 9.94 9.56 10.5 10.25 10.5H13.75C14.44 10.5 15 9.94 15 9.25V8ZM13 17C13 19.21 14.79 21 17 21C19.21 21 21 19.21 21 17C21 14.79 19.21 13 17 13C14.79 13 13 14.79 13 17Z">
@@ -180,7 +180,7 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-center flex-col">
-                    <svg width="32" height="32" class="w-8 h-8 text-gray-500" aria-hidden="true"
+                    <svg width="32" height="32" class="w-8 h-8 text-gray-400" aria-hidden="true"
                         type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M19.5 4H4.5C3.12 4 2 5.11964 2 6.4992V15.4963C2 16.8759 3.12 17.9955 4.5 17.9955H12.6L11.68 20.2948C11.33 21.5344 12.77 22.5041 13.78 21.7143L17.89 18.0055H19.5C20.88 18.0055 22 16.8859 22 15.5063V6.4992C22 5.11964 20.88 4 19.5 4ZM9.99 14.9365C9.61 15.1364 9.16 14.8165 9.23 14.3867L9.61 12.1474L7.98 10.5579C7.67 10.258 7.84 9.72816 8.27 9.66818L10.52 9.33828L11.53 7.29894C11.72 6.90907 12.28 6.90907 12.47 7.29894L13.48 9.33828L15.73 9.66818C16.16 9.72816 16.33 10.258 16.02 10.5579L14.39 12.1474L14.77 14.3867C14.84 14.8165 14.4 15.1364 14.01 14.9365L12 13.8768L9.99 14.9365Z">
@@ -197,8 +197,8 @@
     <div class="min-h-[70vh] -mt-7">
         <a class="w-full bg-white h-13 flex items-center">
             <div class="flex items-center justify-center w-14">
-                <svg width="24" height="24" aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24"
-                    fill="#858585" xmlns="http://www.w3.org/2000/svg">
+                <svg width="24" height="24" class="text-gray-400" aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12ZM11.3899 14.2798C10.8999 14.2798 10.5499 13.8298 10.6599 13.3598C10.8399 12.6298 11.2599 11.5998 12.2699 10.8398C12.9899 10.1998 13.1999 9.68983 13.1999 9.07983C13.1999 8.41983 12.8199 7.89983 11.9899 7.89983C11.2499 7.89983 10.8799 8.28983 10.6999 8.84983C10.5999 9.16983 10.3199 9.39983 9.97988 9.39983H9.05988C8.55988 9.39983 8.18988 8.91983 8.33988 8.44983C8.71988 7.21983 9.76988 5.99983 12.0299 6.00983C14.8599 6.01983 15.6899 7.83983 15.6899 9.17983C15.6899 10.2598 15.3399 10.9998 14.0899 12.1498C13.4899 12.5898 13.2499 13.2198 13.1599 13.6798C13.0899 14.0298 12.7899 14.2898 12.4199 14.2898H11.3799L11.3899 14.2798ZM11.8199 17.9997C12.5986 17.9997 13.2299 17.3684 13.2299 16.5897C13.2299 15.811 12.5986 15.1797 11.8199 15.1797C11.0412 15.1797 10.4099 15.811 10.4099 16.5897C10.4099 17.3684 11.0412 17.9997 11.8199 17.9997Z">
                     </path>
@@ -218,8 +218,8 @@
         </a>
         <a class="w-full bg-white h-13 flex items-center border-t border-gray-200">
             <div class="flex items-center justify-center w-14">
-                <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                    id="store" class="icon glyph" fill="#858585">
+                <svg viewBox="0 0 24 24" class="text-gray-400" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                    id="store" class="icon glyph" fill="currentColor">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
@@ -246,8 +246,8 @@
             <form method="POST" action="{{ route('auth.logout') }}">
                 @csrf
                 <button type="submit"
-                    class="w-90 mx-auto text-center bg-white shadow flex items-center justify-center h-10 text-sky-800 font-semibold rounded-lg border-1 border-sky-500 m-2 mt-3">
-                    <svg viewBox="0 0 24 24" class="w-5 h-5 text-sky-800 mr-1" fill="none"
+                    class="w-90 mx-auto text-center bg-white shadow flex items-center justify-center h-10 text-sky-500 font-semibold rounded-lg border-1 border-sky-500 m-2 mt-3">
+                    <svg viewBox="0 0 24 24" class="w-5 h-5 text-sky-500 mr-1" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

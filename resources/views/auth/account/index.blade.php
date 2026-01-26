@@ -18,8 +18,7 @@
 <body class="bg-sky-50">
     <a href="{{ url()->previous() }}"
         class="absolute z-20 w-7 h-7 bg-white rounded-full text-center top-3 left-2 shadow">x</a>
-    <div class="w-full h-40 bg-sky-200 pt-15 px-6 lg:hidden"
-        style="background-image: url('{{ asset('gui/header.png') }}'); object-fit: contain;">
+    <div class="w-full h-40 bg-sky-50 pt-15 px-6 lg:hidden">
 
     </div>
     <div class="hidden w-full h-55 bg-sky-50 pt-15 px-6 lg:block">
@@ -28,7 +27,6 @@
 
         <div class="lg:flex">
             <div class="relative -top-25 px-6 lg:px-0 lg:-top-15 lg:max-w-60">
-
                 <h1 class="font-semibold text-xl lg:text-2xl lg:mb-2">Pusat Akun</h1>
                 <p class="text-xs text-gray-500 lg:text-sm">
                     Detail profil dan pengaturan untuk akun Lapakita E-Commerce
@@ -49,9 +47,9 @@
                             <div class="font-bold flex-1">
                                 Profil
                             </div>
-                            <div class="text-sm pt-1 font-bold text-sky-500">
+                            <a href={{ route('auth.account.edit') }} class="text-sm pt-1 font-bold text-sky-500">
                                 Edit
-                            </div>
+                            </a>
                         </div>
                         <div class="grid grid-cols-2 mb-4">
                             <div class="text-gray-500 text-xs">

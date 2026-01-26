@@ -38,6 +38,7 @@ Route::middleware('auth')->group(function () {
     })->middleware('throttle:6,1')->name('verification.send');
 
     Route::get('/account', [AuthController::class, 'showAccount'])->name('auth.account');
+    Route::get('/account/edit', [AuthController::class, 'showAccountEdit'])->name('auth.account.edit');
 });
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('auth.logout');

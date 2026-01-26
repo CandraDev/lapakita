@@ -37,6 +37,10 @@ class AuthController extends Controller
     {
         return view('auth.account.index');
     }
+    public function showAccountEdit()
+    {
+        return view('auth.account.edit');
+    }
 
     /**
      * Handle Register
