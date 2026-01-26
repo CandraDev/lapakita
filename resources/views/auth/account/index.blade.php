@@ -16,7 +16,7 @@
 
 
 <body class="bg-sky-50">
-    <a href="{{ route('auth.profile') }}"
+    <a href="{{ route('home') }}"
         class="absolute z-20 w-7 h-7 bg-white rounded-full text-center top-3 left-2 shadow">x</a>
     <div class="w-full h-40 bg-sky-50 pt-15 px-6 lg:hidden">
 
