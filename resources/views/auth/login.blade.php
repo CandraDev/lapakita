@@ -14,147 +14,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-{{-- <body class="bg-sky-50 relative">
-
-    <!-- background -->
-    <div class="w-full h-[100vh]"
-        style="
-            background-image: url('{{ asset('gui/gradient-blue.svg') }}');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        ">
-    </div>
-
-    <!-- HEADER OVERLAY -->
-    <div class="absolute top-5 left-5 right-5 z-30 flex items-center justify-between">
-
-        <!-- X button -->
-        <a
-            class="w-8 h-8 rounded-full
-               bg-white flex items-center justify-center
-               shadow-lg cursor-pointer text-sky-800">
-            ✕
-        </a>
-
-        <!-- Center Text -->
-        <div class="absolute left-1/2 -translate-x-1/2 top-10">
-            <img src="{{ asset('logo/lapakita-white.png') }}" class="h-12 object-contain" alt="Lapakita">
-
-        </div>
-
-    </div>
 
 
-    <!-- GLASS CARD -->
-    <div class="flex items-center justify-center relative -mt-[83vh]">
-        <div
-            class="w-full max-w-6xl h-[90vh] rounded-t-4xl
-               bg-gradient-to-br from-sky-800/60 to-sky-900/30
-               backdrop-blur-2xl
-               border border-white/20
-               shadow-2xl shadow-black/20 pt-7 px-7">
-
-            <!-- Title -->
-            <h1 class="text-white text-center font-bold text-2xl mb-8 text-shadow-md">
-                Masuk ke Akun Lapakita
-            </h1>
-
-            <!-- FORM -->
-            <form class="max-w-md mx-auto space-y-6">
-
-                <!-- Email -->
-                <div>
-                    <label class="block text-white/90 mb-2 text-sm">
-                        Email
-                    </label>
-                    <input type="email" placeholder="email@contoh.com"
-                        class="w-full px-4 py-3 rounded-xl
-                           bg-white/30 backdrop-blur
-                           border border-white/50
-                           text-white placeholder-white/60
-                           focus:outline-none focus:ring-2 focus:ring-sky-400">
-                </div>
-
-                <!-- Password -->
-                <div>
-                    <label class="block text-white/90 mb-2 text-sm">
-                        Kata Sandi
-                    </label>
-                    <input type="password" placeholder="••••••••"
-                        class="w-full px-4 py-3 rounded-xl
-                           bg-white/30 backdrop-blur
-                           border border-white/50
-                           text-white placeholder-white/60
-                           focus:outline-none focus:ring-2 focus:ring-sky-400">
-                </div>
-
-                <!-- Remember & Forgot -->
-                <div class="flex items-center justify-between text-sm">
-                    <label class="flex items-center gap-2 text-white/80">
-                        <input type="checkbox" class="accent-sky-500">
-                        Ingat saya
-                    </label>
-
-                    <a href="#" class="text-sky-200 hover:text-white transition">
-                        Lupa kata sandi?
-                    </a>
-                </div>
-
-                <!-- Button -->
-                <button type="submit"
-                    class="w-full py-3 rounded-xl
-                       bg-sky-500 hover:bg-sky-600
-                       text-white font-semibold
-                       shadow-lg shadow-sky-500/40
-                       transition duration-200">
-                    Masuk
-                </button>
-
-                <!-- Divider -->
-                <div class="flex items-center gap-4">
-                    <div class="flex-1 h-px bg-white/30"></div>
-                    <span class="text-white/60 text-sm">atau</span>
-                    <div class="flex-1 h-px bg-white/30"></div>
-                </div>
-
-                <!-- Social Login -->
-                <button type="button"
-                    class="w-full py-3 rounded-xl
-                       bg-white/90 text-gray-800
-                       font-medium flex items-center justify-center gap-3
-                       hover:bg-white transition">
-
-                    <svg class="w-5 h-5" viewBox="0 0 48 48">
-                        <path fill="#FFC107"
-                            d="M43.6 20.5H42V20H24v8h11.3C33.7 32.4 29.3 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.4 1.1 7.3 2.9l5.7-5.7C33.5 6.1 28.9 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.1-.1-2.2-.4-3.5z" />
-                        <path fill="#FF3D00"
-                            d="M6.3 14.7l6.6 4.8C14.7 16 19 13 24 13c2.8 0 5.4 1.1 7.3 2.9l5.7-5.7C33.5 6.1 28.9 4 24 4c-7.7 0-14.3 4.3-17.7 10.7z" />
-                        <path fill="#4CAF50"
-                            d="M24 44c5.2 0 10-2 13.5-5.3l-6.2-5.2C29.5 34.8 26.9 35 24 35c-5.2 0-9.6-3.4-11.2-8.1l-6.5 5C9.6 39.5 16.3 44 24 44z" />
-                        <path fill="#1976D2"
-                            d="M43.6 20.5H42V20H24v8h11.3c-1.1 3-3.4 5.3-6.3 6.8l6.2 5.2C38.9 36.5 44 31 44 24c0-1.1-.1-2.2-.4-3.5z" />
-                    </svg>
-
-                    Masuk dengan Google
-                </button>
-
-                <!-- Register -->
-                <p class="text-center text-white/80 text-sm">
-                    Belum punya akun?
-                    <a href="{{ route('register') }}" class="text-sky-300 hover:text-white font-semibold">
-                        Daftar
-                    </a>
-                </p>
-            </form>
-
-        </div>
-    </div>
-
-
-</body> --}}
-
-<body class="bg-sky-50 relative min-h-screen">
+{{-- <body class="bg-sky-50 relative min-h-screen">
 
     <!-- background -->
     <div class="absolute inset-0"
@@ -300,6 +162,132 @@
                 </p>
 
             </form>
+        </div>
+    </div>
+</body> --}}
+
+<body class="bg-sky-50">
+    <a href="{{ route('home') }}"
+        class="absolute z-20 w-7 h-7 bg-white rounded-full text-center top-3 left-2 shadow">x</a>
+    <div class="lg:max-w-6xl lg:mx-auto">
+
+        <div class="lg:flex">
+            {{-- <div class="h-30 flex justify-end mb-5 flex-col  px-6 ">
+
+            </div> --}}
+
+            <div class="flex  justify-center items-end mb-7 h-35">
+                <img src="{{ asset('logo/lapakita-main.png') }}" class="w-40" alt="Logo Lapakita">
+            </div>
+            <div class="flex-1 ">
+                <div class=" w-[90%] mx-auto bg-white shadow rounded-lg">
+                    <div class="p-5">
+                        <h1 class="font-semibold text-xl lg:text-2xl lg:mb-2">Masuk ke Lapakita</h1>
+                        <p class="text-xs text-gray-500 lg:text-sm mb-4">
+                            Masuk ke Akun Lapakita dan dapatkan kemudahan dalam berbelanja!
+                        </p>
+                        <form method="POST" action="{{ route('auth.login') }}">
+                            @csrf
+                            <div class="flex border-b border-slate-500 mb-2">
+                                <div class="w-10 flex items-center justify-center">
+                                    <svg viewBox="0 0 24 24" fill="none" width="24" height="24"
+                                        color="rgba(0, 0, 0, 0.65)">
+                                        <path
+                                            d="M14.316 14.1a.75.75 0 00.076 1.298l6.167 3.084c.424.211.691.644.691 1.118v1.65H2.75V19.6c0-.474.268-.907.691-1.118l6.167-3.084a.75.75 0 00.077-1.297c-1.292-.85-2.39-2.419-2.39-3.92V7.456c0-1.291.407-2.465 1.171-3.307C9.22 3.318 10.373 2.75 12 2.75c1.627 0 2.78.568 3.534 1.398.763.842 1.17 2.016 1.17 3.307v2.727c0 1.504-1.093 3.07-2.388 3.918z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <input type="email" name="email"
+                                        class="w-full h-10 ps-2  focus:outline-none focus:border-transparent focus:ring-0 active:border-transparent"
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="flex border-b border-slate-500 mb-2">
+                                <div class="w-10 flex items-center justify-center">
+                                    <svg viewBox="0 0 24 24" fill="none" width="24" height="24"
+                                        color="rgba(0, 0, 0, 0.54)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.757 9.376c.002.212.005.42.005.624h-.75 9.226c0-.204.003-.412.005-.624.015-1.184.03-2.465-.39-3.54-.234-.6-.595-1.1-1.161-1.46-.574-.365-1.42-.626-2.692-.626-1.271 0-2.119.26-2.692.625-.566.36-.927.86-1.161 1.46-.42 1.077-.405 2.357-.39 3.541zm-1.501.083c.003.195.006.376.006.541H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2v-8a2 2 0 00-2-2h-.262c0-.165.003-.346.006-.54.018-1.166.044-2.793-.494-4.17-.327-.838-.87-1.619-1.753-2.18-.877-.558-2.025-.86-3.497-.86s-2.62.302-3.497.86c-.883.56-1.426 1.341-1.753 2.18-.538 1.377-.512 3.005-.494 4.17zM18 11.5H6a.5.5 0 00-.5.5v8a.5.5 0 00.5.5h12a.5.5 0 00.5-.5v-8a.5.5 0 00-.5-.5zM12 14a1 1 0 00-1 1v2a1 1 0 102 0v-2a1 1 0 00-1-1z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <input type="password" name="password"
+                                        class="w-full h-10 ps-2  focus:outline-none focus:border-transparent focus:ring-0 active:border-transparent"
+                                        placeholder="Password">
+                                </div>
+                                <div class="w-10 flex items-center justify-center">
+                                    {{-- Svg Mata Tertutup --}}
+                                    <svg viewBox="0 0 24 24" fill="none" width="24" height="24"
+                                        color="rgba(0, 0, 0, 0.54)" class="ip92G6">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.562 7.391a.75.75 0 011.047.17c1.178 1.637 3.382 4.69 8.391 4.69 5.01 0 7.213-3.053 8.391-4.69a.75.75 0 011.218.877l-.004.006c-.47.652-1.141 1.584-2.117 2.486a.716.716 0 01.042.04l2 2a.75.75 0 01-1.06 1.06l-2-2a.747.747 0 01-.13-.173 10.15 10.15 0 01-2.955 1.425l.827 2.48a.75.75 0 01-1.423.475l-.876-2.628A12.65 12.65 0 0112 13.75c-.68 0-1.317-.05-1.912-.14l-.876 2.627a.75.75 0 11-1.423-.474l.827-2.481a10.153 10.153 0 01-2.956-1.425.75.75 0 01-.13.173l-2 2a.75.75 0 11-1.06-1.06l2-2a.756.756 0 01.042-.04c-.976-.902-1.647-1.834-2.117-2.486l-.004-.006a.75.75 0 01.17-1.047z"
+                                            fill="currentColor"></path>
+                                    </svg>
+
+                                    {{-- Svg Mata Terbuka --}}
+                                    <svg viewBox="0 0 24 24" fill="none" width="24" height="24" class="hidden"
+                                        color="rgba(0, 0, 0, 0.54)">
+                                        <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.988 11.92v.041c0 .013.004.026.01.037l-.002.02v.019l-.002.015v.012c-.003.004-.003.01-.003.013l-.002.009v.01c0 .007 0 .016-.003.022v.002a.813.813 0 01-.208.438 14.289 14.289 0 01-1.474 1.56c-1.045.984-2.197 1.855-3.433 2.528-.977.53-2.017.959-3.097 1.175l-.076.016h-.005l-.005.001-.006.001a8.683 8.683 0 01-1.586.161h-.2a8.724 8.724 0 01-1.597-.163h-.003a.916.916 0 00-.08-.016c-1.078-.216-2.117-.646-3.092-1.176-1.235-.67-2.386-1.543-3.43-2.527a14.04 14.04 0 01-1.476-1.558.821.821 0 01-.208-.437v-.002l-.001-.013-.002-.01v-.007l-.001-.011c-.003-.005-.003-.009-.003-.014C2 12.057 2 12.05 2 12.04a.214.214 0 010-.057l.003-.02v-.014l.002-.014v-.023l.002-.01c0-.007 0-.015.002-.022v-.002a.813.813 0 01.208-.438 13.98 13.98 0 011.596-1.672C4.823 8.83 5.935 8 7.125 7.352c.887-.48 1.831-.88 2.808-1.11l.054-.013c.025-.005.05-.01.075-.017l.021-.005.016-.003.016-.003A8.943 8.943 0 0111.896 6h.2a8.898 8.898 0 011.777.2l.018.004.018.003.086.02.058.015c.98.23 1.922.63 2.812 1.113 1.19.644 2.3 1.478 3.314 2.413.577.512 1.11 1.07 1.596 1.671a.812.812 0 01.209.439v.002l.001.011v.011l.003.008v.01zM12 16a4 4 0 100-8 4 4 0 000 8z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-sky-500 text-sm my-4 flex justify-between">
+                                <div class="text-base">Daftar?</div>
+                                <div class="flex-end mt-1 text-gray-500">Lupa kata sandi?</div>
+                            </div>
+                            <button type="submit"
+                                class="w-full h-10 rounded bg-sky-400 text-center flex items-center justify-center text-white">
+                                Log in
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="mx-7 mt-10 ">
+                    <h1 class="font-light mb-2 ms-1">Atau masuk dengan</h1>
+                    <div class="w-full bg-white shadow rounded-xl">
+                        <div class="h-12 flex items-center ">
+                            <div class="flex items-center justify-center px-4">
+                                <svg viewBox="-3 0 262 262" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMidYMid" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+                                            fill="#4285F4"></path>
+                                        <path
+                                            d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+                                            fill="#34A853"></path>
+                                        <path
+                                            d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+                                            fill="#FBBC05"></path>
+                                        <path
+                                            d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+                                            fill="#EB4335"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="flex-1 text-sm text-gray-700">Google</div>
+                            <div class="flex items-center justify-center pe-2">
+                                <svg width="24" height="24" aria-hidden="true" type="image/svg+xml"
+                                    viewBox="0 0 24 24" fill="#858585" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.49 8.15532L13.69 12.0053L8.49 15.8353C8.22 16.0353 8.05 16.3153 8.01 16.6353C7.97 16.9553 8.05 17.2653 8.26 17.5253C8.68 18.0553 9.47 18.1553 10.01 17.7553L16.51 12.9653C16.82 12.7353 17 12.3753 17 12.0053C17 11.6353 16.82 11.2753 16.51 11.0453L10.01 6.24532C9.79 6.08532 9.53 5.99532 9.25 5.99532C8.86 5.99532 8.5 6.16532 8.26 6.46532C8.06 6.72532 7.97 7.03532 8.01 7.35532C8.05 7.67532 8.22 7.95532 8.49 8.15532Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
