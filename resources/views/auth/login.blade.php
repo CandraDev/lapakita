@@ -20,13 +20,13 @@
         class="absolute z-20 w-7 h-7 bg-white rounded-full text-center top-3 left-2 shadow">x</a>
     <div class="lg:max-w-6xl lg:mx-auto">
 
-        <div class="lg:flex">
+        <div class="">
 
-            <div class="flex  justify-center items-end mb-7 h-35">
+            <div class="flex  justify-center items-end mb-7 lg:mb-20 h-35 ">
                 <img src="{{ asset('logo/lapakita-main.png') }}" class="w-40" alt="Logo Lapakita">
             </div>
-            <div class="flex-1 ">
-                <div class=" w-[90%] mx-auto bg-white shadow rounded-lg">
+            <div class="flex-1 lg:flex lg:flex-col lg:items-center lg:justify-center ">
+                <div class=" w-[90%] lg:w-[50%] mx-auto bg-white shadow rounded-lg">
                     <div class="p-5">
                         <h1 class="font-semibold text-xl lg:text-2xl lg:mb-2">Masuk ke Lapakita</h1>
                         <p class="text-xs text-gray-500 lg:text-sm mb-4">
@@ -60,13 +60,14 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1">
-                                    <input type="password" name="password"
-                                        class="w-full h-10 ps-2  focus:outline-none focus:border-transparent focus:ring-0 active:border-transparent"
+                                    <input type="password" id="password" name="password"
+                                        class="w-full h-10 ps-2 focus:outline-none focus:border-transparent focus:ring-0 active:border-transparent"
                                         placeholder="Password">
                                 </div>
-                                <div class="w-10 flex items-center justify-center">
+
+                                <div class="w-10 flex items-center justify-center cursor-pointer" id="togglePassword">
                                     {{-- Svg Mata Tertutup --}}
-                                    <svg viewBox="0 0 24 24" fill="none" width="24" height="24"
+                                    <svg id="eyeClosed" viewBox="0 0 24 24" fill="none" width="24" height="24"
                                         color="rgba(0, 0, 0, 0.54)" class="ip92G6">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M2.562 7.391a.75.75 0 011.047.17c1.178 1.637 3.382 4.69 8.391 4.69 5.01 0 7.213-3.053 8.391-4.69a.75.75 0 011.218.877l-.004.006c-.47.652-1.141 1.584-2.117 2.486a.716.716 0 01.042.04l2 2a.75.75 0 01-1.06 1.06l-2-2a.747.747 0 01-.13-.173 10.15 10.15 0 01-2.955 1.425l.827 2.48a.75.75 0 01-1.423.475l-.876-2.628A12.65 12.65 0 0112 13.75c-.68 0-1.317-.05-1.912-.14l-.876 2.627a.75.75 0 11-1.423-.474l.827-2.481a10.153 10.153 0 01-2.956-1.425.75.75 0 01-.13.173l-2 2a.75.75 0 11-1.06-1.06l2-2a.756.756 0 01.042-.04c-.976-.902-1.647-1.834-2.117-2.486l-.004-.006a.75.75 0 01.17-1.047z"
@@ -74,7 +75,7 @@
                                     </svg>
 
                                     {{-- Svg Mata Terbuka --}}
-                                    <svg viewBox="0 0 24 24" fill="none" width="24" height="24" class="hidden"
+                                    <svg id="eyeOpen" viewBox="0 0 24 24" fill="none" width="24" height="24" class="hidden"
                                         color="rgba(0, 0, 0, 0.54)">
                                         <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -82,9 +83,29 @@
                                             fill="currentColor"></path>
                                     </svg>
                                 </div>
+
+                                <script>
+                                    const togglePassword = document.getElementById('togglePassword');
+                                    const passwordInput = document.getElementById('password');
+                                    const eyeOpen = document.getElementById('eyeOpen');
+                                    const eyeClosed = document.getElementById('eyeClosed');
+
+                                    togglePassword.addEventListener('click', () => {
+                                        if (passwordInput.type === 'password') {
+                                            passwordInput.type = 'text';
+                                            eyeOpen.classList.remove('hidden');
+                                            eyeClosed.classList.add('hidden');
+                                        } else {
+                                            passwordInput.type = 'password';
+                                            eyeOpen.classList.add('hidden');
+                                            eyeClosed.classList.remove('hidden');
+                                        }
+                                    });
+                                </script>
+
                             </div>
                             <div class="text-sky-500 text-sm my-4 flex justify-between">
-                                <div class="text-base">Daftar?</div>
+                                <a class="text-base" href={{ route('auth.register') }}>Daftar?</a>
                                 <div class="flex-end mt-1 text-gray-500">Lupa kata sandi?</div>
                             </div>
                             <button type="submit"
@@ -95,7 +116,7 @@
                     </div>
                 </div>
 
-                <div class="mx-7 mt-10 ">
+                <div class="w-[90%] lg:w-[50%] mx-7 mt-10 ">
                     <h1 class="font-light mb-2 ms-1">Atau masuk dengan</h1>
                     <div class="w-full bg-white shadow rounded-xl">
                         <div class="h-12 flex items-center ">
