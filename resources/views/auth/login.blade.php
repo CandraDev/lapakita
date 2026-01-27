@@ -49,7 +49,7 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1">
-                                    <input type="email" name="email"
+                                    <input type="email" name="email" value="{{ old('email') }}"
                                         class="w-full h-10 ps-2  focus:outline-none focus:border-transparent focus:ring-0 active:border-transparent"
                                         placeholder="Email">
                                 </div>
