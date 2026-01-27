@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SellerController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -43,6 +44,11 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/account', [AuthController::class, 'showAccount'])->name('auth.account');
     Route::get('/account/edit', [AuthController::class, 'showAccountEdit'])->name('auth.account.edit');
+
+    Route::get('/seller/register', [SellerController::class, 'showRegister'])->name('seller.register');
+    Route::get('/seller/register/credential', [SellerController::class, 'showRegister2'])->name('seller.credential');
+    Route::get('/seller/register/verify', [SellerController::class, 'showRegister3'])->name('seller.credential');
+    Route::get('/seller/register/success', [SellerController::class, 'showRegister4'])->name('seller.success');
 });
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('auth.logout');
