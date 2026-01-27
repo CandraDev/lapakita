@@ -18,7 +18,7 @@
     </div>
     @guest
         <div>
-            <a href="{{ route('auth.login') }}"
+            <a href="{{ route('login') }}"
                 class="flex items-center justify-center bg-sky-500 w-24 h-8 rounded-lg shadow font-bold text-white text-shadow">
                 Masuk
             </a>

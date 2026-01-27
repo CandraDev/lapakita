@@ -32,16 +32,20 @@
                         <p class="text-xs text-gray-500 lg:text-sm mb-4">
                             Masuk ke Akun Lapakita dan dapatkan kemudahan dalam berbelanja!
                         </p>
-                        <form method="POST" action="{{ route('auth.login') }}">
+                        <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="flex border-b border-slate-500 mb-2">
                                 <div class="w-10 flex items-center justify-center">
-                                    <svg viewBox="0 0 24 24" fill="none" width="24" height="24"
-                                        color="rgba(0, 0, 0, 0.65)">
-                                        <path
-                                            d="M14.316 14.1a.75.75 0 00.076 1.298l6.167 3.084c.424.211.691.644.691 1.118v1.65H2.75V19.6c0-.474.268-.907.691-1.118l6.167-3.084a.75.75 0 00.077-1.297c-1.292-.85-2.39-2.419-2.39-3.92V7.456c0-1.291.407-2.465 1.171-3.307C9.22 3.318 10.373 2.75 12 2.75c1.627 0 2.78.568 3.534 1.398.763.842 1.17 2.016 1.17 3.307v2.727c0 1.504-1.093 3.07-2.388 3.918z"
-                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
-                                            stroke-linejoin="round"></path>
+                                    <svg class="w-7 h-7 text-gray-500" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"
+                                                fill="currentColor"></path>
+                                        </g>
                                     </svg>
                                 </div>
                                 <div class="flex-1">
@@ -62,7 +66,7 @@
                                 <div class="flex-1">
                                     <input type="password" id="password" name="password"
                                         class="w-full h-10 ps-2 focus:outline-none focus:border-transparent focus:ring-0 active:border-transparent"
-                                        placeholder="Password">
+                                        placeholder="Kata Sandi">
                                 </div>
 
                                 <div class="w-10 flex items-center justify-center cursor-pointer" id="togglePassword">
@@ -75,8 +79,8 @@
                                     </svg>
 
                                     {{-- Svg Mata Terbuka --}}
-                                    <svg id="eyeOpen" viewBox="0 0 24 24" fill="none" width="24" height="24" class="hidden"
-                                        color="rgba(0, 0, 0, 0.54)">
+                                    <svg id="eyeOpen" viewBox="0 0 24 24" fill="none" width="24" height="24"
+                                        class="hidden" color="rgba(0, 0, 0, 0.54)">
                                         <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M21.988 11.92v.041c0 .013.004.026.01.037l-.002.02v.019l-.002.015v.012c-.003.004-.003.01-.003.013l-.002.009v.01c0 .007 0 .016-.003.022v.002a.813.813 0 01-.208.438 14.289 14.289 0 01-1.474 1.56c-1.045.984-2.197 1.855-3.433 2.528-.977.53-2.017.959-3.097 1.175l-.076.016h-.005l-.005.001-.006.001a8.683 8.683 0 01-1.586.161h-.2a8.724 8.724 0 01-1.597-.163h-.003a.916.916 0 00-.08-.016c-1.078-.216-2.117-.646-3.092-1.176-1.235-.67-2.386-1.543-3.43-2.527a14.04 14.04 0 01-1.476-1.558.821.821 0 01-.208-.437v-.002l-.001-.013-.002-.01v-.007l-.001-.011c-.003-.005-.003-.009-.003-.014C2 12.057 2 12.05 2 12.04a.214.214 0 010-.057l.003-.02v-.014l.002-.014v-.023l.002-.01c0-.007 0-.015.002-.022v-.002a.813.813 0 01.208-.438 13.98 13.98 0 011.596-1.672C4.823 8.83 5.935 8 7.125 7.352c.887-.48 1.831-.88 2.808-1.11l.054-.013c.025-.005.05-.01.075-.017l.021-.005.016-.003.016-.003A8.943 8.943 0 0111.896 6h.2a8.898 8.898 0 011.777.2l.018.004.018.003.086.02.058.015c.98.23 1.922.63 2.812 1.113 1.19.644 2.3 1.478 3.314 2.413.577.512 1.11 1.07 1.596 1.671a.812.812 0 01.209.439v.002l.001.011v.011l.003.008v.01zM12 16a4 4 0 100-8 4 4 0 000 8z"
@@ -105,8 +109,11 @@
 
                             </div>
                             <div class="text-sky-500 text-sm my-4 flex justify-between">
-                                <a class="text-base" href={{ route('auth.register') }}>Daftar?</a>
-                                <div class="flex-end mt-1 text-gray-500">Lupa kata sandi?</div>
+                                <span class="text-gray-500 text-sm">Belum memiliki akun? <a
+                                        class="ms-1 text-sm text-sky-500"
+                                        href={{ route('register') }}>Daftar?</a>
+                                </span>
+                                <div class="flex-end text-sm mt-1 text-gray-500">Lupa kata sandi?</div>
                             </div>
                             <button type="submit"
                                 class="w-full h-10 rounded bg-sky-400 text-center flex items-center justify-center text-white">

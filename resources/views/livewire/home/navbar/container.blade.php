@@ -14,11 +14,11 @@
         <!-- Login/Profile -->
         <div class="flex gap-2 items-center">
             @guest
-                <a href="{{ route('auth.login') }}"
+                <a href="{{ route('login') }}"
                     class="px-2 bg-sky-500 h-8.5 text-xs font-medium text-white rounded-md shadow flex items-center justify-center gap-1">
                     Masuk
                 </a>
-                <a href="{{ route('auth.register') }}"
+                <a href="{{ route('register') }}"
                     class="hidden px-2 bg-white/70 border-sky-500 border-2 h-8.5 text-xs font-bold text-sky-500 rounded-xl shadow sm:flex items-center justify-center gap-1">
                     Daftar
                 </a>

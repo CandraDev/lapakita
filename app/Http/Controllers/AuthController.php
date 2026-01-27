@@ -15,7 +15,7 @@ class AuthController extends Controller
      */
     public function showLogin()
     {
-        return view('auth.login');
+        return view('login');
     }
 
     /**
@@ -23,7 +23,7 @@ class AuthController extends Controller
      */
     public function showRegister()
     {
-        return view('auth.register');
+        return view('register');
     }
     /**
      * Show profile page
@@ -127,6 +127,6 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('auth.login');
+        return redirect()->route('login');
     }
 }

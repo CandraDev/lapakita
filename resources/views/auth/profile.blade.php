@@ -34,9 +34,9 @@
 
         <div class="text-center px-4 pb-1">
             @guest
-                <a class="font-semibold  text-sky-600" href={{ route('auth.login') }}>Masuk</a>
+                <a class="font-semibold  text-sky-600" href={{ route('login') }}>Masuk</a>
                 <p class="text-sm text-gray-400 mb-4">Tidak punya akun? <a class="text-sky-600"
-                        href={{ route('auth.login') }}>Daftar</a></p>
+                        href={{ route('login') }}>Daftar</a></p>
             @else
                 <span class="font-semibold ">{{ Auth::user()->name }}</span><a
                     href={{ route('auth.account') }}
