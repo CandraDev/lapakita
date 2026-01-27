@@ -143,7 +143,7 @@
                                 <div class="w-10 h-10 rounded-full bg-sky-100 flex-shrink-0"></div>
 
                                 <div class="ms-3 leading-tight">
-                                    <div class="flex items-center gap-1">
+                                    <div class="flex items-center gap-1  w-60">
                                         <span class="text-sm font-semibold">
                                             {{ Auth::user()->name }}
                                         </span>
