@@ -21,8 +21,11 @@ Route::middleware('auth')->group(function () {
 
     // Notice page
     Route::get('/email/verify', function () {
+        if (auth()->user()->hasVerifiedEmail()) {
+            return redirect()->route('home');
+        }
         return view('auth.verify-email');
-    })->name('verification.notice');
+    })->middleware('auth')->name('verification.notice');
 
     // Verify link
     Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
