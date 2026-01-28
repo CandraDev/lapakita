@@ -1,0 +1,3937 @@
+[
+    {
+        "name": "Elektronik",
+        "children": [
+            {
+                "name": "Komputer & Perangkat",
+                "children": [
+                    {
+                        "name": "Laptop"
+                    },
+                    {
+                        "name": "Desktop"
+                    },
+                    {
+                        "name": "Monitor"
+                    },
+                    {
+                        "name": "Printer & Scanner"
+                    },
+                    {
+                        "name": "Aksesoris Komputer"
+                    },
+                    {
+                        "name": "Perangkat Penyimpanan"
+                    },
+                    {
+                        "name": "Komponen Komputer"
+                    },
+                    {
+                        "name": "Perangkat Lunak"
+                    },
+                    {
+                        "name": "Jaringan & Internet"
+                    },
+                    {
+                        "name": "Gaming PC"
+                    },
+                    {
+                        "name": "All-in-One PC"
+                    },
+                    {
+                        "name": "Workstation"
+                    }
+                ]
+            },
+            {
+                "name": "Handphone & Gadget",
+                "children": [
+                    {
+                        "name": "Smartphone"
+                    },
+                    {
+                        "name": "Tablet"
+                    },
+                    {
+                        "name": "Smartwatch"
+                    },
+                    {
+                        "name": "Aksesoris Handphone"
+                    },
+                    {
+                        "name": "Power Bank"
+                    },
+                    {
+                        "name": "Headphone & Earphone"
+                    },
+                    {
+                        "name": "Gadget Lainnya"
+                    },
+                    {
+                        "name": "Wearable Devices"
+                    },
+                    {
+                        "name": "Phone Cases & Covers"
+                    },
+                    {
+                        "name": "Screen Protectors"
+                    },
+                    {
+                        "name": "Chargers & Cables"
+                    },
+                    {
+                        "name": "Mobile Gaming Accessories"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Rumah Tangga",
+                "children": [
+                    {
+                        "name": "Kulkas & Freezer"
+                    },
+                    {
+                        "name": "Mesin Cuci & Pengering"
+                    },
+                    {
+                        "name": "AC & Pendingin Udara"
+                    },
+                    {
+                        "name": "Pemanas Air"
+                    },
+                    {
+                        "name": "Peralatan Dapur"
+                    },
+                    {
+                        "name": "Penyedot Debu"
+                    },
+                    {
+                        "name": "Setrika & Alat Pengering Pakaian"
+                    },
+                    {
+                        "name": "Peralatan Kebersihan"
+                    },
+                    {
+                        "name": "Peralatan Kesehatan Rumah"
+                    },
+                    {
+                        "name": "Peralatan Rumah Pintar"
+                    },
+                    {
+                        "name": "Peralatan Lainnya"
+                    },
+                    {
+                        "name": "Perawatan Rumah & Taman"
+                    }
+                ]
+            },
+            {
+                "name": "Audio & Perangkat Hiburan",
+                "children": [
+                    {
+                        "name": "Speaker"
+                    },
+                    {
+                        "name": "Headphone"
+                    },
+                    {
+                        "name": "Perangkat Musik"
+                    },
+                    {
+                        "name": "Kaset & CD Player"
+                    },
+                    {
+                        "name": "MP3 Player"
+                    },
+                    {
+                        "name": "Streaming Device"
+                    },
+                    {
+                        "name": "Sound System"
+                    },
+                    {
+                        "name": "Karaoke Equipment"
+                    },
+                    {
+                        "name": "Microphone & Audio Interface"
+                    },
+                    {
+                        "name": "Audio Amplifier"
+                    },
+                    {
+                        "name": "Home Theater System"
+                    },
+                    {
+                        "name": "Wireless Audio Devices"
+                    }
+                ]
+            },
+            {
+                "name": "Aksesoris Elektronik",
+                "children": [
+                    {
+                        "name": "Charger & Kabel"
+                    },
+                    {
+                        "name": "Power Bank"
+                    },
+                    {
+                        "name": "Perlengkapan Kamera"
+                    },
+                    {
+                        "name": "Tongsis & Tripod"
+                    },
+                    {
+                        "name": "Memori & Flash Drive"
+                    },
+                    {
+                        "name": "Headphone & Earphone"
+                    },
+                    {
+                        "name": "Speaker Portabel"
+                    },
+                    {
+                        "name": "Bluetooth & Nirkabel"
+                    },
+                    {
+                        "name": "Lampu LED"
+                    },
+                    {
+                        "name": "Adapter & Konverter"
+                    },
+                    {
+                        "name": "Keyboard & Mouse"
+                    },
+                    {
+                        "name": "Perlengkapan Fotografi"
+                    }
+                ]
+            },
+            {
+                "name": "Kamera & Fotografi",
+                "children": [
+                    {
+                        "name": "Kamera DSLR"
+                    },
+                    {
+                        "name": "Kamera Mirrorless"
+                    },
+                    {
+                        "name": "Kamera Pocket"
+                    },
+                    {
+                        "name": "Kamera Aksi"
+                    },
+                    {
+                        "name": "Kamera Pengawas"
+                    },
+                    {
+                        "name": "Lensa Kamera"
+                    },
+                    {
+                        "name": "Stabilisator & Gimbal"
+                    },
+                    {
+                        "name": "Flash & Pencahayaan"
+                    },
+                    {
+                        "name": "Tongsis & Tripod"
+                    },
+                    {
+                        "name": "Tas Kamera"
+                    },
+                    {
+                        "name": "Baterai & Charger Kamera"
+                    },
+                    {
+                        "name": "Perlengkapan Fotografi"
+                    }
+                ]
+            },
+            {
+                "name": "Perangkat Kesehatan & Fitness",
+                "children": [
+                    {
+                        "name": "Smartwatch"
+                    },
+                    {
+                        "name": "Fitness Tracker"
+                    },
+                    {
+                        "name": "Timbangan Pintar"
+                    },
+                    {
+                        "name": "Alat Ukur Kesehatan"
+                    },
+                    {
+                        "name": "Alat Bantu Olahraga"
+                    },
+                    {
+                        "name": "Treadmill"
+                    },
+                    {
+                        "name": "Sepeda Statis"
+                    },
+                    {
+                        "name": "Alat Pemijat"
+                    },
+                    {
+                        "name": "Thermometer Digital"
+                    },
+                    {
+                        "name": "Alat Pengukur Tekanan Darah"
+                    },
+                    {
+                        "name": "Pedometer"
+                    },
+                    {
+                        "name": "Alat Pembakar Lemak"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Olahraga Elektronik",
+                "children": [
+                    {
+                        "name": "Fitness Tracker"
+                    },
+                    {
+                        "name": "Smart Scale"
+                    },
+                    {
+                        "name": "Treadmill Elektronik"
+                    },
+                    {
+                        "name": "Sepeda Statis Elektronik"
+                    },
+                    {
+                        "name": "Alat Pemijat Elektronik"
+                    },
+                    {
+                        "name": "Peralatan Yoga Elektronik"
+                    },
+                    {
+                        "name": "Alat Latihan Kekuatan"
+                    },
+                    {
+                        "name": "Pelacak Aktivitas Olahraga"
+                    },
+                    {
+                        "name": "Smart Dumbbell"
+                    },
+                    {
+                        "name": "Kamera Olahraga"
+                    },
+                    {
+                        "name": "Alat Pemantau Kesehatan"
+                    },
+                    {
+                        "name": "Alat Latihan Kardio Elektronik"
+                    }
+                ]
+            },
+            {
+                "name": "Perangkat Mobil & Transportasi",
+                "children": [
+                    {
+                        "name": "GPS & Navigasi"
+                    },
+                    {
+                        "name": "Kamera Mobil / Dashcam"
+                    },
+                    {
+                        "name": "Audio Mobil"
+                    },
+                    {
+                        "name": "Charger & Power Supply Mobil"
+                    },
+                    {
+                        "name": "Alarm & Keamanan Mobil"
+                    },
+                    {
+                        "name": "Sensor & Aksesoris Parkir"
+                    },
+                    {
+                        "name": "Perangkat Smart Car"
+                    },
+                    {
+                        "name": "Alat Pemantau Kendaraan"
+                    },
+                    {
+                        "name": "Perangkat Hiburan Mobil"
+                    },
+                    {
+                        "name": "Lampu & Aksesoris Pencahayaan"
+                    },
+                    {
+                        "name": "Alat Komunikasi Mobil"
+                    },
+                    {
+                        "name": "Aksesoris Transportasi Lain"
+                    }
+                ]
+            },
+            {
+                "name": "Game & Perangkat Hiburan Digital",
+                "children": [
+                    {
+                        "name": "Konsol Game"
+                    },
+                    {
+                        "name": "Game PC / Laptop"
+                    },
+                    {
+                        "name": "Game Mobile"
+                    },
+                    {
+                        "name": "Perangkat Virtual Reality (VR)"
+                    },
+                    {
+                        "name": "Perangkat Augmented Reality (AR)"
+                    },
+                    {
+                        "name": "Controller & Joystick"
+                    },
+                    {
+                        "name": "Headset Gaming"
+                    },
+                    {
+                        "name": "Keyboard & Mouse Gaming"
+                    },
+                    {
+                        "name": "Monitor Gaming"
+                    },
+                    {
+                        "name": "Aksesoris Game"
+                    },
+                    {
+                        "name": "Software / Game Engine"
+                    },
+                    {
+                        "name": "Streaming & Perangkat Hiburan Digital"
+                    }
+                ]
+            },
+            {
+                "name": "Perangkat Komputer & Jaringan",
+                "children": [
+                    {
+                        "name": "Router"
+                    },
+                    {
+                        "name": "Modem"
+                    },
+                    {
+                        "name": "Switch"
+                    },
+                    {
+                        "name": "Hub"
+                    },
+                    {
+                        "name": "Access Point"
+                    },
+                    {
+                        "name": "Kabel & Adapter Jaringan"
+                    },
+                    {
+                        "name": "Firewall & Security"
+                    },
+                    {
+                        "name": "NAS / Storage Server"
+                    },
+                    {
+                        "name": "Server Rack"
+                    },
+                    {
+                        "name": "UPS & Power Supply"
+                    },
+                    {
+                        "name": "Perangkat Monitoring Jaringan"
+                    },
+                    {
+                        "name": "Perangkat Nirkabel & WiFi"
+                    }
+                ]
+            },
+            {
+                "name": "Perangkat Rumah Pintar",
+                "children": [
+                    {
+                        "name": "Lampu Pintar"
+                    },
+                    {
+                        "name": "Kunci Pintar"
+                    },
+                    {
+                        "name": "Thermostat Pintar"
+                    },
+                    {
+                        "name": "Kamera Keamanan"
+                    },
+                    {
+                        "name": "Sensor Pintu & Jendela"
+                    },
+                    {
+                        "name": "Smart Speaker"
+                    },
+                    {
+                        "name": "Alat Pemantau Energi"
+                    },
+                    {
+                        "name": "Robot Vacuum"
+                    },
+                    {
+                        "name": "Perangkat Otomasi Rumah"
+                    },
+                    {
+                        "name": "Smart Plugs / Stopkontak Pintar"
+                    },
+                    {
+                        "name": "Alarm & Detektor"
+                    },
+                    {
+                        "name": "Aksesoris Rumah Pintar"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fashion",
+        "children": [
+            {
+                "name": "Pakaian Pria",
+                "children": [
+                    {
+                        "name": "Kaos"
+                    },
+                    {
+                        "name": "Kemeja"
+                    },
+                    {
+                        "name": "Jaket"
+                    },
+                    {
+                        "name": "Blazer"
+                    },
+                    {
+                        "name": "Celana Panjang"
+                    },
+                    {
+                        "name": "Celana Pendek"
+                    },
+                    {
+                        "name": "Sweater & Hoodie"
+                    },
+                    {
+                        "name": "Pakaian Formal"
+                    },
+                    {
+                        "name": "Pakaian Santai"
+                    },
+                    {
+                        "name": "Pakaian Olahraga"
+                    },
+                    {
+                        "name": "Pakaian Tidur"
+                    },
+                    {
+                        "name": "Aksesoris Pria"
+                    }
+                ]
+            },
+            {
+                "name": "Pakaian Wanita",
+                "children": [
+                    {
+                        "name": "Dress"
+                    },
+                    {
+                        "name": "Blus"
+                    },
+                    {
+                        "name": "Kemeja"
+                    },
+                    {
+                        "name": "Kaos & T-Shirt"
+                    },
+                    {
+                        "name": "Jaket & Coat"
+                    },
+                    {
+                        "name": "Celana Panjang"
+                    },
+                    {
+                        "name": "Celana Pendek"
+                    },
+                    {
+                        "name": "Rok"
+                    },
+                    {
+                        "name": "Sweater & Hoodie"
+                    },
+                    {
+                        "name": "Pakaian Formal"
+                    },
+                    {
+                        "name": "Pakaian Santai"
+                    },
+                    {
+                        "name": "Pakaian Tidur"
+                    }
+                ]
+            },
+            {
+                "name": "Pakaian Anak",
+                "children": [
+                    {
+                        "name": "Dress Anak"
+                    },
+                    {
+                        "name": "Kaos Anak"
+                    },
+                    {
+                        "name": "Kemeja Anak"
+                    },
+                    {
+                        "name": "Celana Anak"
+                    },
+                    {
+                        "name": "Rok Anak"
+                    },
+                    {
+                        "name": "Jaket Anak"
+                    },
+                    {
+                        "name": "Pakaian Tidur Anak"
+                    },
+                    {
+                        "name": "Sweater & Hoodie Anak"
+                    },
+                    {
+                        "name": "Pakaian Formal Anak"
+                    },
+                    {
+                        "name": "Aksesoris Anak"
+                    },
+                    {
+                        "name": "Sepatu Anak"
+                    },
+                    {
+                        "name": "Topi & Hiasan Kepala Anak"
+                    }
+                ]
+            },
+            {
+                "name": "Sepatu",
+                "children": [
+                    {
+                        "name": "Sepatu Pria"
+                    },
+                    {
+                        "name": "Sepatu Wanita"
+                    },
+                    {
+                        "name": "Sepatu Anak"
+                    },
+                    {
+                        "name": "Sneakers"
+                    },
+                    {
+                        "name": "Boots"
+                    },
+                    {
+                        "name": "Sandal"
+                    },
+                    {
+                        "name": "Sepatu Olahraga"
+                    },
+                    {
+                        "name": "Sepatu Formal"
+                    },
+                    {
+                        "name": "Slip-on"
+                    },
+                    {
+                        "name": "Sepatu Kasual"
+                    },
+                    {
+                        "name": "Alas Kaki Khusus"
+                    },
+                    {
+                        "name": "Perawatan Sepatu"
+                    }
+                ]
+            },
+            {
+                "name": "Tas & Dompet",
+                "children": [
+                    {
+                        "name": "Tas Pria"
+                    },
+                    {
+                        "name": "Tas Wanita"
+                    },
+                    {
+                        "name": "Tas Ransel"
+                    },
+                    {
+                        "name": "Tas Selempang"
+                    },
+                    {
+                        "name": "Tas Tangan"
+                    },
+                    {
+                        "name": "Dompet Pria"
+                    },
+                    {
+                        "name": "Dompet Wanita"
+                    },
+                    {
+                        "name": "Tas Anak"
+                    },
+                    {
+                        "name": "Tas Olahraga"
+                    },
+                    {
+                        "name": "Tas Laptop"
+                    },
+                    {
+                        "name": "Koper & Travel Bag"
+                    },
+                    {
+                        "name": "Aksesoris Tas"
+                    }
+                ]
+            },
+            {
+                "name": "Aksesoris Fashion",
+                "children": [
+                    {
+                        "name": "Topi & Penutup Kepala"
+                    },
+                    {
+                        "name": "Sabuk"
+                    },
+                    {
+                        "name": "Sarung Tangan"
+                    },
+                    {
+                        "name": "Syal & Pashmina"
+                    },
+                    {
+                        "name": "Kacamata"
+                    },
+                    {
+                        "name": "Bros & Pin"
+                    },
+                    {
+                        "name": "Pashmina & Shawl"
+                    },
+                    {
+                        "name": "Selendang"
+                    },
+                    {
+                        "name": "Stoking & Kaos Kaki"
+                    },
+                    {
+                        "name": "Hiasan Rambut"
+                    },
+                    {
+                        "name": "Korset & Shapewear"
+                    },
+                    {
+                        "name": "Ikat Pinggang"
+                    }
+                ]
+            },
+            {
+                "name": "Perhiasan & Jam Tangan",
+                "children": [
+                    {
+                        "name": "Jam Tangan Pria"
+                    },
+                    {
+                        "name": "Jam Tangan Wanita"
+                    },
+                    {
+                        "name": "Cincin"
+                    },
+                    {
+                        "name": "Anting"
+                    },
+                    {
+                        "name": "Kalung"
+                    },
+                    {
+                        "name": "Gelang"
+                    },
+                    {
+                        "name": "Perhiasan Etnik"
+                    },
+                    {
+                        "name": "Aksesoris Cincin & Gelang"
+                    },
+                    {
+                        "name": "Kacamata"
+                    },
+                    {
+                        "name": "Perhiasan Berlian"
+                    },
+                    {
+                        "name": "Perhiasan Mewah"
+                    },
+                    {
+                        "name": "Jam Tangan Olahraga"
+                    }
+                ]
+            },
+            {
+                "name": "Baju Dalam & Pakaian Tidur",
+                "children": [
+                    {
+                        "name": "Baju Dalam Wanita"
+                    },
+                    {
+                        "name": "Baju Dalam Pria"
+                    },
+                    {
+                        "name": "Setelan Tidur Wanita"
+                    },
+                    {
+                        "name": "Setelan Tidur Pria"
+                    },
+                    {
+                        "name": "Baju Tidur Anak"
+                    },
+                    {
+                        "name": "Seksi Lingerie"
+                    },
+                    {
+                        "name": "Bra & Panty"
+                    },
+                    {
+                        "name": "Boxer & Briefs"
+                    },
+                    {
+                        "name": "Piyama"
+                    },
+                    {
+                        "name": "Sleepwear Wanita"
+                    },
+                    {
+                        "name": "Kaos Kaki & Stoking"
+                    },
+                    {
+                        "name": "Shapewear & Corset"
+                    }
+                ]
+            },
+            {
+                "name": "Sportwear & Outdoor",
+                "children": [
+                    {
+                        "name": "Sportwear Wanita"
+                    },
+                    {
+                        "name": "Sportwear Pria"
+                    },
+                    {
+                        "name": "Pakaian Olahraga Anak"
+                    },
+                    {
+                        "name": "Jacket & Outerwear"
+                    },
+                    {
+                        "name": "Celana Olahraga"
+                    },
+                    {
+                        "name": "Pakaian Hiking & Camping"
+                    },
+                    {
+                        "name": "Pakaian Renang"
+                    },
+                    {
+                        "name": "Pakaian Golf"
+                    },
+                    {
+                        "name": "Jersey & T-shirt Olahraga"
+                    },
+                    {
+                        "name": "Aksesoris Outdoor"
+                    },
+                    {
+                        "name": "Sepatu Olahraga"
+                    },
+                    {
+                        "name": "Peralatan Fitness"
+                    }
+                ]
+            },
+            {
+                "name": "Hijab & Busana Muslim",
+                "children": [
+                    {
+                        "name": "Hijab & Jilbab"
+                    },
+                    {
+                        "name": "Gamis"
+                    },
+                    {
+                        "name": "Tunik"
+                    },
+                    {
+                        "name": "Abaya"
+                    },
+                    {
+                        "name": "Kaftan"
+                    },
+                    {
+                        "name": "Pakaian Muslim Pria"
+                    },
+                    {
+                        "name": "Pakaian Muslim Wanita"
+                    },
+                    {
+                        "name": "Cadar"
+                    },
+                    {
+                        "name": "Pashmina & Scarf"
+                    },
+                    {
+                        "name": "Baju Kurung"
+                    },
+                    {
+                        "name": "Mukena"
+                    },
+                    {
+                        "name": "Syal & Shawl"
+                    }
+                ]
+            },
+            {
+                "name": "Pakaian Tradisional",
+                "children": [
+                    {
+                        "name": "Baju Batik"
+                    },
+                    {
+                        "name": "Kebaya"
+                    },
+                    {
+                        "name": "Saroong & Sarung"
+                    },
+                    {
+                        "name": "Pakaian Adat Pria"
+                    },
+                    {
+                        "name": "Pakaian Adat Wanita"
+                    },
+                    {
+                        "name": "Songket"
+                    },
+                    {
+                        "name": "Baju Kurung"
+                    },
+                    {
+                        "name": "Kebaya Modern"
+                    },
+                    {
+                        "name": "Pakaian Bali"
+                    },
+                    {
+                        "name": "Pakaian Tradisional Anak"
+                    },
+                    {
+                        "name": "Baju Gamis"
+                    },
+                    {
+                        "name": "Aksesoris Tradisional"
+                    }
+                ]
+            },
+            {
+                "name": "Kacamata & Sunglasses",
+                "children": [
+                    {
+                        "name": "Kacamata Pria"
+                    },
+                    {
+                        "name": "Kacamata Wanita"
+                    },
+                    {
+                        "name": "Kacamata Anak"
+                    },
+                    {
+                        "name": "Sunglasses Pria"
+                    },
+                    {
+                        "name": "Sunglasses Wanita"
+                    },
+                    {
+                        "name": "Aksesoris Kacamata"
+                    },
+                    {
+                        "name": "Kacamata Olahraga"
+                    },
+                    {
+                        "name": "Kacamata Kerja"
+                    },
+                    {
+                        "name": "Kacamata Fashion"
+                    },
+                    {
+                        "name": "Lensa Kontak"
+                    },
+                    {
+                        "name": "Kacamata Anti Radiasi"
+                    },
+                    {
+                        "name": "Kacamata Hitam"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Kecantikan & Perawatan Diri",
+        "children": [
+            {
+                "name": "Perawatan Kulit",
+                "children": [
+                    {
+                        "name": "Pelembap"
+                    },
+                    {
+                        "name": "Serum"
+                    },
+                    {
+                        "name": "Masker Wajah"
+                    },
+                    {
+                        "name": "Pembersih Wajah"
+                    },
+                    {
+                        "name": "Sunscreen"
+                    },
+                    {
+                        "name": "Scrub & Eksfoliasi"
+                    },
+                    {
+                        "name": "Toner"
+                    },
+                    {
+                        "name": "Krim Anti-Aging"
+                    },
+                    {
+                        "name": "Essence"
+                    },
+                    {
+                        "name": "Lotion"
+                    },
+                    {
+                        "name": "Cleansing Oil"
+                    },
+                    {
+                        "name": "Spot Treatment"
+                    }
+                ]
+            },
+            {
+                "name": "Perawatan Wajah",
+                "children": [
+                    {
+                        "name": "Pembersih Wajah"
+                    },
+                    {
+                        "name": "Toner"
+                    },
+                    {
+                        "name": "Serum"
+                    },
+                    {
+                        "name": "Masker Wajah"
+                    },
+                    {
+                        "name": "Pelembap Wajah"
+                    },
+                    {
+                        "name": "Scrub & Eksfoliasi"
+                    },
+                    {
+                        "name": "Sunscreen Wajah"
+                    },
+                    {
+                        "name": "Krim Mata"
+                    },
+                    {
+                        "name": "Krim Malam"
+                    },
+                    {
+                        "name": "Tisu Pembersih Wajah"
+                    },
+                    {
+                        "name": "Face Mist"
+                    },
+                    {
+                        "name": "Peeling"
+                    }
+                ]
+            },
+            {
+                "name": "Perawatan Rambut",
+                "children": [
+                    {
+                        "name": "Shampoo"
+                    },
+                    {
+                        "name": "Kondisioner"
+                    },
+                    {
+                        "name": "Hair Mask"
+                    },
+                    {
+                        "name": "Serum Rambut"
+                    },
+                    {
+                        "name": "Hair Oil"
+                    },
+                    {
+                        "name": "Hair Spray"
+                    },
+                    {
+                        "name": "Shampoo Kering"
+                    },
+                    {
+                        "name": "Pelembap Rambut"
+                    },
+                    {
+                        "name": "Pewarna Rambut"
+                    },
+                    {
+                        "name": "Alat Penata Rambut"
+                    },
+                    {
+                        "name": "Perawatan Rambut Rontok"
+                    },
+                    {
+                        "name": "Perawatan Kulit Kepala"
+                    }
+                ]
+            },
+            {
+                "name": "Makeup",
+                "children": [
+                    {
+                        "name": "Foundation"
+                    },
+                    {
+                        "name": "Concealer"
+                    },
+                    {
+                        "name": "Blush On"
+                    },
+                    {
+                        "name": "Bronzer"
+                    },
+                    {
+                        "name": "Highlighter"
+                    },
+                    {
+                        "name": "Eyeshadow"
+                    },
+                    {
+                        "name": "Eyeliner"
+                    },
+                    {
+                        "name": "Maskara"
+                    },
+                    {
+                        "name": "Lipstik"
+                    },
+                    {
+                        "name": "Lip Gloss"
+                    },
+                    {
+                        "name": "Setting Spray"
+                    },
+                    {
+                        "name": "Alat Makeup"
+                    }
+                ]
+            },
+            {
+                "name": "Perawatan Tubuh",
+                "children": [
+                    {
+                        "name": "Body Lotion"
+                    },
+                    {
+                        "name": "Scrub Tubuh"
+                    },
+                    {
+                        "name": "Body Wash"
+                    },
+                    {
+                        "name": "Deodorant"
+                    },
+                    {
+                        "name": "Pelembap Tubuh"
+                    },
+                    {
+                        "name": "Minyak Aromaterapi"
+                    },
+                    {
+                        "name": "Gel Mandi"
+                    },
+                    {
+                        "name": "Body Butter"
+                    },
+                    {
+                        "name": "Exfoliator Tubuh"
+                    },
+                    {
+                        "name": "Mandi Susu"
+                    },
+                    {
+                        "name": "Tisu Basah"
+                    },
+                    {
+                        "name": "Perawatan Selulit"
+                    }
+                ]
+            },
+            {
+                "name": "Perawatan Kaki & Tangan",
+                "children": [
+                    {
+                        "name": "Krim Tangan"
+                    },
+                    {
+                        "name": "Krim Kaki"
+                    },
+                    {
+                        "name": "Perawatan Kuku"
+                    },
+                    {
+                        "name": "Alat Manikur"
+                    },
+                    {
+                        "name": "Pembersih Kuku"
+                    },
+                    {
+                        "name": "Hand Sanitizer"
+                    },
+                    {
+                        "name": "Parafin"
+                    },
+                    {
+                        "name": "Scrub Tangan"
+                    },
+                    {
+                        "name": "Masker Kaki"
+                    },
+                    {
+                        "name": "Alat Pedikur"
+                    },
+                    {
+                        "name": "Lotion Kaki"
+                    },
+                    {
+                        "name": "Pelembap Kuku"
+                    }
+                ]
+            },
+            {
+                "name": "Parfum",
+                "children": [
+                    {
+                        "name": "Parfum Pria"
+                    },
+                    {
+                        "name": "Parfum Wanita"
+                    },
+                    {
+                        "name": "Parfum Unisex"
+                    },
+                    {
+                        "name": "Parfum Roll-On"
+                    },
+                    {
+                        "name": "Eau de Toilette"
+                    },
+                    {
+                        "name": "Eau de Parfum"
+                    },
+                    {
+                        "name": "Parfum Solid"
+                    },
+                    {
+                        "name": "Body Mist"
+                    },
+                    {
+                        "name": "Parfum Travel"
+                    },
+                    {
+                        "name": "Parfum Kecil"
+                    },
+                    {
+                        "name": "Parfum Organik"
+                    },
+                    {
+                        "name": "Parfum Original"
+                    }
+                ]
+            },
+            {
+                "name": "Alat Kecantikan",
+                "children": [
+                    {
+                        "name": "Hair Dryer"
+                    },
+                    {
+                        "name": "Straightener"
+                    },
+                    {
+                        "name": "Curling Iron"
+                    },
+                    {
+                        "name": "Alat Cukur"
+                    },
+                    {
+                        "name": "Alat Pembersih Wajah"
+                    },
+                    {
+                        "name": "Alat Makeup"
+                    },
+                    {
+                        "name": "Alat Perawatan Kulit"
+                    },
+                    {
+                        "name": "Pembersih PorI"
+                    },
+                    {
+                        "name": "Alat Penata Rambut"
+                    },
+                    {
+                        "name": "Pemangkas Kuku"
+                    },
+                    {
+                        "name": "Penata Mata"
+                    },
+                    {
+                        "name": "Alat Perawatan Tubuh"
+                    }
+                ]
+            },
+            {
+                "name": "Perawatan Pria",
+                "children": [
+                    {
+                        "name": "Krim Cukur"
+                    },
+                    {
+                        "name": "Aftershave"
+                    },
+                    {
+                        "name": "Shampoo Pria"
+                    },
+                    {
+                        "name": "Deodorant Pria"
+                    },
+                    {
+                        "name": "Pelembap Pria"
+                    },
+                    {
+                        "name": "Serum Pria"
+                    },
+                    {
+                        "name": "Pembersih Wajah Pria"
+                    },
+                    {
+                        "name": "Pomade"
+                    },
+                    {
+                        "name": "Perawatan Rambut Pria"
+                    },
+                    {
+                        "name": "Pakaian Olahraga Pria"
+                    },
+                    {
+                        "name": "Aksesoris Pria"
+                    },
+                    {
+                        "name": "Minyak Cukur Pria"
+                    }
+                ]
+            },
+            {
+                "name": "Perawatan Ibu Hamil & Menyusui",
+                "children": [
+                    {
+                        "name": "Pelembap Ibu Hamil"
+                    },
+                    {
+                        "name": "Krim Stretch Mark"
+                    },
+                    {
+                        "name": "Vitamin Ibu Hamil"
+                    },
+                    {
+                        "name": "Pakaian Hamil"
+                    },
+                    {
+                        "name": "Bantal Menyusui"
+                    },
+                    {
+                        "name": "Krim Payudara"
+                    },
+                    {
+                        "name": "Pelunak Kulit"
+                    },
+                    {
+                        "name": "Produk Menyusui"
+                    },
+                    {
+                        "name": "Perawatan Payudara"
+                    },
+                    {
+                        "name": "Krim Penenang"
+                    },
+                    {
+                        "name": "Pelembap Kulit Ibu"
+                    },
+                    {
+                        "name": "Shampoo Ibu Hamil"
+                    }
+                ]
+            },
+            {
+                "name": "Produk Organik & Alami",
+                "children": [
+                    {
+                        "name": "Pelembap Organik"
+                    },
+                    {
+                        "name": "Shampoo Organik"
+                    },
+                    {
+                        "name": "Serum Organik"
+                    },
+                    {
+                        "name": "Masker Organik"
+                    },
+                    {
+                        "name": "Sabun Organik"
+                    },
+                    {
+                        "name": "Perawatan Kulit Alami"
+                    },
+                    {
+                        "name": "Pelembap Wajah Alami"
+                    },
+                    {
+                        "name": "Minyak Alami"
+                    },
+                    {
+                        "name": "Toner Organik"
+                    },
+                    {
+                        "name": "Sunscreen Organik"
+                    },
+                    {
+                        "name": "Perawatan Rambut Alami"
+                    },
+                    {
+                        "name": "Parfum Organik"
+                    }
+                ]
+            },
+            {
+                "name": "Perawatan Kesehatan",
+                "children": [
+                    {
+                        "name": "Vitamins"
+                    },
+                    {
+                        "name": "Minyak Esensial"
+                    },
+                    {
+                        "name": "Produk Imunitas"
+                    },
+                    {
+                        "name": "Detoksifikasi"
+                    },
+                    {
+                        "name": "Perawatan Organik Kesehatan"
+                    },
+                    {
+                        "name": "Alat Kesehatan"
+                    },
+                    {
+                        "name": "Perawatan Kulit Sehat"
+                    },
+                    {
+                        "name": "Penurun Berat Badan"
+                    },
+                    {
+                        "name": "Suplemen Kecantikan"
+                    },
+                    {
+                        "name": "Alat Terapi"
+                    },
+                    {
+                        "name": "Produk Relaksasi"
+                    },
+                    {
+                        "name": "Produk Penghilang Stres"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Rumah & Gaya Hidup",
+        "children": [
+            {
+                "name": "Perabotan Rumah Tangga",
+                "children": [
+                    {
+                        "name": "Sofa"
+                    },
+                    {
+                        "name": "Meja Makan"
+                    },
+                    {
+                        "name": "Kursi"
+                    },
+                    {
+                        "name": "Tempat Tidur"
+                    },
+                    {
+                        "name": "Lemari"
+                    },
+                    {
+                        "name": "Rak Buku"
+                    },
+                    {
+                        "name": "Meja Samping"
+                    },
+                    {
+                        "name": "Meja Kerja"
+                    },
+                    {
+                        "name": "Lampu"
+                    },
+                    {
+                        "name": "Alas Kaki"
+                    },
+                    {
+                        "name": "Kursi Kantor"
+                    },
+                    {
+                        "name": "Perabotan Outdoor"
+                    }
+                ]
+            },
+            {
+                "name": "Dekorasi Rumah",
+                "children": [
+                    {
+                        "name": "Lukisan & Poster"
+                    },
+                    {
+                        "name": "Vas Bunga"
+                    },
+                    {
+                        "name": "Bantal & Selimut"
+                    },
+                    {
+                        "name": "Gorden"
+                    },
+                    {
+                        "name": "Karpet & Permadani"
+                    },
+                    {
+                        "name": "Jam Dinding"
+                    },
+                    {
+                        "name": "Patung & Aksesoris"
+                    },
+                    {
+                        "name": "Wallpaper"
+                    },
+                    {
+                        "name": "Tanaman Hias"
+                    },
+                    {
+                        "name": "Perhiasan Dinding"
+                    },
+                    {
+                        "name": "Tempat Penyimpanan"
+                    },
+                    {
+                        "name": "Cermin"
+                    }
+                ]
+            },
+            {
+                "name": "Penyimpanan & Organisasi",
+                "children": [
+                    {
+                        "name": "Rak Buku"
+                    },
+                    {
+                        "name": "Tempat Penyimpanan Mainan"
+                    },
+                    {
+                        "name": "Kotak Penyimpanan"
+                    },
+                    {
+                        "name": "Laci & Organiser"
+                    },
+                    {
+                        "name": "Tempat Sepatu"
+                    },
+                    {
+                        "name": "Tempat Baju"
+                    },
+                    {
+                        "name": "Gantungan Pakaian"
+                    },
+                    {
+                        "name": "Keranjang Laundry"
+                    },
+                    {
+                        "name": "Penyimpanan Makanan"
+                    },
+                    {
+                        "name": "Tempat Tisu"
+                    },
+                    {
+                        "name": "Pengatur Kabel"
+                    },
+                    {
+                        "name": "Organizer Kosmetik"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Dapur",
+                "children": [
+                    {
+                        "name": "Kompor"
+                    },
+                    {
+                        "name": "Wajan & Panci"
+                    },
+                    {
+                        "name": "Peralatan Memasak"
+                    },
+                    {
+                        "name": "Alat Pemanggang"
+                    },
+                    {
+                        "name": "Talenan"
+                    },
+                    {
+                        "name": "Saringan"
+                    },
+                    {
+                        "name": "Alat Pembuka Botol"
+                    },
+                    {
+                        "name": "Peralatan Kopi & Teh"
+                    },
+                    {
+                        "name": "Peralatan Makanan Kering"
+                    },
+                    {
+                        "name": "Mikrogelombang"
+                    },
+                    {
+                        "name": "Tempat Penyimpanan Makanan"
+                    },
+                    {
+                        "name": "Peralatan Makanan & Minuman"
+                    }
+                ]
+            },
+            {
+                "name": "Kamar Tidur",
+                "children": [
+                    {
+                        "name": "Tempat Tidur"
+                    },
+                    {
+                        "name": "Bantal & Guling"
+                    },
+                    {
+                        "name": "Selimut & Sprei"
+                    },
+                    {
+                        "name": "Lemari Pakaian"
+                    },
+                    {
+                        "name": "Meja Samping Tempat Tidur"
+                    },
+                    {
+                        "name": "Lampu Tidur"
+                    },
+                    {
+                        "name": "Tempat Tidur Bayi"
+                    },
+                    {
+                        "name": "Kasur & Matras"
+                    },
+                    {
+                        "name": "Penyimpanan Pakaian"
+                    },
+                    {
+                        "name": "Jam Alarm"
+                    },
+                    {
+                        "name": "Perlengkapan Tidur Bayi"
+                    },
+                    {
+                        "name": "Kursi Santai"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Kebersihan",
+                "children": [
+                    {
+                        "name": "Sapu"
+                    },
+                    {
+                        "name": "Penghisap Debu"
+                    },
+                    {
+                        "name": "Lap & Kain Pembersih"
+                    },
+                    {
+                        "name": "Sikat Pembersih"
+                    },
+                    {
+                        "name": "Ember"
+                    },
+                    {
+                        "name": "Sabun Pembersih"
+                    },
+                    {
+                        "name": "Disinfektan"
+                    },
+                    {
+                        "name": "Pembersih Jendela"
+                    },
+                    {
+                        "name": "Alat Pel"
+                    },
+                    {
+                        "name": "Peralatan Pencuci Piring"
+                    },
+                    {
+                        "name": "Tempat Sampah"
+                    },
+                    {
+                        "name": "Pengharum Ruangan"
+                    }
+                ]
+            },
+            {
+                "name": "Penerangan & Lampu",
+                "children": [
+                    {
+                        "name": "Lampu Meja"
+                    },
+                    {
+                        "name": "Lampu Dinding"
+                    },
+                    {
+                        "name": "Lampu LED"
+                    },
+                    {
+                        "name": "Lampu Taman"
+                    },
+                    {
+                        "name": "Lampu Gantung"
+                    },
+                    {
+                        "name": "Lampu Senja"
+                    },
+                    {
+                        "name": "Lampu Dekorasi"
+                    },
+                    {
+                        "name": "Lampu Kamar Tidur"
+                    },
+                    {
+                        "name": "Lampu Kamar Mandi"
+                    },
+                    {
+                        "name": "Penerangan Ruang Tamu"
+                    },
+                    {
+                        "name": "Lampu Penerangan Jalan"
+                    },
+                    {
+                        "name": "Lampu Tidur Anak"
+                    }
+                ]
+            },
+            {
+                "name": "Alat Rumah Tangga Elektronik",
+                "children": [
+                    {
+                        "name": "Televisi"
+                    },
+                    {
+                        "name": "Kulkas"
+                    },
+                    {
+                        "name": "Mesin Cuci"
+                    },
+                    {
+                        "name": "Kipas Angin"
+                    },
+                    {
+                        "name": "AC"
+                    },
+                    {
+                        "name": "Blender"
+                    },
+                    {
+                        "name": "Mesin Kopi"
+                    },
+                    {
+                        "name": "Rice Cooker"
+                    },
+                    {
+                        "name": "Pemanas Air"
+                    },
+                    {
+                        "name": "Pengering Rambut"
+                    },
+                    {
+                        "name": "Pembersih Udara"
+                    },
+                    {
+                        "name": "Pemanggang Roti"
+                    }
+                ]
+            },
+            {
+                "name": "Gaya Hidup & Olahraga",
+                "children": [
+                    {
+                        "name": "Peralatan Olahraga"
+                    },
+                    {
+                        "name": "Sepatu Olahraga"
+                    },
+                    {
+                        "name": "Baju Olahraga"
+                    },
+                    {
+                        "name": "Fitness & Yoga"
+                    },
+                    {
+                        "name": "Alat Lari & Jogging"
+                    },
+                    {
+                        "name": "Peralatan Sepeda"
+                    },
+                    {
+                        "name": "Pelatih Pribadi"
+                    },
+                    {
+                        "name": "Olahraga Outdoor"
+                    },
+                    {
+                        "name": "Aksesoris Olahraga"
+                    },
+                    {
+                        "name": "Pakaian Renang"
+                    },
+                    {
+                        "name": "Perlengkapan Hiking"
+                    },
+                    {
+                        "name": "Pakaian Gunung"
+                    }
+                ]
+            },
+            {
+                "name": "Taman & Outdoor",
+                "children": [
+                    {
+                        "name": "Perabotan Taman"
+                    },
+                    {
+                        "name": "Tanaman Hias"
+                    },
+                    {
+                        "name": "Lampu Taman"
+                    },
+                    {
+                        "name": "Alat Berkebun"
+                    },
+                    {
+                        "name": "Pot & Polybag"
+                    },
+                    {
+                        "name": "Pengairan Taman"
+                    },
+                    {
+                        "name": "Kursi Taman"
+                    },
+                    {
+                        "name": "Dekorasi Taman"
+                    },
+                    {
+                        "name": "Hiasan Outdoor"
+                    },
+                    {
+                        "name": "Tempat Sampah Taman"
+                    },
+                    {
+                        "name": "Penutup Taman"
+                    },
+                    {
+                        "name": "Alat Pembersih Taman"
+                    }
+                ]
+            },
+            {
+                "name": "Kebutuhan Bayi & Anak",
+                "children": [
+                    {
+                        "name": "Tempat Tidur Bayi"
+                    },
+                    {
+                        "name": "Pakaian Bayi"
+                    },
+                    {
+                        "name": "Perlengkapan Mandi Bayi"
+                    },
+                    {
+                        "name": "Mainan Anak"
+                    },
+                    {
+                        "name": "Perlengkapan Menyusui"
+                    },
+                    {
+                        "name": "Pampers"
+                    },
+                    {
+                        "name": "Perawatan Bayi"
+                    },
+                    {
+                        "name": "Peralatan Makan Bayi"
+                    },
+                    {
+                        "name": "Kereta Bayi"
+                    },
+                    {
+                        "name": "Tas Perlengkapan Bayi"
+                    },
+                    {
+                        "name": "Peralatan Kesehatan Bayi"
+                    },
+                    {
+                        "name": "Tempat Tidur Anak"
+                    }
+                ]
+            },
+            {
+                "name": "Produk & Perawatan Hewan Peliharaan",
+                "children": [
+                    {
+                        "name": "Makanan Hewan Peliharaan"
+                    },
+                    {
+                        "name": "Perawatan Hewan"
+                    },
+                    {
+                        "name": "Mainan Hewan"
+                    },
+                    {
+                        "name": "Tempat Tidur Hewan"
+                    },
+                    {
+                        "name": "Kandang Hewan"
+                    },
+                    {
+                        "name": "Pakaian Hewan Peliharaan"
+                    },
+                    {
+                        "name": "Aksesoris Hewan"
+                    },
+                    {
+                        "name": "Obat Hewan Peliharaan"
+                    },
+                    {
+                        "name": "Suplemen Hewan Peliharaan"
+                    },
+                    {
+                        "name": "Transportasi Hewan"
+                    },
+                    {
+                        "name": "Pembersih Hewan"
+                    },
+                    {
+                        "name": "Perawatan Gigi Hewan"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Olahraga & Outdoor",
+        "children": [
+            {
+                "name": "Fitness & Gym",
+                "children": [
+                    {
+                        "name": "Treadmill"
+                    },
+                    {
+                        "name": "Dumbbell & Barbell"
+                    },
+                    {
+                        "name": "Matras Yoga"
+                    },
+                    {
+                        "name": "Kettlebell"
+                    },
+                    {
+                        "name": "Resistance Bands"
+                    },
+                    {
+                        "name": "Skipping Rope"
+                    },
+                    {
+                        "name": "Exercise Ball"
+                    },
+                    {
+                        "name": "Ab Roller"
+                    },
+                    {
+                        "name": "Pull-Up Bar"
+                    },
+                    {
+                        "name": "Weight Bench"
+                    },
+                    {
+                        "name": "Step Platform"
+                    },
+                    {
+                        "name": "Foam Roller"
+                    }
+                ]
+            },
+            {
+                "name": "Lari & Jogging",
+                "children": [
+                    {
+                        "name": "Sepatu Lari Pria"
+                    },
+                    {
+                        "name": "Sepatu Lari Wanita"
+                    },
+                    {
+                        "name": "Kaos Kaki Olahraga"
+                    },
+                    {
+                        "name": "Baju Lari"
+                    },
+                    {
+                        "name": "Celana Lari"
+                    },
+                    {
+                        "name": "Topi & Headband"
+                    },
+                    {
+                        "name": "Tali Sepatu Lari"
+                    },
+                    {
+                        "name": "Tas Lari"
+                    },
+                    {
+                        "name": "Botol Minum"
+                    },
+                    {
+                        "name": "Jam Olahraga / Smartwatch"
+                    },
+                    {
+                        "name": "Socks Compression"
+                    },
+                    {
+                        "name": "Alat Pemanas Otot"
+                    }
+                ]
+            },
+            {
+                "name": "Sepak Bola & Futsal",
+                "children": [
+                    {
+                        "name": "Bola Sepak Bola"
+                    },
+                    {
+                        "name": "Sepatu Sepak Bola"
+                    },
+                    {
+                        "name": "Kaos Sepak Bola"
+                    },
+                    {
+                        "name": "Celana Sepak Bola"
+                    },
+                    {
+                        "name": "Pelindung Tulang Kering"
+                    },
+                    {
+                        "name": "Kaos Kaki Sepak Bola"
+                    },
+                    {
+                        "name": "Sarung Tangan Kiper"
+                    },
+                    {
+                        "name": "Net & Gawang Mini"
+                    },
+                    {
+                        "name": "Tas Olahraga"
+                    },
+                    {
+                        "name": "Jersey Klub"
+                    },
+                    {
+                        "name": "Training Kit"
+                    },
+                    {
+                        "name": "Aksesoris Sepak Bola"
+                    }
+                ]
+            },
+            {
+                "name": "Basket & Bola Voli",
+                "children": [
+                    {
+                        "name": "Bola Basket"
+                    },
+                    {
+                        "name": "Bola Voli"
+                    },
+                    {
+                        "name": "Sepatu Basket"
+                    },
+                    {
+                        "name": "Kaos Basket"
+                    },
+                    {
+                        "name": "Celana Basket"
+                    },
+                    {
+                        "name": "Pelindung Lutut"
+                    },
+                    {
+                        "name": "Tas Basket"
+                    },
+                    {
+                        "name": "Jersey Basket"
+                    },
+                    {
+                        "name": "Alat Latihan Basket"
+                    },
+                    {
+                        "name": "Net Bola Voli"
+                    },
+                    {
+                        "name": "Pompa Bola"
+                    },
+                    {
+                        "name": "Aksesoris Basket & Voli"
+                    }
+                ]
+            },
+            {
+                "name": "Sepeda & Aksesoris",
+                "children": [
+                    {
+                        "name": "Sepeda Gunung"
+                    },
+                    {
+                        "name": "Sepeda Lipat"
+                    },
+                    {
+                        "name": "Sepeda Balap"
+                    },
+                    {
+                        "name": "Helm Sepeda"
+                    },
+                    {
+                        "name": "Sarung Tangan Sepeda"
+                    },
+                    {
+                        "name": "Lampu Sepeda"
+                    },
+                    {
+                        "name": "Pompa Sepeda"
+                    },
+                    {
+                        "name": "Kunci Sepeda"
+                    },
+                    {
+                        "name": "Tas Sepeda"
+                    },
+                    {
+                        "name": "Ban & Velg"
+                    },
+                    {
+                        "name": "Suspensi Sepeda"
+                    },
+                    {
+                        "name": "Aksesoris Sepeda Lainnya"
+                    }
+                ]
+            },
+            {
+                "name": "Renang & Air",
+                "children": [
+                    {
+                        "name": "Baju Renang Pria"
+                    },
+                    {
+                        "name": "Baju Renang Wanita"
+                    },
+                    {
+                        "name": "Kacamata Renang"
+                    },
+                    {
+                        "name": "Topi Renang"
+                    },
+                    {
+                        "name": "Pelampung"
+                    },
+                    {
+                        "name": "Alat Latihan Renang"
+                    },
+                    {
+                        "name": "Snorkeling"
+                    },
+                    {
+                        "name": "Peralatan Diving"
+                    },
+                    {
+                        "name": "Kolam Renang Inflatable"
+                    },
+                    {
+                        "name": "Handuk Renang"
+                    },
+                    {
+                        "name": "Sepatu Air"
+                    },
+                    {
+                        "name": "Tas Renang"
+                    }
+                ]
+            },
+            {
+                "name": "Camping & Hiking",
+                "children": [
+                    {
+                        "name": "Tenda"
+                    },
+                    {
+                        "name": "Sleeping Bag"
+                    },
+                    {
+                        "name": "Matras Camping"
+                    },
+                    {
+                        "name": "Ransel Hiking"
+                    },
+                    {
+                        "name": "Kompor Portable"
+                    },
+                    {
+                        "name": "Peralatan Masak Outdoor"
+                    },
+                    {
+                        "name": "Senter & Headlamp"
+                    },
+                    {
+                        "name": "Tongkat Hiking"
+                    },
+                    {
+                        "name": "Peralatan Navigasi"
+                    },
+                    {
+                        "name": "Alat Penampung Air"
+                    },
+                    {
+                        "name": "Peralatan Survival"
+                    },
+                    {
+                        "name": "Aksesoris Camping"
+                    }
+                ]
+            },
+            {
+                "name": "Olahraga Luar Ruangan",
+                "children": [
+                    {
+                        "name": "Panahan"
+                    },
+                    {
+                        "name": "Memanah Target"
+                    },
+                    {
+                        "name": "Busur & Anak Panah"
+                    },
+                    {
+                        "name": "Peralatan Golf"
+                    },
+                    {
+                        "name": "Peralatan Tenis"
+                    },
+                    {
+                        "name": "Peralatan Badminton"
+                    },
+                    {
+                        "name": "Peralatan Skateboard"
+                    },
+                    {
+                        "name": "Peralatan Rollerblade"
+                    },
+                    {
+                        "name": "Alat Olahraga Pantai"
+                    },
+                    {
+                        "name": "Pelindung Olahraga Outdoor"
+                    },
+                    {
+                        "name": "Tas Olahraga Outdoor"
+                    },
+                    {
+                        "name": "Aksesoris Olahraga Outdoor"
+                    }
+                ]
+            },
+            {
+                "name": "Alat Pelindung & Safety",
+                "children": [
+                    {
+                        "name": "Helm Sepeda & Motor"
+                    },
+                    {
+                        "name": "Pelindung Lutut"
+                    },
+                    {
+                        "name": "Pelindung Siku"
+                    },
+                    {
+                        "name": "Pelindung Pergelangan"
+                    },
+                    {
+                        "name": "Pelindung Kepala"
+                    },
+                    {
+                        "name": "Pelindung Dada"
+                    },
+                    {
+                        "name": "Rompi Pelindung"
+                    },
+                    {
+                        "name": "Kacamata Safety"
+                    },
+                    {
+                        "name": "Sepatu Safety"
+                    },
+                    {
+                        "name": "Sarung Tangan Safety"
+                    },
+                    {
+                        "name": "Peluit Darurat"
+                    },
+                    {
+                        "name": "Aksesoris Safety Lainnya"
+                    }
+                ]
+            },
+            {
+                "name": "Olahraga Indoor",
+                "children": [
+                    {
+                        "name": "Treadmill"
+                    },
+                    {
+                        "name": "Elliptical"
+                    },
+                    {
+                        "name": "Stationary Bike"
+                    },
+                    {
+                        "name": "Stepper"
+                    },
+                    {
+                        "name": "Dumbbell Set"
+                    },
+                    {
+                        "name": "Kettlebell"
+                    },
+                    {
+                        "name": "Yoga Mat"
+                    },
+                    {
+                        "name": "Resistance Bands"
+                    },
+                    {
+                        "name": "Foam Roller"
+                    },
+                    {
+                        "name": "Medicine Ball"
+                    },
+                    {
+                        "name": "Pull-Up Bar"
+                    },
+                    {
+                        "name": "Ab Wheel"
+                    }
+                ]
+            },
+            {
+                "name": "Pakaian & Sepatu Olahraga",
+                "children": [
+                    {
+                        "name": "Kaos Olahraga Pria"
+                    },
+                    {
+                        "name": "Kaos Olahraga Wanita"
+                    },
+                    {
+                        "name": "Celana Olahraga Pria"
+                    },
+                    {
+                        "name": "Celana Olahraga Wanita"
+                    },
+                    {
+                        "name": "Sepatu Lari"
+                    },
+                    {
+                        "name": "Sepatu Basket"
+                    },
+                    {
+                        "name": "Sepatu Sepak Bola"
+                    },
+                    {
+                        "name": "Sepatu Fitness"
+                    },
+                    {
+                        "name": "Jaket Olahraga"
+                    },
+                    {
+                        "name": "Topi & Headband"
+                    },
+                    {
+                        "name": "Kaos Kaki Olahraga"
+                    },
+                    {
+                        "name": "Aksesoris Olahraga"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Memancing",
+                "children": [
+                    {
+                        "name": "Joran"
+                    },
+                    {
+                        "name": "Reel"
+                    },
+                    {
+                        "name": "Umpan"
+                    },
+                    {
+                        "name": "Kail & Senar"
+                    },
+                    {
+                        "name": "Kursi Memancing"
+                    },
+                    {
+                        "name": "Kotak Peralatan Memancing"
+                    },
+                    {
+                        "name": "Pakaian Memancing"
+                    },
+                    {
+                        "name": "Pelampung & Life Jacket"
+                    },
+                    {
+                        "name": "Payung & Tenda Memancing"
+                    },
+                    {
+                        "name": "Tas Pancing"
+                    },
+                    {
+                        "name": "Alat Pembersih Ikan"
+                    },
+                    {
+                        "name": "Aksesoris Memancing Lainnya"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Mainan & Hobi",
+        "children": [
+            {
+                "name": "Mainan Edukasi",
+                "children": [
+                    {
+                        "name": "Puzzle"
+                    },
+                    {
+                        "name": "Blok Bangunan"
+                    },
+                    {
+                        "name": "Mainan Sains"
+                    },
+                    {
+                        "name": "Mainan Matematika"
+                    },
+                    {
+                        "name": "Mainan Bahasa"
+                    },
+                    {
+                        "name": "Alat Musik Mini"
+                    },
+                    {
+                        "name": "Board Game Edukatif"
+                    },
+                    {
+                        "name": "Robot Edukasi"
+                    },
+                    {
+                        "name": "Kartu Belajar"
+                    },
+                    {
+                        "name": "Mainan STEM"
+                    },
+                    {
+                        "name": "Mainan Kreatif"
+                    },
+                    {
+                        "name": "Kit Eksperimen"
+                    }
+                ]
+            },
+            {
+                "name": "Mainan Anak Bayi",
+                "children": [
+                    {
+                        "name": "Gantungan Bayi"
+                    },
+                    {
+                        "name": "Mainan Gigitan"
+                    },
+                    {
+                        "name": "Mainan Bunyi"
+                    },
+                    {
+                        "name": "Boneka Bayi"
+                    },
+                    {
+                        "name": "Mainan Sensorik"
+                    },
+                    {
+                        "name": "Alat Bantu Tidur"
+                    },
+                    {
+                        "name": "Play Mat"
+                    },
+                    {
+                        "name": "Rattle"
+                    },
+                    {
+                        "name": "Mainan Goyang"
+                    },
+                    {
+                        "name": "Alat Mandi Bayi"
+                    },
+                    {
+                        "name": "Mainan Bayi Outdoor"
+                    },
+                    {
+                        "name": "Mainan Aktivitas"
+                    }
+                ]
+            },
+            {
+                "name": "Action Figure & Koleksi",
+                "children": [
+                    {
+                        "name": "Action Figure Superhero"
+                    },
+                    {
+                        "name": "Action Figure Anime"
+                    },
+                    {
+                        "name": "Mainan Koleksi Mobil"
+                    },
+                    {
+                        "name": "Mainan Koleksi Pesawat"
+                    },
+                    {
+                        "name": "Mainan Koleksi Kapal"
+                    },
+                    {
+                        "name": "Mainan Koleksi Figur Film"
+                    },
+                    {
+                        "name": "Mainan Koleksi Karakter"
+                    },
+                    {
+                        "name": "Miniatur Bangunan"
+                    },
+                    {
+                        "name": "Miniatur Kendaraan"
+                    },
+                    {
+                        "name": "Miniatur Tokoh Sejarah"
+                    },
+                    {
+                        "name": "Kartu Koleksi"
+                    },
+                    {
+                        "name": "Patung Miniatur"
+                    }
+                ]
+            },
+            {
+                "name": "Mainan Luar Ruangan",
+                "children": [
+                    {
+                        "name": "Sepeda Anak"
+                    },
+                    {
+                        "name": "Skuter"
+                    },
+                    {
+                        "name": "Skateboard"
+                    },
+                    {
+                        "name": "Bola"
+                    },
+                    {
+                        "name": "Perosotan"
+                    },
+                    {
+                        "name": "Ayunan"
+                    },
+                    {
+                        "name": "Playground Mini"
+                    },
+                    {
+                        "name": "Water Gun"
+                    },
+                    {
+                        "name": "Mainan Pantai"
+                    },
+                    {
+                        "name": "Mainan Taman"
+                    },
+                    {
+                        "name": "Trampolin"
+                    },
+                    {
+                        "name": "Alat Olahraga Anak"
+                    }
+                ]
+            },
+            {
+                "name": "Mainan Kreatif & Seni",
+                "children": [
+                    {
+                        "name": "Cat Air"
+                    },
+                    {
+                        "name": "Crayon & Pensil Warna"
+                    },
+                    {
+                        "name": "Alat Kerajinan"
+                    },
+                    {
+                        "name": "Kit DIY"
+                    },
+                    {
+                        "name": "Lem & Perekat"
+                    },
+                    {
+                        "name": "Kertas Origami"
+                    },
+                    {
+                        "name": "Stiker & Decal"
+                    },
+                    {
+                        "name": "Kit Lukis"
+                    },
+                    {
+                        "name": "Clay & Play Dough"
+                    },
+                    {
+                        "name": "Alat Jahit Mini"
+                    },
+                    {
+                        "name": "Kit Perhiasan DIY"
+                    },
+                    {
+                        "name": "Alat Kreatif Lainnya"
+                    }
+                ]
+            },
+            {
+                "name": "Puzzle & Board Game",
+                "children": [
+                    {
+                        "name": "Puzzle Kayu"
+                    },
+                    {
+                        "name": "Puzzle 3D"
+                    },
+                    {
+                        "name": "Puzzle Karton"
+                    },
+                    {
+                        "name": "Board Game Strategi"
+                    },
+                    {
+                        "name": "Board Game Keluarga"
+                    },
+                    {
+                        "name": "Board Game Anak"
+                    },
+                    {
+                        "name": "Board Game Dewasa"
+                    },
+                    {
+                        "name": "Catur & Dam"
+                    },
+                    {
+                        "name": "Monopoli"
+                    },
+                    {
+                        "name": "Scrabble"
+                    },
+                    {
+                        "name": "Permainan Kartu"
+                    },
+                    {
+                        "name": "Permainan Papan Lainnya"
+                    }
+                ]
+            },
+            {
+                "name": "Mainan Kendaraan",
+                "children": [
+                    {
+                        "name": "Mobil Mainan"
+                    },
+                    {
+                        "name": "Motor Mainan"
+                    },
+                    {
+                        "name": "Pesawat Mainan"
+                    },
+                    {
+                        "name": "Kereta Mainan"
+                    },
+                    {
+                        "name": "Perahu Mainan"
+                    },
+                    {
+                        "name": "Truk Mainan"
+                    },
+                    {
+                        "name": "Helikopter Mainan"
+                    },
+                    {
+                        "name": "Alat Transportasi Mini"
+                    },
+                    {
+                        "name": "RC Mobil"
+                    },
+                    {
+                        "name": "RC Pesawat"
+                    },
+                    {
+                        "name": "RC Kapal"
+                    },
+                    {
+                        "name": "Aksesoris Kendaraan Mini"
+                    }
+                ]
+            },
+            {
+                "name": "Mainan Edukasi STEM",
+                "children": [
+                    {
+                        "name": "Robot Kit"
+                    },
+                    {
+                        "name": "Elektronik Kit"
+                    },
+                    {
+                        "name": "Kit Coding"
+                    },
+                    {
+                        "name": "Kit Mekanik"
+                    },
+                    {
+                        "name": "Kit Sains"
+                    },
+                    {
+                        "name": "Kit Eksperimen"
+                    },
+                    {
+                        "name": "Kit Matematika"
+                    },
+                    {
+                        "name": "Kit Fisika"
+                    },
+                    {
+                        "name": "Kit Kimia"
+                    },
+                    {
+                        "name": "Kit Astronomi"
+                    },
+                    {
+                        "name": "Kit Teknik"
+                    },
+                    {
+                        "name": "Kit Teknologi"
+                    }
+                ]
+            },
+            {
+                "name": "Boneka & Soft Toys",
+                "children": [
+                    {
+                        "name": "Boneka Berbulu"
+                    },
+                    {
+                        "name": "Boneka Karakter"
+                    },
+                    {
+                        "name": "Boneka Fashion"
+                    },
+                    {
+                        "name": "Boneka Bayi"
+                    },
+                    {
+                        "name": "Boneka Keluarga"
+                    },
+                    {
+                        "name": "Boneka Hewan"
+                    },
+                    {
+                        "name": "Boneka Koleksi"
+                    },
+                    {
+                        "name": "Boneka Mini"
+                    },
+                    {
+                        "name": "Boneka Interaktif"
+                    },
+                    {
+                        "name": "Boneka Musik"
+                    },
+                    {
+                        "name": "Boneka DIY"
+                    },
+                    {
+                        "name": "Boneka Edukatif"
+                    }
+                ]
+            },
+            {
+                "name": "Kostum & Aksesoris",
+                "children": [
+                    {
+                        "name": "Kostum Anak"
+                    },
+                    {
+                        "name": "Kostum Halloween"
+                    },
+                    {
+                        "name": "Topeng"
+                    },
+                    {
+                        "name": "Aksesoris Kostum"
+                    },
+                    {
+                        "name": "Kostum Karakter"
+                    },
+                    {
+                        "name": "Kostum Pesta"
+                    },
+                    {
+                        "name": "Kostum Superhero"
+                    },
+                    {
+                        "name": "Kostum Hewan"
+                    },
+                    {
+                        "name": "Kostum Disney"
+                    },
+                    {
+                        "name": "Kostum Anime"
+                    },
+                    {
+                        "name": "Kostum DIY"
+                    },
+                    {
+                        "name": "Kostum Kreatif"
+                    }
+                ]
+            },
+            {
+                "name": "Hobi Kreatif & Koleksi",
+                "children": [
+                    {
+                        "name": "Model Kit"
+                    },
+                    {
+                        "name": "Model Pesawat"
+                    },
+                    {
+                        "name": "Model Mobil"
+                    },
+                    {
+                        "name": "Model Kapal"
+                    },
+                    {
+                        "name": "Koleksi Stiker"
+                    },
+                    {
+                        "name": "Koleksi Koin"
+                    },
+                    {
+                        "name": "Koleksi Prangko"
+                    },
+                    {
+                        "name": "Miniatur Bangunan"
+                    },
+                    {
+                        "name": "Miniatur Kendaraan"
+                    },
+                    {
+                        "name": "Kit DIY Kreatif"
+                    },
+                    {
+                        "name": "Alat Hobi Lainnya"
+                    },
+                    {
+                        "name": "Peralatan Lukis & Seni"
+                    }
+                ]
+            },
+            {
+                "name": "Permainan Elektronik",
+                "children": [
+                    {
+                        "name": "Konsol Game"
+                    },
+                    {
+                        "name": "Controller & Aksesoris"
+                    },
+                    {
+                        "name": "Game PC"
+                    },
+                    {
+                        "name": "Game Konsol"
+                    },
+                    {
+                        "name": "Game Anak"
+                    },
+                    {
+                        "name": "VR & AR"
+                    },
+                    {
+                        "name": "Game Edukasi"
+                    },
+                    {
+                        "name": "Kartu Game"
+                    },
+                    {
+                        "name": "Mainan Interaktif"
+                    },
+                    {
+                        "name": "Robot Interaktif"
+                    },
+                    {
+                        "name": "Perangkat Tambahan Game"
+                    },
+                    {
+                        "name": "Aksesoris VR"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Otomotif & Industri",
+        "children": [
+            {
+                "name": "Mobil & Aksesoris",
+                "children": [
+                    {
+                        "name": "Aki Mobil"
+                    },
+                    {
+                        "name": "Ban Mobil"
+                    },
+                    {
+                        "name": "Velg Mobil"
+                    },
+                    {
+                        "name": "Lampu Mobil"
+                    },
+                    {
+                        "name": "Sarung Jok"
+                    },
+                    {
+                        "name": "Karpet Mobil"
+                    },
+                    {
+                        "name": "Cover Mobil"
+                    },
+                    {
+                        "name": "Pelindung Cat Mobil"
+                    },
+                    {
+                        "name": "Aksesoris Interior"
+                    },
+                    {
+                        "name": "Aksesoris Eksterior"
+                    },
+                    {
+                        "name": "Audio Mobil"
+                    },
+                    {
+                        "name": "GPS & Navigasi"
+                    }
+                ]
+            },
+            {
+                "name": "Motor & Aksesoris",
+                "children": [
+                    {
+                        "name": "Aki Motor"
+                    },
+                    {
+                        "name": "Ban Motor"
+                    },
+                    {
+                        "name": "Lampu Motor"
+                    },
+                    {
+                        "name": "Helm"
+                    },
+                    {
+                        "name": "Jaket Motor"
+                    },
+                    {
+                        "name": "Sarung Tangan Motor"
+                    },
+                    {
+                        "name": "Pelindung Motor"
+                    },
+                    {
+                        "name": "Audio Motor"
+                    },
+                    {
+                        "name": "Cover Motor"
+                    },
+                    {
+                        "name": "Ban Motor Trail"
+                    },
+                    {
+                        "name": "Velg Motor"
+                    },
+                    {
+                        "name": "Aksesoris Eksterior Motor"
+                    }
+                ]
+            },
+            {
+                "name": "Oli & Pelumas",
+                "children": [
+                    {
+                        "name": "Oli Mesin Mobil"
+                    },
+                    {
+                        "name": "Oli Mesin Motor"
+                    },
+                    {
+                        "name": "Oli Transmisi"
+                    },
+                    {
+                        "name": "Pelumas Rantai"
+                    },
+                    {
+                        "name": "Pelumas Industri"
+                    },
+                    {
+                        "name": "Grease"
+                    },
+                    {
+                        "name": "Additive Oli"
+                    },
+                    {
+                        "name": "Minyak Rem"
+                    },
+                    {
+                        "name": "Minyak Power Steering"
+                    },
+                    {
+                        "name": "Oli Pendingin"
+                    },
+                    {
+                        "name": "Pelumas Gearbox"
+                    },
+                    {
+                        "name": "Pelumas Khusus"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Bengkel",
+                "children": [
+                    {
+                        "name": "Dongkrak"
+                    },
+                    {
+                        "name": "Kunci Inggris"
+                    },
+                    {
+                        "name": "Obeng Set"
+                    },
+                    {
+                        "name": "Palang Roda"
+                    },
+                    {
+                        "name": "Compressor"
+                    },
+                    {
+                        "name": "Tang"
+                    },
+                    {
+                        "name": "Kunci Sok"
+                    },
+                    {
+                        "name": "Peralatan Listrik"
+                    },
+                    {
+                        "name": "Mesin Bor"
+                    },
+                    {
+                        "name": "Peralatan Las"
+                    },
+                    {
+                        "name": "Peralatan Teknis"
+                    },
+                    {
+                        "name": "Alat Ukur"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Safety & Proteksi",
+                "children": [
+                    {
+                        "name": "Helm Industri"
+                    },
+                    {
+                        "name": "Sepatu Safety"
+                    },
+                    {
+                        "name": "Sarung Tangan Safety"
+                    },
+                    {
+                        "name": "Rompi Safety"
+                    },
+                    {
+                        "name": "Kacamata Safety"
+                    },
+                    {
+                        "name": "Earplug / Ear Muff"
+                    },
+                    {
+                        "name": "Masker Safety"
+                    },
+                    {
+                        "name": "Pelindung Lutut"
+                    },
+                    {
+                        "name": "Pelindung Siku"
+                    },
+                    {
+                        "name": "Sabuk Pengaman"
+                    },
+                    {
+                        "name": "Alat Proteksi Lainnya"
+                    },
+                    {
+                        "name": "Pakaian Safety"
+                    }
+                ]
+            },
+            {
+                "name": "Suku Cadang & Sparepart",
+                "children": [
+                    {
+                        "name": "Rem Mobil & Motor"
+                    },
+                    {
+                        "name": "Kampas Rem"
+                    },
+                    {
+                        "name": "Filter Oli"
+                    },
+                    {
+                        "name": "Filter Udara"
+                    },
+                    {
+                        "name": "Filter Bahan Bakar"
+                    },
+                    {
+                        "name": "Bearing"
+                    },
+                    {
+                        "name": "Shockbreaker"
+                    },
+                    {
+                        "name": "Timing Belt"
+                    },
+                    {
+                        "name": "Kopling"
+                    },
+                    {
+                        "name": "Gearbox"
+                    },
+                    {
+                        "name": "Poros & Roda Gigi"
+                    },
+                    {
+                        "name": "Suku Cadang Lainnya"
+                    }
+                ]
+            },
+            {
+                "name": "Alat Ukur & Diagnostik",
+                "children": [
+                    {
+                        "name": "Multimeter"
+                    },
+                    {
+                        "name": "OBD Scanner"
+                    },
+                    {
+                        "name": "Alat Tekanan Ban"
+                    },
+                    {
+                        "name": "Alat Ukur Oli"
+                    },
+                    {
+                        "name": "Thermometer Industri"
+                    },
+                    {
+                        "name": "Manometer"
+                    },
+                    {
+                        "name": "Alat Kalibrasi"
+                    },
+                    {
+                        "name": "Volt & Amp Meter"
+                    },
+                    {
+                        "name": "Alat Diagnostik Mobil"
+                    },
+                    {
+                        "name": "Alat Diagnostik Motor"
+                    },
+                    {
+                        "name": "Laser Level"
+                    },
+                    {
+                        "name": "Aksesoris Ukur"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Listrik & Mekanik",
+                "children": [
+                    {
+                        "name": "Mesin Bor"
+                    },
+                    {
+                        "name": "Mesin Gerinda"
+                    },
+                    {
+                        "name": "Mesin Las"
+                    },
+                    {
+                        "name": "Kompresor"
+                    },
+                    {
+                        "name": "Mesin Potong"
+                    },
+                    {
+                        "name": "Peralatan Pneumatik"
+                    },
+                    {
+                        "name": "Peralatan Hidrolik"
+                    },
+                    {
+                        "name": "Alat Tangan Listrik"
+                    },
+                    {
+                        "name": "Generator Listrik"
+                    },
+                    {
+                        "name": "Battery Charger"
+                    },
+                    {
+                        "name": "Alat Mekanik Lainnya"
+                    },
+                    {
+                        "name": "Peralatan Workshop"
+                    }
+                ]
+            },
+            {
+                "name": "Industri & Pabrik",
+                "children": [
+                    {
+                        "name": "Mesin Produksi"
+                    },
+                    {
+                        "name": "Mesin Packaging"
+                    },
+                    {
+                        "name": "Conveyor Belt"
+                    },
+                    {
+                        "name": "Pompa Industri"
+                    },
+                    {
+                        "name": "Kompressor Industri"
+                    },
+                    {
+                        "name": "Tangki & Silinder"
+                    },
+                    {
+                        "name": "Katup & Pipa"
+                    },
+                    {
+                        "name": "Peralatan Las Industri"
+                    },
+                    {
+                        "name": "Peralatan Mekanik"
+                    },
+                    {
+                        "name": "Alat Ukur Industri"
+                    },
+                    {
+                        "name": "Alat Listrik Industri"
+                    },
+                    {
+                        "name": "Aksesoris Industri"
+                    }
+                ]
+            },
+            {
+                "name": "Ban & Velg",
+                "children": [
+                    {
+                        "name": "Ban Mobil"
+                    },
+                    {
+                        "name": "Ban Motor"
+                    },
+                    {
+                        "name": "Ban Truk"
+                    },
+                    {
+                        "name": "Ban Offroad"
+                    },
+                    {
+                        "name": "Velg Mobil"
+                    },
+                    {
+                        "name": "Velg Motor"
+                    },
+                    {
+                        "name": "Aksesoris Ban"
+                    },
+                    {
+                        "name": "Ban Dalam"
+                    },
+                    {
+                        "name": "Ban Luar"
+                    },
+                    {
+                        "name": "Tire Repair Kit"
+                    },
+                    {
+                        "name": "Ban Racing"
+                    },
+                    {
+                        "name": "Ban All Terrain"
+                    }
+                ]
+            },
+            {
+                "name": "Aksesoris Kendaraan",
+                "children": [
+                    {
+                        "name": "Audio Mobil"
+                    },
+                    {
+                        "name": "Speaker & Subwoofer"
+                    },
+                    {
+                        "name": "GPS Navigasi"
+                    },
+                    {
+                        "name": "Dashcam"
+                    },
+                    {
+                        "name": "Charger Mobil"
+                    },
+                    {
+                        "name": "Holder HP"
+                    },
+                    {
+                        "name": "Lampu LED"
+                    },
+                    {
+                        "name": "Alarm & Security"
+                    },
+                    {
+                        "name": "Cover Mobil"
+                    },
+                    {
+                        "name": "Sarung Jok"
+                    },
+                    {
+                        "name": "Karpet Mobil"
+                    },
+                    {
+                        "name": "Aksesoris Interior Lainnya"
+                    }
+                ]
+            },
+            {
+                "name": "Peralatan Maintenance & Cleaning",
+                "children": [
+                    {
+                        "name": "Alat Cuci Mobil"
+                    },
+                    {
+                        "name": "Sabun & Wax Mobil"
+                    },
+                    {
+                        "name": "Lap & Spons"
+                    },
+                    {
+                        "name": "Vacuum Cleaner Mobil"
+                    },
+                    {
+                        "name": "Poles Mobil"
+                    },
+                    {
+                        "name": "Peralatan Servis Motor"
+                    },
+                    {
+                        "name": "Alat Tune-Up"
+                    },
+                    {
+                        "name": "Pelumas & Grease"
+                    },
+                    {
+                        "name": "Alat Pengukur Tekanan"
+                    },
+                    {
+                        "name": "Sikat & Brush"
+                    },
+                    {
+                        "name": "Kit Perbaikan"
+                    },
+                    {
+                        "name": "Aksesoris Maintenance Lainnya"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Buku & ATK",
+        "children": [
+            {
+                "name": "Buku Anak",
+                "children": [
+                    {
+                        "name": "Dongeng & Cerita Anak"
+                    },
+                    {
+                        "name": "Buku Aktivitas Anak"
+                    },
+                    {
+                        "name": "Buku Bergambar"
+                    },
+                    {
+                        "name": "Buku Edukasi Anak"
+                    },
+                    {
+                        "name": "Komik Anak"
+                    },
+                    {
+                        "name": "Puzzle Buku"
+                    },
+                    {
+                        "name": "Buku Bayi & Balita"
+                    },
+                    {
+                        "name": "Buku Cerita Rakyat"
+                    },
+                    {
+                        "name": "Buku Bahasa Anak"
+                    },
+                    {
+                        "name": "Buku Sains Anak"
+                    },
+                    {
+                        "name": "Buku Kreatif Anak"
+                    },
+                    {
+                        "name": "Buku Kesehatan Anak"
+                    }
+                ]
+            },
+            {
+                "name": "Novel & Fiksi",
+                "children": [
+                    {
+                        "name": "Novel Romantis"
+                    },
+                    {
+                        "name": "Novel Misteri & Thriller"
+                    },
+                    {
+                        "name": "Novel Fantasi"
+                    },
+                    {
+                        "name": "Novel Petualangan"
+                    },
+                    {
+                        "name": "Novel Sejarah"
+                    },
+                    {
+                        "name": "Novel Remaja"
+                    },
+                    {
+                        "name": "Novel Dewasa"
+                    },
+                    {
+                        "name": "Novel Komedi"
+                    },
+                    {
+                        "name": "Novel Inspiratif"
+                    },
+                    {
+                        "name": "Novel Sains Fiksi"
+                    },
+                    {
+                        "name": "Novel Klasik"
+                    },
+                    {
+                        "name": "Novel Lokal Indonesia"
+                    }
+                ]
+            },
+            {
+                "name": "Buku Non-Fiksi",
+                "children": [
+                    {
+                        "name": "Biografi & Memoar"
+                    },
+                    {
+                        "name": "Buku Motivasi"
+                    },
+                    {
+                        "name": "Buku Pendidikan"
+                    },
+                    {
+                        "name": "Buku Bisnis & Ekonomi"
+                    },
+                    {
+                        "name": "Buku Agama & Spiritual"
+                    },
+                    {
+                        "name": "Buku Sains & Teknologi"
+                    },
+                    {
+                        "name": "Buku Kesehatan"
+                    },
+                    {
+                        "name": "Buku Hobi & Keterampilan"
+                    },
+                    {
+                        "name": "Buku Psikologi"
+                    },
+                    {
+                        "name": "Buku Politik & Hukum"
+                    },
+                    {
+                        "name": "Buku Referensi"
+                    },
+                    {
+                        "name": "Buku Seni & Desain"
+                    }
+                ]
+            },
+            {
+                "name": "Komik & Manga",
+                "children": [
+                    {
+                        "name": "Komik Jepang (Manga)"
+                    },
+                    {
+                        "name": "Komik Korea (Manhwa)"
+                    },
+                    {
+                        "name": "Komik Lokal Indonesia"
+                    },
+                    {
+                        "name": "Webtoon"
+                    },
+                    {
+                        "name": "Komik Superhero"
+                    },
+                    {
+                        "name": "Komik Fantasi"
+                    },
+                    {
+                        "name": "Komik Petualangan"
+                    },
+                    {
+                        "name": "Komik Romantis"
+                    },
+                    {
+                        "name": "Komik Misteri"
+                    },
+                    {
+                        "name": "Komik Anak"
+                    },
+                    {
+                        "name": "Komik Edukasi"
+                    },
+                    {
+                        "name": "Komik Komedi"
+                    }
+                ]
+            },
+            {
+                "name": "Alat Tulis (ATK)",
+                "children": [
+                    {
+                        "name": "Pensil & Pulpen"
+                    },
+                    {
+                        "name": "Spidol & Stabilo"
+                    },
+                    {
+                        "name": "Penghapus & Rautan"
+                    },
+                    {
+                        "name": "Penggaris & Set Alat Gambar"
+                    },
+                    {
+                        "name": "Pensil Warna & Krayon"
+                    },
+                    {
+                        "name": "Buku Tulis & Notes"
+                    },
+                    {
+                        "name": "Binder & Folder"
+                    },
+                    {
+                        "name": "Stapler & Penjepit"
+                    },
+                    {
+                        "name": "Lem & Perekat"
+                    },
+                    {
+                        "name": "Alat Kantor Lainnya"
+                    },
+                    {
+                        "name": "Whiteboard & Spidol"
+                    },
+                    {
+                        "name": "Kalender & Agenda"
+                    }
+                ]
+            },
+            {
+                "name": "Buku Pelajaran & Pendidikan",
+                "children": [
+                    {
+                        "name": "Buku SD"
+                    },
+                    {
+                        "name": "Buku SMP"
+                    },
+                    {
+                        "name": "Buku SMA"
+                    },
+                    {
+                        "name": "Buku Perguruan Tinggi"
+                    },
+                    {
+                        "name": "Buku Bahasa Asing"
+                    },
+                    {
+                        "name": "Buku Matematika"
+                    },
+                    {
+                        "name": "Buku IPA"
+                    },
+                    {
+                        "name": "Buku IPS"
+                    },
+                    {
+                        "name": "Buku Seni & Budaya"
+                    },
+                    {
+                        "name": "Buku Komputer & IT"
+                    },
+                    {
+                        "name": "Buku Tes Masuk Sekolah / SBMPTN"
+                    },
+                    {
+                        "name": "Buku Pendidikan Anak Usia Dini"
+                    }
+                ]
+            },
+            {
+                "name": "Buku Agama",
+                "children": [
+                    {
+                        "name": "Al-Quran"
+                    },
+                    {
+                        "name": "Hadits & Tafsir"
+                    },
+                    {
+                        "name": "Buku Kristen"
+                    },
+                    {
+                        "name": "Buku Katolik"
+                    },
+                    {
+                        "name": "Buku Buddha & Hindu"
+                    },
+                    {
+                        "name": "Buku Agama Anak"
+                    },
+                    {
+                        "name": "Buku Doa & Dzikir"
+                    },
+                    {
+                        "name": "Buku Spiritualitas"
+                    },
+                    {
+                        "name": "Buku Pemikiran Agama"
+                    },
+                    {
+                        "name": "Buku Pendidikan Agama"
+                    },
+                    {
+                        "name": "Buku Etika & Moral"
+                    },
+                    {
+                        "name": "Buku Lainnya"
+                    }
+                ]
+            },
+            {
+                "name": "Kamus & Referensi",
+                "children": [
+                    {
+                        "name": "Kamus Bahasa Indonesia"
+                    },
+                    {
+                        "name": "Kamus Bahasa Inggris"
+                    },
+                    {
+                        "name": "Kamus Bahasa Asing Lainnya"
+                    },
+                    {
+                        "name": "Atlas & Peta"
+                    },
+                    {
+                        "name": "Ensiklopedia"
+                    },
+                    {
+                        "name": "Buku Referensi Sains"
+                    },
+                    {
+                        "name": "Buku Referensi Matematika"
+                    },
+                    {
+                        "name": "Buku Referensi Sejarah"
+                    },
+                    {
+                        "name": "Buku Referensi Agama"
+                    },
+                    {
+                        "name": "Buku Referensi IT"
+                    },
+                    {
+                        "name": "Buku Referensi Seni"
+                    },
+                    {
+                        "name": "Buku Referensi Hukum"
+                    }
+                ]
+            },
+            {
+                "name": "Buku Seni & Kreatif",
+                "children": [
+                    {
+                        "name": "Buku Lukis & Menggambar"
+                    },
+                    {
+                        "name": "Buku Kerajinan Tangan"
+                    },
+                    {
+                        "name": "Buku Fotografi"
+                    },
+                    {
+                        "name": "Buku Desain Grafis"
+                    },
+                    {
+                        "name": "Buku Arsitektur"
+                    },
+                    {
+                        "name": "Buku Musik"
+                    },
+                    {
+                        "name": "Buku Fashion"
+                    },
+                    {
+                        "name": "Buku DIY & Kreatif"
+                    },
+                    {
+                        "name": "Buku Hobi & Koleksi"
+                    },
+                    {
+                        "name": "Buku Tulis & Sketchbook"
+                    },
+                    {
+                        "name": "Buku Seni Anak"
+                    },
+                    {
+                        "name": "Buku Seni Profesional"
+                    }
+                ]
+            },
+            {
+                "name": "Komik & Novel Remaja",
+                "children": [
+                    {
+                        "name": "Novel Remaja"
+                    },
+                    {
+                        "name": "Komik Remaja"
+                    },
+                    {
+                        "name": "Novel Fantasi Remaja"
+                    },
+                    {
+                        "name": "Novel Romance Remaja"
+                    },
+                    {
+                        "name": "Novel Misteri Remaja"
+                    },
+                    {
+                        "name": "Komik Jepang Remaja"
+                    },
+                    {
+                        "name": "Komik Korea Remaja"
+                    },
+                    {
+                        "name": "Komik Lokal Remaja"
+                    },
+                    {
+                        "name": "Light Novel"
+                    },
+                    {
+                        "name": "Webtoon & Digital Comic"
+                    },
+                    {
+                        "name": "Buku Cerita Remaja"
+                    },
+                    {
+                        "name": "Buku Pendidikan Remaja"
+                    }
+                ]
+            },
+            {
+                "name": "Alat Belajar & Media",
+                "children": [
+                    {
+                        "name": "Globe & Atlas"
+                    },
+                    {
+                        "name": "Papan Tulis"
+                    },
+                    {
+                        "name": "Proyektor Mini"
+                    },
+                    {
+                        "name": "Flashcard"
+                    },
+                    {
+                        "name": "Model Anatomi"
+                    },
+                    {
+                        "name": "Alat Peraga Matematika"
+                    },
+                    {
+                        "name": "Alat Peraga IPA"
+                    },
+                    {
+                        "name": "Buku Aktivitas Edukasi"
+                    },
+                    {
+                        "name": "Puzzle Edukasi"
+                    },
+                    {
+                        "name": "Kit Eksperimen Sains"
+                    },
+                    {
+                        "name": "Alat Musik Pendidikan"
+                    },
+                    {
+                        "name": "Media Kreatif Lainnya"
+                    }
+                ]
+            }
+        ]
+    }
+]
