@@ -38,7 +38,7 @@
 
             <!-- Logo -->
             <div class="hidden lg:flex mx-2">
-                <img src="{{ asset('logo/lapakita-main.png') }}" class="h-11">
+                <img src="{{ asset('logo/lapakita-seller.png') }}" class="h-11">
             </div>
 
             <!-- Login/Profile -->
@@ -58,13 +58,6 @@
                     <!-- Dropdown -->
                     <div
                         class="absolute right-0 mt-1  z-50 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                        {{-- <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Profil Saya</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Pesanan</a>
-                        <form method="POST" action="{{ route('auth.logout') }}">
-                            @csrf
-                            <button type="submit"
-                                class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Keluar</button>
-                        </form> --}}
                         <div class="grid grid-cols-2 items-center w-full p-3">
                             <!-- User Info -->
                             <div class="flex items-center">
@@ -289,8 +282,8 @@
                 <h1 class="font-semibold mb-2">Informasi Toko <span class="text-red-600 rounded-full">*</span></h1>
                 <div class="relative w-full mb-2">
                     <input type="text" id="storeName" name="storeName"
-                        class="peer w-full h-11 px-3 pt-4 border border-slate-400 rounded focus:outline-none focus:border-blue-500"
-                        placeholder=" " required/>
+                        class="peer w-full h-11 px-2 pt-4 border border-slate-400 rounded focus:outline-none focus:border-blue-500"
+                        placeholder=" " old={{ old('storeName') }} required/>
 
                     <label for="storeName"
                         class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-sm
@@ -309,15 +302,15 @@
 
                 <div class="relative w-full mb-2">
                     <select id="storeCategory" name="storeCategory" required
-                        class="peer w-full h-11 px-3 pt-4 border border-slate-400 rounded bg-white
+                        class="peer w-full h-11 px-1 pt-4 border border-slate-400 rounded bg-white
                 focus:outline-none focus:border-blue-500">
                         <option value="" selected disabled></option>
-                        <option value="electronics">Elektronik</option>
-                        <option value="fashion">Fashion</option>
-                        <option value="lifestyle">Gaya Hidup</option>
-                        <option value="beauty">Kecantikan</option>
-                        <option value="home">Rumah Tangga</option>
-                        <option value="automotive">Otomotif</option>
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}"
+                                    {{ old('storeCategory') == $category->id ? 'selected' : '' }}>
+                                    {{ $category->name }}
+                            </option>
+                        @endforeach
                     </select>
 
                     <label for="storeCategory"
@@ -342,10 +335,15 @@
 
                 <div class="relative w-full mb-2">
                     <select id="storeProvince" name="storeProvince" required
-                        class="peer w-full h-11 px-3 pt-4 border border-slate-400 rounded bg-white
+                        class="peer w-full h-11 px-1  pt-4 border border-slate-400 rounded bg-white
                 focus:outline-none focus:border-blue-500">
                         <option value="" selected disabled></option>
-                        <option value="electronics">Dummy</option>
+                        @foreach ($provinces as $province)
+                            <option value="{{ $province->id }}"
+                                    {{ old('storeProvince') == $province->id ? 'selected' : '' }}>
+                                    {{ $province->name }}
+                            </option>
+                        @endforeach
                     </select>
 
                     <label for="storeProvince"
@@ -357,14 +355,13 @@
                     </label>
                 </div>
                 <div class="relative w-full mb-2">
-                    <select id="storeCity" name="storeCity" required
-                        class="peer w-full h-11 px-3 pt-4 border border-slate-400 rounded bg-white
+                    <select id="storeRegency" name="storeRegency" required
+                        class="peer w-full h-11 px-1 pt-4 border border-slate-400 rounded bg-white
                 focus:outline-none focus:border-blue-500">
                         <option value="" selected disabled></option>
-                        <option value="electronics">Dummy</option>
                     </select>
 
-                    <label for="storeCity"
+                    <label for="storeRegency"
                         class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500
                 transition-all duration-200 pointer-events-none
                 peer-focus:top-3 peer-focus:text-xs peer-focus:text-blue-500
@@ -374,7 +371,7 @@
                 </div>
                 <div class="relative w-full mb-2">
                     <select id="storeDistrict" name="storeDistrict" required
-                        class="peer w-full h-11 px-3 pt-4 border border-slate-400 rounded bg-white
+                        class="peer w-full h-11 px-1 pt-4 border border-slate-400 rounded bg-white
                 focus:outline-none focus:border-blue-500">
                         <option value="" selected disabled></option>
                         <option value="electronics">Dummy</option>
@@ -390,7 +387,7 @@
                 </div>
                 <div class="relative w-full mb-2">
                     <select id="storeVillage" name="storeVillage" required
-                        class="peer w-full h-11 px-3 pt-4 border border-slate-400 rounded bg-white
+                        class="peer w-full h-11 px-1 pt-4 border border-slate-400 rounded bg-white
                 focus:outline-none focus:border-blue-500">
                         <option value="" selected disabled></option>
                         <option value="electronics">Dummy</option>
@@ -441,6 +438,76 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        document.getElementById('storeProvince').addEventListener('change', function () {
+            const provinceId = this.value;
+            const regencySelect = document.getElementById('storeRegency');
+
+            regencySelect.innerHTML = '<option>Loading...</option>';
+
+            fetch(`/api/regencies/${provinceId}`)
+                .then(response => response.json())
+                .then(regencies => {
+                    regencySelect.innerHTML =
+                        '<option value="" disabled selected></option>';
+
+                    regencies.forEach(regency => {
+                        const option = document.createElement('option');
+                        option.value = regency.id;
+                        option.textContent = regency.name;
+                        regencySelect.appendChild(option);
+                    });
+            });
+        });
+    </script>
+
+    <script>
+        document.getElementById('storeRegency').addEventListener('change', function () {
+            const regencyId = this.value;
+            const districtSelect = document.getElementById('storeDistrict');
+
+            districtSelect.innerHTML = '<option>Loading...</option>';
+
+            fetch(`/api/districts/${regencyId}`)
+                .then(response => response.json())
+                .then(districts => {
+                    districtSelect.innerHTML =
+                        '<option value="" disabled selected></option>';
+
+                    districts.forEach(district => {
+                        const option = document.createElement('option');
+                        option.value = district.id;
+                        option.textContent = district.name;
+                        districtSelect.appendChild(option);
+                    });
+            });
+        });
+    </script>
+
+    <script>
+        document.getElementById('storeDistrict').addEventListener('change', function () {
+            const districtId = this.value;
+            const villageSelect = document.getElementById('storeVillage');
+
+            villageSelect.innerHTML = '<option>Loading...</option>';
+
+            fetch(`/api/villages/${districtId}`)
+                .then(response => response.json())
+                .then(districts => {
+                    villageSelect.innerHTML =
+                        '<option value="" disabled selected></option>';
+
+                    districts.forEach(district => {
+                        const option = document.createElement('option');
+                        option.value = district.id;
+                        option.textContent = district.name;
+                        villageSelect.appendChild(option);
+                    });
+            });
+        });
+    </script>
+
 
     <script>
         const map = L.map("map").setView([-6.2, 106.816666], 13); // Jakarta

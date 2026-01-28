@@ -109,7 +109,7 @@
 
             <!-- Logo -->
             <div class="hidden lg:flex mx-2">
-                <img src="{{ asset('logo/lapakita-main.png') }}" class="h-11">
+                <img src="{{ asset('logo/lapakita-seller.png') }}" class="h-11">
             </div>
 
             <!-- Login/Profile -->

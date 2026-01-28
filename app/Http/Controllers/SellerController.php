@@ -11,7 +11,9 @@ class SellerController extends Controller
 
         // 1️⃣ User BELUM punya store
         if (!$user->store) {
-            return view('seller.register.information');
+            $categories = \App\Models\Category::all();
+            $provinces = \App\Models\Province::orderBy('name', 'asc')->distinct()->get();
+            return view('seller.register.information', compact('categories', 'provinces'));
         }
 
         $store = $user->store;
