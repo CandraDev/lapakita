@@ -309,9 +309,9 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1">
-                                    <div class="text-sm text-sky-600">Menjadi Penjual
+                                    <a href="{{ route('seller.register') }}" class="text-sm text-sky-600">Menjadi Penjual
                                         <span class="inline-block w-1 h-1 rounded-full bg-sky-500 shadow shadow-sky-500 align-middle ms-1"></span>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -345,68 +345,50 @@
                 Kategori
             </div>
 
-            <!-- Dropdown -->
-            <div
-                class="absolute left-0 top-full mt-2 w-[600px]
-                    bg-white rounded-lg shadow-md
-                    opacity-0 invisible
-                    group-hover:opacity-100 group-hover:visible
-                    transition-all duration-200 z-50">
+            <div class="absolute left-0 top-full mt-2 w-[600px]
+                bg-white rounded-lg shadow-md
+                opacity-0 invisible
+                group-hover:opacity-100 group-hover:visible
+                transition-all duration-200 z-50">
 
                 <div class="flex">
 
                     <!-- LEFT: CATEGORY SIDEBAR -->
-                    <div class="w-48 bg-sky-50">
+                    <div class="w-48 bg-sky-50 rounded-lg shadow">
                         <ul class="text-sm">
-
-                            <li class="group/item">
-                                <a href="#"
-                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500">
-                                    Elektronik
-                                </a>
-                            </li>
-
-                            <li class="group/item">
-                                <a href="#"
-                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500">
-                                    Fashion
-                                </a>
-                            </li>
-
-                            <li class="group/item">
-                                <a href="#"
-                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500">
-                                    Rumah Tangga
-                                </a>
-                            </li>
-
-                            <li class="group/item">
-                                <a href="#"
-                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500">
-                                    Makanan
-                                </a>
-                            </li>
-
+                            @foreach($categories as $category)
+                                <li class="group/item">
+                                    <!-- Trigger the category selection -->
+                                    <a href="#"
+                                    class="block px-4 py-3 hover:bg-white hover:text-sky-500 font-medium text-gray-500"
+                                    wire:click="selectCategory({{ $category->id }})">
+                                    {{ $category->name }}
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
 
-                    <!-- RIGHT: SUB CATEGORY -->
+                    <!-- RIGHT: SUB CATEGORY CONTENT (dynamic content) -->
                     <div class="flex-1 p-4">
                         <div class="grid grid-cols-3 gap-4 text-sm">
-
-                            <a href="#" class="hover:text-sky-500">Handphone</a>
-                            <a href="#" class="hover:text-sky-500">Laptop</a>
-                            <a href="#" class="hover:text-sky-500">Aksesoris</a>
-
-                            <a href="#" class="hover:text-sky-500">TV</a>
-                            <a href="#" class="hover:text-sky-500">Audio</a>
-                            <a href="#" class="hover:text-sky-500">Kamera</a>
-
+                            <!-- Dynamically display subcategories for the selected category -->
+                            @if($subCategories)
+                                @foreach($subCategories as $subCategory)
+                                    <a href="#" class="hover:text-sky-500">{{ $subCategory->name }}</a>
+                                @endforeach
+                            @else
+                                <p class="text-gray-400">Select a category to see subcategories</p>
+                            @endif
                         </div>
                     </div>
 
                 </div>
             </div>
+
+
+
+
 
 
         </div>
