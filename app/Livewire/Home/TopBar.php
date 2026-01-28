@@ -4,7 +4,7 @@ namespace App\Livewire\Home;
 
 use Livewire\Component;
 
-class TopBar extends Component
+class Topbar extends Component
 {
     public function render()
     {
