@@ -46,9 +46,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/account/edit', [AuthController::class, 'showAccountEdit'])->name('auth.account.edit');
 
     Route::get('/seller/register', [SellerController::class, 'showRegister'])->name('seller.register');
-    Route::get('/seller/register/credential', [SellerController::class, 'showRegister2'])->name('seller.credential');
-    Route::get('/seller/register/verify', [SellerController::class, 'showRegister3'])->name('seller.credential');
-    Route::get('/seller/register/success', [SellerController::class, 'showRegister4'])->name('seller.success');
+    Route::post('/seller/register/information', [SellerController::class, 'registerStepOne'])->name('seller.register.information');
 });
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('auth.logout');
