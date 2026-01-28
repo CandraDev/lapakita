@@ -32,9 +32,9 @@
         </div>
     </nav>
     <!-- MAIN NAV (Sticky) -->
-    <nav class="fixed top-0 right-0 left-0 bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] z-40 sticky top-0"
+    <nav class="fixed top-0 right-0 left-0 bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] z-40  hidden lg:block"
         style="background-image: url('{{ asset('gui/header.png') }}');">
-        <div class="w-full p-2 md:h-auto lg:max-w-6xl lg:mx-auto flex items-center gap-2 lg:p-4 justify-between">
+        <div class="w-full p-2  md:h-auto lg:max-w-6xl lg:mx-auto flex items-center gap-2 lg:p-4 justify-between hidden lg:flex">
 
             <!-- Logo -->
             <div class="hidden lg:flex mx-2">
@@ -252,7 +252,7 @@
         </div>
     </nav>
 
-    <div class="h-14  w-full lg:h-5 bg-sky-50">
+    <div class="h-14  w-full lg:h-5 bg-sky-50 lg:h-21">
     </div>
     <main class="lg:max-w-4xl lg:mx-auto ">
         <section class="w-full h-34 bg-sky-100 flex">
