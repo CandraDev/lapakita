@@ -56,3 +56,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('auth.logout');
 Route::get('/profile', [AuthController::class, 'showProfile'])->name('auth.profile');
+
+Route::get('/member/voucher', function () {
+    return view('member.voucher');
+})->name('home');

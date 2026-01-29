@@ -18,7 +18,7 @@
 <body class="bg-sky-50">
     <a href="{{ route('home') }}"
         class="absolute z-20 w-7 h-7 bg-white rounded-full text-center top-3 left-2 shadow">x</a>
-    <div class="lg:max-w-6xl lg:mx-auto">
+    <div class="lg:max-w-3xl lg:mx-auto">
 
         <div class="">
 
@@ -26,9 +26,9 @@
                 <img src="{{ asset('logo/lapakita-main.png') }}" class="w-40" alt="Logo Lapakita">
             </div>
             <div class="flex-1 lg:flex lg:flex-col lg:items-center lg:justify-center ">
-                <div class=" w-[90%] lg:w-[50%] mx-auto bg-white shadow rounded-lg">
+                <div class=" w-[90%] lg:w-[50%] mx-auto bg-white shadow-md rounded-2xl">
                     <div class="p-5">
-                        <h1 class="font-semibold text-xl lg:text-2xl lg:mb-2">Masuk ke Lapakita</h1>
+                        <h1 class="font-semibold text-xl lg:text-lg mb-2">Masuk ke Lapakita</h1>
                         <p class="text-xs text-gray-500 lg:text-sm mb-4">
                             Masuk ke Akun Lapakita dan dapatkan kemudahan dalam berbelanja!
                         </p>
@@ -116,8 +116,8 @@
                                 <div class="flex-end text-sm mt-1 text-gray-500">Lupa kata sandi?</div>
                             </div>
                             <button type="submit"
-                                class="w-full h-10 rounded bg-sky-400 text-center flex items-center justify-center text-white">
-                                Log in
+                                class="w-full h-10 rounded-xl shadow bg-sky-400 text-center flex items-center justify-center text-white">
+                                Masuk
                             </button>
                         </form>
                     </div>
