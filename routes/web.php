@@ -41,13 +41,18 @@ Route::middleware('auth')->group(function () {
 
         return back()->with('message', 'Link verifikasi sudah dikirim ulang.');
     })->middleware('throttle:6,1')->name('verification.send');
-
+});
+Route::middleware(['auth', 'verified'])->group(function () {
+    // Account routes
     Route::get('/account', [AuthController::class, 'showAccount'])->name('auth.account');
     Route::get('/account/edit', [AuthController::class, 'showAccountEdit'])->name('auth.account.edit');
 
+    // Seller register routes
     Route::get('/seller/register', [SellerController::class, 'showRegister'])->name('seller.register');
     Route::post('/seller/register/information', [SellerController::class, 'registerStepOne'])->name('seller.register.information');
+    Route::post('/seller/register/credentials', [SellerController::class, 'registerStepTwo'])->name('seller.register.credentials');
 });
+
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('auth.logout');
 Route::get('/profile', [AuthController::class, 'showProfile'])->name('auth.profile');

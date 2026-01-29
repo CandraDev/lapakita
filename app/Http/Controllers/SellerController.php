@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Store;
 use App\Models\Address;
+use App\Models\Credential;
 
 use App\Models\Province;
 use App\Models\Regency;
@@ -30,8 +31,9 @@ class SellerController extends Controller
 
         $store = $user->store;
 
+
         // 2️⃣ Punya store tapi BELUM punya credential
-        if (!$store->credential) {
+        if ($store->credentials->isEmpty()) {
             return view('seller.register.credentials');
         }
 
@@ -193,5 +195,55 @@ class SellerController extends Controller
 
 
         return redirect()->route('seller.register');
+    }
+
+    public function registerStepTwo(Request $request) {
+        // return dd($request->all());
+        // Validasi file KTP wajib
+        $rules = [
+            'ktpFile' => 'required|file|mimes:jpeg,jpg,png|max:5048', // max 5MB
+        ];
+
+        // Jika user memiliki NPWP, maka npwpFile wajib
+        if ($request->input('have_npwp') === 'Ya') {
+            $rules['npwpFile'] = 'required|file|mimes:jpeg,jpg,png|max:5048';
+        }
+
+        // Validasi
+        $validatedData = $request->validate($rules);
+
+        $userId = auth()->id();
+
+        $store = Store::where('user_id', $userId)->first();
+
+        if (!$store) {
+            return back()->with('error', 'Toko tidak ditemukan. Silakan lengkapi informasi terlebih dahulu.');
+        }
+
+        $storeId = $store->id;
+
+        // Simpan file KTP
+        if ($request->hasFile('ktpFile')) {
+            $ktpPath = $request->file('ktpFile')->store('credentials/ktp', 'public');
+            Credential::create([
+                'user_id' => $userId,
+                'store_id' => $storeId,
+                'type' => 'ktp',
+                'credential_image' => $ktpPath,
+            ]);
+        }
+
+        // Simpan file NPWP jika ada
+        if ($request->input('have_npwp') === 'Ya' && $request->hasFile('npwpFile')) {
+            $npwpPath = $request->file('npwpFile')->store('credentials/npwp', 'public');
+            Credential::create([
+                'user_id' => $userId,
+                'store_id' => $storeId,
+                'type' => 'npwp',
+                'credential_image' => $npwpPath,
+            ]);
+        }
+
+        return back()->with('success', 'File berhasil diupload!');
     }
 }
