@@ -1,9 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Store;
+use App\Models\Address;
 
 use App\Models\Province;
 use App\Models\Regency;
@@ -160,14 +165,33 @@ class SellerController extends Controller
 
         });
 
-        if ($validator->fails()) {
-            return back()
-                ->withErrors($validator)
-                ->withInput();
-        }
+        DB::transaction(function () use ($request) {
+            // Simpan data toko
+            $store = Store::create([
+                'name'             => $request->storeName,
+                'user_id'          => Auth::id(), // user yang sedang login
+                'main_category_id' => $request->storeCategory,
+            ]);
 
-        dd('Sukses');
+            // Simpan data alamat
+            $address = Address::create([
+                'user_id'     => Auth::id(),
+                'store_id'    => $store->id, // relasi store
+                'province_id' => $request->storeProvince,
+                'regency_id'  => $request->storeRegency,
+                'district_id' => $request->storeDistrict,
+                'village_id'  => $request->storeVillage,
+                'drop_point'  => json_encode([
+                    'lat' => $request->latitude,
+                    'lng' => $request->longitude
+                ]),
+                'type'        => 'store',
+                'address'     => $request->storeAddress,
+                'is_default'  => false,
+            ]);
+        });
 
+
+        return redirect()->route('seller.register');
     }
-
 }

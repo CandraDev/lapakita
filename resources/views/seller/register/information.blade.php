@@ -388,7 +388,7 @@
                 <div class="relative w-full mb-2">
                     <select id="storeRegency" name="storeRegency" required
                         class="peer w-full h-11 px-1 pt-4 border border-slate-400 rounded bg-white
-                focus:outline-none focus:border-blue-500">
+                focus:outline-none focus:border-blue-500" data-old="{{ old('storeRegency') }}">
                         <option value="" selected disabled></option>
                     </select>
 
@@ -409,9 +409,8 @@
                 <div class="relative w-full mb-2">
                     <select id="storeDistrict" name="storeDistrict" required
                         class="peer w-full h-11 px-1 pt-4 border border-slate-400 rounded bg-white
-                focus:outline-none focus:border-blue-500">
+                focus:outline-none focus:border-blue-500" data-old="{{ old('storeDistrict') }}">
                         <option value="" selected disabled></option>
-                        <option value="electronics">Dummy</option>
                     </select>
 
                     <label for="storeDistrict"
@@ -431,9 +430,8 @@
                 <div class="relative w-full mb-2">
                     <select id="storeVillage" name="storeVillage" required
                         class="peer w-full h-11 px-1 pt-4 border border-slate-400 rounded bg-white
-                focus:outline-none focus:border-blue-500">
+                focus:outline-none focus:border-blue-500" data-old="{{ old('storeVillage') }}">
                         <option value="" selected disabled></option>
-                        <option value="electronics">Dummy</option>
                     </select>
 
                     <label for="storeVillage"
@@ -454,7 +452,7 @@
                     <textarea id="storeAddress" name="storeAddress" rows="4"
                         class="peer w-full px-3 pt-6 pb-2 border border-slate-400 rounded
                 resize-none focus:outline-none focus:border-blue-500"
-                        placeholder=" " required></textarea>
+                        placeholder=" "  required>{{ old('storeAddress') }}</textarea>
 
                     <label for="storeAddress"
                         class="absolute left-3 top-3 text-slate-500
@@ -510,6 +508,11 @@
                         const option = document.createElement('option');
                         option.value = regency.id;
                         option.textContent = regency.name;
+                        // kalau ada old value dari Laravel (misal validasi gagal)
+                        const oldRegency = document.getElementById('storeRegency').dataset.old;
+                        if (oldRegency && oldRegency == regency.id) {
+                            option.selected = true;
+                        }
                         regencySelect.appendChild(option);
                     });
             });
@@ -533,6 +536,11 @@
                         const option = document.createElement('option');
                         option.value = district.id;
                         option.textContent = district.name;
+                        // kalau ada old value dari Laravel (misal validasi gagal)
+                        const oldDistrict = document.getElementById('storeDistrict').dataset.old;
+                        if (oldDistrict && oldDistrict == district.id) {
+                            option.selected = true;
+                        }
                         districtSelect.appendChild(option);
                     });
             });
@@ -556,6 +564,11 @@
                         const option = document.createElement('option');
                         option.value = district.id;
                         option.textContent = district.name;
+                        // kalau ada old value dari Laravel (misal validasi gagal)
+                        const oldVillage = document.getElementById('storeVillage').dataset.old;
+                        if (oldVillage && oldVillage == district.id) {
+                            option.selected = true;
+                        }
                         villageSelect.appendChild(option);
                     });
             });
