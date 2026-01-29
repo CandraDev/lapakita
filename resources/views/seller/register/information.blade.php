@@ -298,12 +298,18 @@
                 peer-not-placeholder-shown:text-xs">
                         Nama Toko
                     </label>
+
+                    @error('storeName')
+                        <div class="w-full">
+                            <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                        </div>
+                    @enderror
                 </div>
 
                 <div class="relative w-full mb-2">
                     <select id="storeCategory" name="storeCategory" required
                         class="peer w-full h-11 px-1 pt-4 border border-slate-400 rounded bg-white
-                focus:outline-none focus:border-blue-500">
+                        focus:outline-none focus:border-blue-500">
                         <option value="" selected disabled></option>
                         @foreach ($categories as $category)
                             <option value="{{ $category->id }}"
@@ -315,11 +321,17 @@
 
                     <label for="storeCategory"
                         class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500
-                transition-all duration-200 pointer-events-none
-                peer-focus:top-3 peer-focus:text-xs peer-focus:text-blue-500
-                peer-valid:top-3 peer-valid:text-xs">
+                        transition-all duration-200 pointer-events-none
+                        peer-focus:top-3 peer-focus:text-xs peer-focus:text-blue-500
+                        peer-valid:top-3 peer-valid:text-xs">
                         Kategori Utama Toko
                     </label>
+
+                    @error('storeCategory')
+                        <div class="w-full">
+                            <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                        </div>
+                    @enderror
                 </div>
             </section>
             <section class="w-full bg-white mb-10 lg:mb-0 p-5">
@@ -328,15 +340,28 @@
 
 
                 <h2 class="text-sm text-gray-600 text-semibold mb-1">Titik Penjemputan Paket</h2>
+
+                @error('latitude')
+                    <div class="w-full">
+                        <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                    </div>
+                @enderror
+                @error('longitude')
+                    <div class="w-full">
+                        <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                    </div>
+                @enderror
                 <div id="map" class="w-full h-40 lg:h-80 rounded border mb-10 z-0"></div>
 
                 <input type="hidden" id="latitude" name="latitude">
                 <input type="hidden" id="longitude" name="longitude">
 
+
+
                 <div class="relative w-full mb-2">
                     <select id="storeProvince" name="storeProvince" required
                         class="peer w-full h-11 px-1  pt-4 border border-slate-400 rounded bg-white
-                focus:outline-none focus:border-blue-500">
+                        focus:outline-none focus:border-blue-500">
                         <option value="" selected disabled></option>
                         @foreach ($provinces as $province)
                             <option value="{{ $province->id }}"
@@ -353,6 +378,12 @@
                 peer-valid:top-3 peer-valid:text-xs">
                         Provinsi
                     </label>
+
+                    @error('storeProvince')
+                        <div class="w-full">
+                            <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                        </div>
+                    @enderror
                 </div>
                 <div class="relative w-full mb-2">
                     <select id="storeRegency" name="storeRegency" required
@@ -368,6 +399,12 @@
                 peer-valid:top-3 peer-valid:text-xs">
                         Kota/Kab
                     </label>
+
+                    @error('storeRegency')
+                        <div class="w-full">
+                            <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                        </div>
+                    @enderror
                 </div>
                 <div class="relative w-full mb-2">
                     <select id="storeDistrict" name="storeDistrict" required
@@ -384,6 +421,12 @@
                 peer-valid:top-3 peer-valid:text-xs">
                         Kecamatan
                     </label>
+
+                    @error('storeDistrict')
+                        <div class="w-full">
+                            <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                        </div>
+                    @enderror
                 </div>
                 <div class="relative w-full mb-2">
                     <select id="storeVillage" name="storeVillage" required
@@ -400,6 +443,12 @@
                 peer-valid:top-3 peer-valid:text-xs">
                         Kelurahan
                     </label>
+
+                    @error('storeVillage')
+                        <div class="w-full">
+                            <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                        </div>
+                    @enderror
                 </div>
                 <div class="relative w-full mb-2">
                     <textarea id="storeAddress" name="storeAddress" rows="4"
@@ -420,6 +469,11 @@
                         Alamat Lengkap
                     </label>
                 </div>
+                @error('storeAddress')
+                    <div class="w-full">
+                        <small class="text-red-500 -mt-5 mb-2">{{ $message }}</small>
+                    </div>
+                @enderror
 
                 <button
                     type="submit"
