@@ -62,45 +62,60 @@
     </div>
 
     <div class="w-full rounded-lg mt-4 pb-5 mb-5 border-b border-gray-500/20">
-        <a href="#">
+        <a href="{{ route('member.order') }}">
             <div
-                class="w-full flex items-center px-1 font-medium text-xs h-8 hover:bg-gray-50 transition rounded-sm">
+                class="w-full flex items-center px-1 font-medium text-xs h-8
+                {{ Route::is('member.order')
+                    ? 'border-l-4 border-sky-500 text-sky-500 bg-gray-50 ps-2 transition rounded-sm'
+                    : 'hover:bg-gray-50' }}">
                 Daftar Pesanan
             </div>
         </a>
         <a href="{{ route('member.voucher') }}">
             <div
-                class="w-full flex items-center px-1 font-medium text-xs h-8 transition rounded-sm ps-2
+                class="w-full flex items-center px-1 font-medium text-xs h-8
                 {{ Route::is('member.voucher')
-                    ? 'border-l-4 border-sky-500 text-sky-500 bg-gray-50'
-                    : 'hover:bg-gray-50 border-l-4 border-transparent text-gray-600' }}">
+                    ? 'border-l-4 border-sky-500 text-sky-500 bg-gray-50 ps-2 transition rounded-sm'
+                    : 'hover:bg-gray-50' }}">
                 Voucher
             </div>
         </a>
 
-        <a href="#">
+        <a href="{{ route('member.review') }}">
             <div
-                class="w-full flex items-center px-1 font-medium text-xs h-8 hover:bg-gray-50 transition rounded-sm ">
+                class="w-full flex items-center px-1 font-medium text-xs h-8
+                {{ Route::is('member.review')
+                    ? 'border-l-4 border-sky-500 text-sky-500 bg-gray-50 ps-2 transition rounded-sm'
+                    : 'hover:bg-gray-50' }}">
                 Ulasan
             </div>
         </a>
     </div>
     <div class="w-full rounded-lg mt-4 pb-5 mb-5 border-b border-gray-500/20">
-        <a href="#">
+        <a href="{{ route('member.wishlist') }}">
             <div
-                class="w-full flex items-center px-1 font-medium text-xs h-8 hover:bg-gray-50 transition rounded-sm">
+                class="w-full flex items-center px-1 font-medium text-xs h-8
+                {{ Route::is('member.wishlist')
+                    ? 'border-l-4 border-sky-500 text-sky-500 bg-gray-50 ps-2 transition rounded-sm'
+                    : 'hover:bg-gray-50' }}">
                 Wishlist
             </div>
         </a>
-        <a href="#">
+        <a href="{{ route('member.address') }}">
             <div
-                class="w-full flex items-center px-1 font-medium text-xs h-8 hover:bg-gray-50 transition rounded-sm">
+                class="w-full flex items-center px-1 font-medium text-xs h-8
+                {{ Route::is('member.address')
+                    ? 'border-l-4 border-sky-500 text-sky-500 bg-gray-50 ps-2 transition rounded-sm'
+                    : 'hover:bg-gray-50' }}">
                 Alamat
             </div>
         </a>
-        <a href="#">
+        <a href="{{ route('member.seller-favorites') }}">
             <div
-                class="w-full flex items-center px-1 font-medium text-xs h-8 hover:bg-gray-50 transition rounded-sm ">
+                class="w-full flex items-center px-1 font-medium text-xs h-8
+                {{ Route::is('member.seller-favorites')
+                    ? 'border-l-4 border-sky-500 text-sky-500 bg-gray-50 ps-2 transition rounded-sm'
+                    : 'hover:bg-gray-50' }}">
                 Seller Favorit
             </div>
         </a>

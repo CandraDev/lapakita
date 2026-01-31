@@ -54,8 +54,23 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::prefix('member')->group(function () {
         Route::get('/voucher', function () {
-            return view('member.voucher');
+            return view('member.voucher.index');
         })->name('member.voucher');
+        Route::get('/order', function () {
+            return view('member.order.index');
+        })->name('member.order');
+        Route::get('/review', function () {
+            return view('member.review.index');
+        })->name('member.review');
+        Route::get('/wishlist', function () {
+            return view('member.wishlist.index');
+        })->name('member.wishlist');
+        Route::get('/address', function () {
+            return view('member.address.index');
+        })->name('member.address');
+        Route::get('/seller-favorites', function () {
+            return view('member.seller-favorites.index');
+        })->name('member.seller-favorites');
     });
 });
 

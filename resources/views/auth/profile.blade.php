@@ -216,7 +216,7 @@
                 </svg>
             </div>
         </a>
-        <a class="w-full bg-white h-13 flex items-center border-t border-gray-200">
+        <a href="{{ route('seller.register') }}" class="w-full bg-white h-13 flex items-center border-t border-gray-200">
             <div class="flex items-center justify-center w-14">
                 <svg viewBox="0 0 24 24" class="text-gray-400" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
                     id="store" class="icon glyph" fill="currentColor">
