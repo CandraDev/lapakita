@@ -1,4 +1,4 @@
-<sidebar class="w-2/10 bg-white p-4 shadow-lg rounded-lg hidden lg:inline-block">
+<sidebar class="w-2/10 bg-white p-4 rounded-lg shadow-[0_0_15px_rgba(0,0,0,0.1)] hidden lg:inline-block">
     <div class="flex">
         <div class="w-9 h-9 rounded-full bg-sky-100 flex-shrink-0 overflow-hidden flex items-center justify-center">
             @if (Auth::check() && Auth::user()->avatar)

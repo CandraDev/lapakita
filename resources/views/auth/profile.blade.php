@@ -27,10 +27,25 @@
 
         <div
             class="absolute -top-12 left-1/2 -translate-x-1/2
-                h-20 w-20 bg-sky-200 rounded-full
-                border-4 border-white flex items-center justify-center">
-            <span class="text-sky-600 text-sm">Lapakita</span>
+           h-20 w-20 bg-sky-200 rounded-full
+           border-4 border-white flex items-center justify-center overflow-hidden">
+
+            @if (Auth::check() && Auth::user()->avatar)
+                {{-- User avatar --}}
+                <img src="{{ Str::startsWith(Auth::user()->avatar, ['http://', 'https://'])
+                    ? Auth::user()->avatar
+                    : asset('storage/' . Auth::user()->avatar) }}"
+                    class="w-full h-full object-cover" alt="Avatar">
+            @else
+                {{-- Default: SVG profile --}}
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-600" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            @endif
         </div>
+
 
         <div class="text-center px-4 pb-1">
             @guest
@@ -38,8 +53,7 @@
                 <p class="text-sm text-gray-400 mb-4">Tidak punya akun? <a class="text-sky-600"
                         href={{ route('login') }}>Daftar</a></p>
             @else
-                <span class="font-semibold ">{{ Auth::user()->name }}</span><a
-                    href={{ route('auth.account') }}
+                <span class="font-semibold ">{{ Auth::user()->name }}</span><a href={{ route('auth.account') }}
                     class="text-xs font-bold ms-1 text-sky-600 align-top">Ubah <div
                         class="h-1.5 w-1.5 bg-red-500 rounded-full inline-block align-middle shadow"></div></a>
                 <span class="font-sm text-xs block text-sky-800 ">{{ Auth::user()->email }}</span></a>
@@ -135,7 +149,7 @@
         <div class="w-full bg-white h-30 -mt-9 mb-10 px-4 py-3">
             <div class="flex mb-4">
                 <div class="flex-1 ">Transaksi Belanja</div>
-                <div class="text-xs mt-2 text-gray-400">Lihat Semua
+                <div class="text-xs mt-2 text-gray-700">Lihat Semua
                     <svg class="inline-block w-3 h-3 text-gray-400" aria-hidden="true" type="image/svg+xml"
                         viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -197,8 +211,8 @@
     <div class="min-h-[70vh] -mt-7">
         <a class="w-full bg-white h-13 flex items-center">
             <div class="flex items-center justify-center w-14">
-                <svg width="24" height="24" class="text-gray-400" aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24"
-                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg width="24" height="24" class="text-gray-400" aria-hidden="true" type="image/svg+xml"
+                    viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12ZM11.3899 14.2798C10.8999 14.2798 10.5499 13.8298 10.6599 13.3598C10.8399 12.6298 11.2599 11.5998 12.2699 10.8398C12.9899 10.1998 13.1999 9.68983 13.1999 9.07983C13.1999 8.41983 12.8199 7.89983 11.9899 7.89983C11.2499 7.89983 10.8799 8.28983 10.6999 8.84983C10.5999 9.16983 10.3199 9.39983 9.97988 9.39983H9.05988C8.55988 9.39983 8.18988 8.91983 8.33988 8.44983C8.71988 7.21983 9.76988 5.99983 12.0299 6.00983C14.8599 6.01983 15.6899 7.83983 15.6899 9.17983C15.6899 10.2598 15.3399 10.9998 14.0899 12.1498C13.4899 12.5898 13.2499 13.2198 13.1599 13.6798C13.0899 14.0298 12.7899 14.2898 12.4199 14.2898H11.3799L11.3899 14.2798ZM11.8199 17.9997C12.5986 17.9997 13.2299 17.3684 13.2299 16.5897C13.2299 15.811 12.5986 15.1797 11.8199 15.1797C11.0412 15.1797 10.4099 15.811 10.4099 16.5897C10.4099 17.3684 11.0412 17.9997 11.8199 17.9997Z">
                     </path>
@@ -216,10 +230,11 @@
                 </svg>
             </div>
         </a>
-        <a href="{{ route('seller.register') }}" class="w-full bg-white h-13 flex items-center border-t border-gray-200">
+        <a href="{{ route('seller.register') }}"
+            class="w-full bg-white h-13 flex items-center border-t border-gray-200">
             <div class="flex items-center justify-center w-14">
-                <svg viewBox="0 0 24 24" class="text-gray-400" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                    id="store" class="icon glyph" fill="currentColor">
+                <svg viewBox="0 0 24 24" class="text-gray-400" width="24" height="24"
+                    xmlns="http://www.w3.org/2000/svg" id="store" class="icon glyph" fill="currentColor">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
