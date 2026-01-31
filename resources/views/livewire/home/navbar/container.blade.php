@@ -1,5 +1,5 @@
 <!-- MAIN NAV (Sticky) -->
-<div class="bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] z-40 sticky top-0"
+<div class="bg-sky-100 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] z-40 sticky top-0"
     style="background-image: url('{{ asset('gui/header.png') }}');">
     <div class="w-full p-2 md:h-auto lg:max-w-6xl lg:mx-auto flex items-center gap-2 lg:p-4 justify-between">
 
@@ -232,11 +232,11 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <div class="flex-1">
+                                <a href="{{ route('member.voucher');}}" class="flex-1">
                                     <div class="text-xs">Voucher <span
                                             class="text-sm font-medium  text-sky-500 ms-1">21</span>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                                 <div class="flex items-center justify-center w-10">

@@ -18,7 +18,7 @@
     </nav>
     <!-- MAIN NAV (Sticky) -->
 
-    <nav class="fixed top-0 right-0 left-0 bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] z-40  hidden lg:block"
+    <nav class="fixed top-0 right-0 left-0 bg-sky-100 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] z-40  hidden lg:block"
         style="background-image: url('{{ asset('gui/header.png') }}');">
             <div class="hidden lg:block bg-sky-100  relative z-100">
                 <div
@@ -461,5 +461,5 @@
                 </div>
             </div>
     </nav>
-    <div class="w-full bg-gray-500 h-14 lg:h-35 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]"></div>
+    <div class="w-full bg-gray-500 h-14 lg:h-30 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]"></div>
 </header>

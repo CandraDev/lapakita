@@ -51,12 +51,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/seller/register', [SellerController::class, 'showRegister'])->name('seller.register');
     Route::post('/seller/register/information', [SellerController::class, 'registerStepOne'])->name('seller.register.information');
     Route::post('/seller/register/credentials', [SellerController::class, 'registerStepTwo'])->name('seller.register.credentials');
+
+    Route::prefix('member')->group(function () {
+        Route::get('/voucher', function () {
+            return view('member.voucher');
+        })->name('member.voucher');
+    });
 });
 
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('auth.logout');
 Route::get('/profile', [AuthController::class, 'showProfile'])->name('auth.profile');
 
-Route::get('/member/voucher', function () {
-    return view('member.voucher');
-})->name('home');
