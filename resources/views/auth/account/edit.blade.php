@@ -24,7 +24,7 @@
     <div class="lg:max-w-6xl lg:mx-auto">
 
         <div class="lg:flex">
-            <div class="relative -top-25 px-6 lg:px-0 lg:-top-15 lg:max-w-60">
+            <div class="relative -top-25 px-6 lg:px-0 lg:-top-15 lg:max-w-2/10">
                 <h1 class="font-semibold text-xl lg:text-2xl lg:mb-2">Profil</h1>
                 <p class="text-xs text-gray-500 lg:text-sm">
                     Detail profil dan pengaturan untuk akun Lapakita E-Commerce
@@ -35,7 +35,7 @@
                 <form method="POST">
                     @csrf
 
-                    <div class="relative -top-12 w-[90%] mx-auto bg-white shadow rounded-lg pt-12 ">
+                    <div class="relative -top-12 w-[90%] lg:max-w-6/10 mx-auto bg-white shadow rounded-lg pt-12 ">
                         <!-- Avatar Upload -->
                         <label
                             class="absolute -top-10 left-1/2 -translate-x-1/2
@@ -67,9 +67,9 @@
                             <!-- Nama Lengkap (readonly, label tetap naik) -->
                             <div class="grid  gap-3 mb-4 items-center">
                                 <div class="relative">
-                                    <input type="text" value="{{ Auth::user()->name }}" readonly
-                                        class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 pt-5 pb-2 text-sm cursor-not-allowed">
-                                    <label class="absolute left-3 top-2 text-xs text-gray-500">
+                                    <input type="text" value="{{ Auth::user()->name }}" 
+                                        class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 pt-5 pb-2 text-sm ">
+                                    <label class="absolute left-3 top-1.5 text-xs text-gray-500">
                                         Nama Lengkap
                                     </label>
                                 </div>

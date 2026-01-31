@@ -23,22 +23,22 @@
     </div>
     <div class="hidden w-full h-55 bg-sky-50 pt-15 px-6 lg:block">
     </div>
-    <div class="lg:max-w-6xl lg:mx-auto">
+    <div class="lg:max-w-5xl lg:mx-auto">
 
         <div class="lg:flex">
-            <div class="relative -top-25 px-6 lg:px-0 lg:-top-15 lg:max-w-60">
+            <div class="relative -top-25 px-6 lg:px-0 lg:-top-15 lg:max-w-2/10">
                 <h1 class="font-semibold text-xl lg:text-2xl lg:mb-2">Pusat Akun</h1>
                 <p class="text-xs text-gray-500 lg:text-sm">
                     Detail profil dan pengaturan untuk akun Lapakita E-Commerce
                 </p>
             </div>
-            <div class="flex-1">
+            <div class="flex-1 w-[90%] lg:max-w-6/10 mx-auto">
 
-                <div class="relative -top-12 w-[90%] mx-auto bg-white shadow rounded-lg pt-12 ">
+                <div class="relative -top-12  mx-auto bg-white shadow rounded-lg pt-12 ">
                     <div
                         class="absolute -top-10 left-15 -translate-x-1/2
-                h-20 w-20 bg-sky-200 rounded-full
-                border-4 border-white flex items-center justify-center">
+                        h-20 w-20 bg-sky-200 rounded-full
+                        border-4 border-white flex items-center justify-center">
                         <span class="text-sky-600 text-sm">Lapakita</span>
                     </div>
 
@@ -47,7 +47,7 @@
                             <div class="font-bold flex-1">
                                 Profil
                             </div>
-                            <a href={{ route('auth.account.edit') }} class="text-sm pt-1 font-bold text-sky-500">
+                            <a href={{ route('auth.account.edit') }} class="text-sm pt-1 font-bold text-sky-500 pe-3 lg:pe-0">
                                 Edit
                             </a>
                         </div>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="mx-7 relative -top-4">
+                <div class="w-full relative -top-4">
                     <h1 class="font-semibold mb-2">Pengaturan</h1>
                     <div class="w-full bg-white rounded-xl">
                         <div class="h-12 flex items-center ">
