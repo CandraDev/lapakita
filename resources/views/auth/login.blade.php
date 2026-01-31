@@ -126,7 +126,7 @@
                 <div class="w-[90%] lg:w-[50%] mx-7 mt-10 ">
                     <h1 class="font-light mb-2 ms-1">Atau masuk dengan</h1>
                     <div class="w-full bg-white shadow rounded-xl">
-                        <div class="h-12 flex items-center ">
+                        <a href={{ route('auth.google') }} class="h-12 flex items-center ">
                             <div class="flex items-center justify-center px-4">
                                 <svg viewBox="-3 0 262 262" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
                                     preserveAspectRatio="xMidYMid" fill="#000000">
@@ -157,7 +157,7 @@
                                     </path>
                                 </svg>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,21 @@
         <div class="grid grid-cols-2 items-center w-full p-3">
             <!-- User Info -->
             <div class="flex items-center">
-                <div class="w-10 h-10 rounded-full bg-sky-100 flex-shrink-0"></div>
+                <div
+                    class="w-10 h-10 rounded-full bg-sky-100 flex-shrink-0 overflow-hidden flex items-center justify-center">
+                    @if (Auth::check() && Auth::user()->avatar)
+                        <img src="{{ Str::startsWith(Auth::user()->avatar, ['http://', 'https://']) ? Auth::user()->avatar : asset('storage/' . Auth::user()->avatar) }}"
+                            class="w-full h-full object-cover" alt="Avatar" />
+                    @else
+                        {{-- SVG icon user --}}
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-sky-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    @endif
+                </div>
+
 
                 <div class="ms-3 leading-tight">
                     <div class="flex items-center gap-1  w-60">
@@ -43,8 +57,7 @@
 
                 <form method="POST" action="{{ route('auth.logout') }}">
                     @csrf
-                    <button type="submit"
-                        class="text-sm font-semibold text-red-600 hover:text-red-700 cursor-pointer">
+                    <button type="submit" class="text-sm font-semibold text-red-600 hover:text-red-700 cursor-pointer">
                         Keluar
                     </button>
                 </form>
@@ -74,10 +87,9 @@
             </div>
             <div class="h-10 rounded border border-slate-400 flex items-center hover:bg-gray-100">
                 <div class="flex items-center justify-center w-10">
-                    <svg fill="currentColor" class="text-gray-400 w-5 h-5 inline-block mr-2"
-                        height="200px" width="200px" version="1.1" id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 491.52 491.52" xml:space="preserve">
+                    <svg fill="currentColor" class="text-gray-400 w-5 h-5 inline-block mr-2" height="200px"
+                        width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 491.52 491.52" xml:space="preserve">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -98,27 +110,26 @@
                     </div>
                 </div>
             </div>
-            <a href="{{ route('member.voucher') }}" class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+            <a href="{{ route('member.voucher') }}"
+                class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                 <div class="flex items-center justify-center w-10">
-                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true"
-                        type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true" type="image/svg+xml"
+                        viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M2 10V8C2 6.62 3.12 5.5 4.5 5.5H6V18.5H4.5C3.12 18.5 2 17.38 2 16V14C3.1 14 4 13.1 4 12C4 10.9 3.1 10 2 10ZM7 5.5H19.5C20.88 5.5 22 6.62 22 8V16C22 17.38 20.88 18.5 19.5 18.5H7V5.5ZM10 15.25H15C15.55 15.25 16 14.8 16 14.25C16 13.7 15.55 13.25 15 13.25H10C9.45 13.25 9 13.7 9 14.25C9 14.8 9.45 15.25 10 15.25ZM10 10.75H18C18.55 10.75 19 10.3 19 9.75C19 9.2 18.55 8.75 18 8.75H10C9.45 8.75 9 9.2 9 9.75C9 10.3 9.45 10.75 10 10.75Z">
                         </path>
                     </svg>
                 </div>
                 <div class="flex-1">
-                    <div class="text-xs">Voucher <span
-                            class="text-sm font-medium  text-sky-500 ms-1">21</span>
+                    <div class="text-xs">Voucher <span class="text-sm font-medium  text-sky-500 ms-1">21</span>
                     </div>
                 </div>
             </a>
-            <a href="{{ route('member.review') }}" class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+            <a href="{{ route('member.review') }}"
+                class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                 <div class="flex items-center justify-center w-10">
-                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true"
-                        type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true" type="image/svg+xml"
+                        viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M19.5 4H4.5C3.12 4 2 5.11964 2 6.4992V15.4963C2 16.8759 3.12 17.9955 4.5 17.9955H12.6L11.68 20.2948C11.33 21.5344 12.77 22.5041 13.78 21.7143L17.89 18.0055H19.5C20.88 18.0055 22 16.8859 22 15.5063V6.4992C22 5.11964 20.88 4 19.5 4ZM9.99 14.9365C9.61 15.1364 9.16 14.8165 9.23 14.3867L9.61 12.1474L7.98 10.5579C7.67 10.258 7.84 9.72816 8.27 9.66818L10.52 9.33828L11.53 7.29894C11.72 6.90907 12.28 6.90907 12.47 7.29894L13.48 9.33828L15.73 9.66818C16.16 9.72816 16.33 10.258 16.02 10.5579L14.39 12.1474L14.77 14.3867C14.84 14.8165 14.4 15.1364 14.01 14.9365L12 13.8768L9.99 14.9365Z">
                         </path>
@@ -129,10 +140,11 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ route('member.order') }}" class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+            <a href="{{ route('member.order') }}"
+                class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                 <div class="flex items-center justify-center w-10">
-                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true"
-                        aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
+                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true" aria-hidden="true"
+                        type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M19.5 2H4.5C3.12 2 2 3.12 2 4.5V7H22V4.5C22 3.12 20.88 2 19.5 2ZM21 8H15V9.25C15 9.94 14.44 10.5 13.75 10.5H10.25C9.56 10.5 9 9.94 9 9.25V8H3V18.6C3 19.93 4.08 21 5.4 21H14.03C14.86 21.62 15.88 22 17 22C19.76 22 22 19.76 22 17C22 15.88 21.62 14.86 21 14.03V8ZM17 21C14.79 21 13 19.21 13 17C13 14.79 14.79 13 17 13C19.21 13 21 14.79 21 17C21 19.21 19.21 21 17 21ZM18.5501 18.97C18.6301 19 18.7001 19.02 18.7801 19.02V19.01C18.9701 19.01 19.1401 18.91 19.2301 18.74C19.3501 18.5 19.2601 18.19 19.0101 18.07L17.3101 17.2V14.51C17.3101 14.23 17.0901 14.01 16.8101 14.01C16.5301 14.01 16.3101 14.23 16.3101 14.51V17.51C16.3101 17.7 16.4101 17.88 16.5801 17.96L18.5501 18.97Z">
@@ -144,10 +156,11 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ route('member.wishlist') }}" class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+            <a href="{{ route('member.wishlist') }}"
+                class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                 <div class="flex items-center justify-center w-10">
-                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true"
-                        aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
+                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true" aria-hidden="true"
+                        type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M16.46 3C14.02 3 12.97 4.05 12 6C11.03 4.05 9.98 3 7.54 3C4.02 3 2 6.03 2 9.49C2 14.99 10.52 21 12 21C13.48 21 22 14.96 22 9.49C22 6.05 20.02 3 16.46 3Z">
@@ -159,10 +172,11 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ route('member.address')}}" class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+            <a href="{{ route('member.address') }}"
+                class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                 <div class="flex items-center justify-center w-10">
-                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true"
-                        aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
+                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true" aria-hidden="true"
+                        type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M19 8.5V2.05C20.14 2.28 21 3.29 21 4.5V19.5C21 20.88 19.88 22 18.5 22H7.5C6.12 22 5 20.88 5 19.5V18H4.25C3.56 18 3 17.44 3 16.75C3 16.06 3.56 15.5 4.25 15.5H5V8.5H4.25C3.56 8.5 3 7.94 3 7.25C3 6.56 3.56 6 4.25 6H5V4.5C5 3.12 6.12 2 7.5 2H12V8.5C12 9.33 12.67 10 13.5 10C13.9 10 14.28 9.84 14.56 9.56L15.5 8.62L16.44 9.56C16.73 9.84 17.1 10 17.5 10C18.33 10 19 9.33 19 8.5ZM8 19C8 19.55 8.45 20 9 20H17C17.55 20 18 19.55 18 19C18 18.45 17.55 18 17 18H9C8.45 18 8 18.45 8 19ZM15.5 7.2L17.15 8.85C17.46 9.17 18 8.95 18 8.5V2H13V8.5C13 8.94 13.54 9.16 13.85 8.85L15.5 7.2Z">
@@ -174,10 +188,11 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ route('seller.register') }}"  class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+            <a href="{{ route('seller.register') }}"
+                class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                 <div class="flex items-center justify-center w-10">
-                    <svg class="text-sky-600" width="24" height="24" aria-hidden="true"
-                        aria-hidden="true" type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
+                    <svg class="text-sky-600" width="24" height="24" aria-hidden="true" aria-hidden="true"
+                        type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M19 8.5V2.05C20.14 2.28 21 3.29 21 4.5V19.5C21 20.88 19.88 22 18.5 22H7.5C6.12 22 5 20.88 5 19.5V18H4.25C3.56 18 3 17.44 3 16.75C3 16.06 3.56 15.5 4.25 15.5H5V8.5H4.25C3.56 8.5 3 7.94 3 7.25C3 6.56 3.56 6 4.25 6H5V4.5C5 3.12 6.12 2 7.5 2H12V8.5C12 9.33 12.67 10 13.5 10C13.9 10 14.28 9.84 14.56 9.56L15.5 8.62L16.44 9.56C16.73 9.84 17.1 10 17.5 10C18.33 10 19 9.33 19 8.5ZM8 19C8 19.55 8.45 20 9 20H17C17.55 20 18 19.55 18 19C18 18.45 17.55 18 17 18H9C8.45 18 8 18.45 8 19ZM15.5 7.2L17.15 8.85C17.46 9.17 18 8.95 18 8.5V2H13V8.5C13 8.94 13.54 9.16 13.85 8.85L15.5 7.2Z">
@@ -186,7 +201,8 @@
                 </div>
                 <div class="flex-1">
                     <div class="text-sm text-sky-600">Menjadi Penjual
-                        <span class="inline-block w-1 h-1 rounded-full bg-sky-500 shadow shadow-sky-500 align-middle ms-1"></span>
+                        <span
+                            class="inline-block w-1 h-1 rounded-full bg-sky-500 shadow shadow-sky-500 align-middle ms-1"></span>
                     </div>
                 </div>
             </a>

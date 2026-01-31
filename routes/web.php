@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
@@ -42,6 +43,7 @@ Route::middleware('auth')->group(function () {
         return back()->with('message', 'Link verifikasi sudah dikirim ulang.');
     })->middleware('throttle:6,1')->name('verification.send');
 });
+
 Route::middleware(['auth', 'verified'])->group(function () {
     // Account routes
     Route::get('/account', [AuthController::class, 'showAccount'])->name('auth.account');
@@ -74,6 +76,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     });
 });
 
+
+Route::get('/auth/google', [AuthController::class, 'redirectGoogle'])->name('auth.google');
+Route::get('/auth/google/callback', [AuthController::class, 'callback']);
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('auth.logout');
 Route::get('/profile', [AuthController::class, 'showProfile'])->name('auth.profile');

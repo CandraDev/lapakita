@@ -32,22 +32,38 @@
                     Detail profil dan pengaturan untuk akun Lapakita E-Commerce
                 </p>
             </div>
-            <div class="flex-1 w-[90%] lg:max-w-6/10 mx-auto">
+            <div class="flex-1 w-[90%] lg:max-w-5/10 mx-auto">
 
                 <div class="relative -top-12  mx-auto bg-white shadow rounded-lg pt-12 ">
                     <div
                         class="absolute -top-10 left-15 -translate-x-1/2
-                        h-20 w-20 bg-sky-200 rounded-full
-                        border-4 border-white flex items-center justify-center">
-                        <span class="text-sky-600 text-sm">Lapakita</span>
+                            h-18 w-18 bg-sky-200 rounded-full
+                            border-4 border-white flex items-center justify-center overflow-hidden">
+
+                        @if (Auth::check() && Auth::user()->avatar)
+                            <img src="{{ Str::startsWith(Auth::user()->avatar, ['http://', 'https://'])
+                                ? Auth::user()->avatar
+                                : asset('storage/' . Auth::user()->avatar) }}"
+                                class="w-full h-full object-cover" alt="Avatar">
+                        @else
+                            {{-- SVG fallback user --}}
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-sky-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        @endif
+
                     </div>
+
 
                     <div class="px-5 pb-1">
                         <div class="flex justify-around mb-4">
                             <div class="font-bold flex-1">
                                 Profil
                             </div>
-                            <a href={{ route('auth.account.edit') }} class="text-sm pt-1 font-bold text-sky-500 pe-3 lg:pe-0">
+                            <a href={{ route('auth.account.edit') }}
+                                class="text-sm pt-1 font-bold text-sky-500 pe-3 lg:pe-0">
                                 Edit
                             </a>
                         </div>

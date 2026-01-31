@@ -35,39 +35,58 @@
                 <form method="POST">
                     @csrf
 
-                    <div class="relative -top-12 w-[90%] lg:max-w-6/10 mx-auto bg-white shadow rounded-lg pt-12 ">
+                    <div class="relative -top-12 w-[90%] lg:max-w-5/10 mx-auto bg-white shadow rounded-lg pt-12">
+
                         <!-- Avatar Upload -->
                         <label
-                            class="absolute -top-10 left-1/2 -translate-x-1/2
-           h-20 w-20 bg-sky-200 rounded-full
-           border-4 border-white
-           flex items-center justify-center
-           cursor-pointer hover:bg-sky-300 transition">
+                            class="relative -top-10 left-1/2 -translate-x-1/2
+               h-20 w-20 bg-sky-200 rounded-full
+               border-4 border-white
+               flex items-center justify-center
+               cursor-pointer hover:bg-sky-300 transition overflow-visible">
 
-                            <!-- Icon Camera (SVG) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <!-- Avatar image / preview -->
+                            <img id="avatarPreview"
+                                src="{{ Auth::check() && Auth::user()->avatar ? (Str::startsWith(Auth::user()->avatar, ['http://', 'https://']) ? Auth::user()->avatar : asset('storage/' . Auth::user()->avatar)) : '' }}"
+                                class="w-full h-full object-cover rounded-full {{ Auth::check() && Auth::user()->avatar ? 'block' : 'hidden' }}" alt="Avatar">
+
+                            <!-- Default camera icon -->
+                            <svg id="defaultCameraIcon" xmlns="http://www.w3.org/2000/svg"
+                                class="absolute inset-0 m-auto h-8 w-8 text-sky-600 z-10" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                @if (Auth::check() && Auth::user()->avatar) style="display:none;" @endif>
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 7h3l2-3h8l2 3h3v11a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
+                                <circle cx="12" cy="13" r="3" />
+                            </svg>
+
+                            <!-- Camera overlay icon (bottom right) -->
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="absolute bottom-0 right-0 h-6 w-6 text-white bg-sky-600 bg-opacity-70 rounded-full p-1 z-20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                @if (!(Auth::check() && Auth::user()->avatar)) style="display:none;" @endif>
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3 7h3l2-3h8l2 3h3v11a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
                                 <circle cx="12" cy="13" r="3" />
                             </svg>
 
                             <!-- Hidden File Input -->
-                            <input type="file" name="avatar" accept="image/*" class="hidden" />
+                            <input type="file" name="avatar" accept="image/*" class="hidden" id="avatarInput" />
                         </label>
 
 
+
                         <div class="px-5 pb-5">
-                            <div class="flex justify-between mb-4">
+                            <div class="flex justify-between mb-2">
                                 <div class="font-bold">
                                     Edit Info Pemilik Akun
                                 </div>
                             </div>
 
                             <!-- Nama Lengkap (readonly, label tetap naik) -->
-                            <div class="grid  gap-3 mb-4 items-center">
+                            <div class="grid  gap-3 mb-2 items-center">
                                 <div class="relative">
-                                    <input type="text" value="{{ Auth::user()->name }}" 
+                                    <input type="text" value="{{ Auth::user()->name }}"
                                         class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 pt-5 pb-2 text-sm ">
                                     <label class="absolute left-3 top-1.5 text-xs text-gray-500">
                                         Nama Lengkap
@@ -76,7 +95,7 @@
                             </div>
 
                             <!-- Nomor HP (floating label aktif) -->
-                            <div class="grid  gap-3 mb-4 items-center">
+                            <div class="grid  gap-3 mb-2 items-center">
 
                                 <div class="relative">
                                     <input type="text" name="phone" id="phone"
@@ -95,7 +114,7 @@
                             </div>
 
                             <!-- Email (readonly) -->
-                            <div class="grid  gap-3 mb-4 items-center">
+                            <div class="grid  gap-3 mb-2 items-center">
                                 <div class="relative">
                                     <input type="email" value="{{ Auth::user()->email }}" readonly
                                         class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 pt-5 pb-2 text-sm cursor-not-allowed">
@@ -158,6 +177,28 @@
 
     </div>
     </div>
+
+    <script>
+        const avatarInput = document.getElementById('avatarInput');
+        const avatarPreview = document.getElementById('avatarPreview');
+        const defaultIcon = document.getElementById('defaultCameraIcon');
+        const overlayIcon = document.querySelector('label svg:nth-of-type(2)'); // camera overlay
+
+        avatarInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                avatarPreview.src = e.target.result;
+                avatarPreview.style.display = 'block';
+                defaultIcon.style.display = 'none';
+                if (overlayIcon) overlayIcon.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        });
+    </script>
+
 </body>
 
 </html>

@@ -1,7 +1,17 @@
 <sidebar class="w-2/10 bg-white p-4 shadow-lg rounded-lg hidden lg:inline-block">
     <div class="flex">
-        <div class="w-9 h-9 rounded-full bg-gray-400 shrink-0">
-
+        <div class="w-9 h-9 rounded-full bg-sky-100 flex-shrink-0 overflow-hidden flex items-center justify-center">
+            @if (Auth::check() && Auth::user()->avatar)
+                <img src="{{ Str::startsWith(Auth::user()->avatar, ['http://', 'https://']) ? Auth::user()->avatar : asset('storage/' . Auth::user()->avatar) }}"
+                    class="w-full h-full object-cover" alt="Avatar" />
+            @else
+                {{-- SVG icon user --}}
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-sky-600" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            @endif
         </div>
         <div class="flex flex-col justify-center hover:bg-gray-50 transition hover:rounded-lg w-full ps-2">
             <div class="flex items-center gap-2 max-w-full">
@@ -37,8 +47,8 @@
         </div>
         <div class="h-7 rounded border border-slate-200  flex items-center hover:bg-gray-50 transition">
             <div class="flex items-center justify-center w-7">
-                <svg fill="currentColor" class="text-gray-400 w-3 h-3 inline-block" height="200px"
-                    width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <svg fill="currentColor" class="text-gray-400 w-3 h-3 inline-block" height="200px" width="200px"
+                    version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 491.52 491.52" xml:space="preserve">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
