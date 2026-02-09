@@ -188,8 +188,14 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ route('seller.register') }}"
+            @php
+                $user = auth()->user();
+                $hasStore = $user && $user->store()->exists();
+            @endphp
+
+            <a href="{{ $hasStore ? route('seller.index') : route('seller.register.index') }}"
                 class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+
                 <div class="flex items-center justify-center w-10">
                     <svg class="text-sky-600" width="24" height="24" aria-hidden="true" aria-hidden="true"
                         type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
@@ -199,13 +205,20 @@
                         </path>
                     </svg>
                 </div>
+
                 <div class="flex-1">
-                    <div class="text-sm text-sky-600">Menjadi Penjual
-                        <span
-                            class="inline-block w-1 h-1 rounded-full bg-sky-500 shadow shadow-sky-500 align-middle ms-1"></span>
+                    <div class="text-sm text-sky-600">
+                        {{ $hasStore ? 'Toko Saya' : 'Menjadi Penjual' }}
+
+                        @unless($hasStore)
+                            <span
+                                class="inline-block w-1 h-1 rounded-full bg-sky-500 shadow shadow-sky-500 align-middle ms-1">
+                            </span>
+                        @endunless
                     </div>
                 </div>
             </a>
+
         </div>
     </div>
 </div>

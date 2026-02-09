@@ -230,7 +230,7 @@
                 </svg>
             </div>
         </a>
-        <a href="{{ route('seller.register') }}"
+        <a href="{{ route('seller.register.index') }}"
             class="w-full bg-white h-13 flex items-center border-t border-gray-200">
             <div class="flex items-center justify-center w-14">
                 <svg viewBox="0 0 24 24" class="text-gray-400" width="24" height="24"

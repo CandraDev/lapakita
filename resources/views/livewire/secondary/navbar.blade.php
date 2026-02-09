@@ -21,7 +21,7 @@
     <nav class="fixed top-0 right-0 left-0 bg-sky-100 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.01)] z-40  hidden lg:block"
         style="background-image: url('{{ asset('gui/header.png') }}');">
             @livewire('home.top-bar')
-            <div class="w-full p-2 md:h-auto lg:max-w-6xl lg:mx-auto flex items-center gap-2 lg:p-4 justify-between">
+            <div class="w-full p-2 md:h-auto lg:max-w-7xl lg:mx-auto flex items-center gap-2 lg:p-4 justify-between">
 
                 <!-- Logo -->
                 <a href="{{ route('home') }}" class="hidden lg:flex mx-2">
@@ -141,7 +141,7 @@
 
             <!-- Kategori dan alamat -->
             <div
-                class="hidden w-full p-2 pb-4 md:h-7 lg:max-w-6xl lg:mx-auto  items-center gap-2  justify-between lg:flex mx-3 mb-1 relative z-20">
+                class="hidden w-full p-2 pb-4 md:h-7 lg:max-w-7xl lg:mx-auto  items-center gap-2  justify-between lg:flex mx-3 mb-1 relative z-20">
 
                 <div class="relative group">
 

@@ -50,10 +50,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/account', [AuthController::class, 'showAccount'])->name('auth.account');
     Route::get('/account/edit', [AuthController::class, 'showAccountEdit'])->name('auth.account.edit');
 
-    // Seller register routes
-    Route::get('/seller/register', [SellerController::class, 'showRegister'])->name('seller.register');
-    Route::post('/seller/register/information', [SellerController::class, 'registerStepOne'])->name('seller.register.information');
-    Route::post('/seller/register/credentials', [SellerController::class, 'registerStepTwo'])->name('seller.register.credentials');
 
     Route::prefix('member')->name('member.')->group(function () {
 
@@ -71,6 +67,20 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/wishlist', fn () => view('member.wishlist.index'))->name('wishlist');
         Route::get('/address', fn () => view('member.address.index'))->name('address');
         Route::get('/seller-favorites', fn () => view('member.seller-favorites.index'))->name('seller-favorites');
+    });
+
+    Route::prefix('seller')->name('seller.')->group(function () {
+        Route::middleware(['store.exists'])->group(function () {
+            Route::get('/', [SellerController::class, 'showDashboard'])->name('index');
+            // nanti tambahkan route dashboard lain
+        });
+
+        Route::prefix('register')->name('register.')->group(function () {
+            Route::get('/', [SellerController::class, 'showRegister'])->name('index');
+            Route::post('/information', [SellerController::class, 'registerStepOne'])->name('information');
+            Route::post('/credentials', [SellerController::class, 'registerStepTwo'])->name('credentials');
+        });
+
     });
 
 });

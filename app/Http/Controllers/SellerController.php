@@ -19,6 +19,11 @@ use App\Models\Village;
 
 class SellerController extends Controller
 {
+
+    public function showDashboard() {
+        return view('seller.dashboard.index');
+    }
+
     public function showRegister() {
         $user = auth()->user();
 
@@ -194,7 +199,7 @@ class SellerController extends Controller
         });
 
 
-        return redirect()->route('seller.register');
+        return redirect()->route('seller.register.index');
     }
 
     public function registerStepTwo(Request $request) {

@@ -17,7 +17,7 @@
 
 
 <body class="bg-sky-50 ">
-    @livewire('secondary.seller-navbar')
+    @livewire('secondary.seller-navbar', [ 'showActions' => false, 'title' => 'Pendaftaran Akun Penjual'])
     <main class="lg:max-w-4xl lg:mx-auto ">
         <section class="w-full h-34 bg-sky-100 flex">
             <div class="w-40 flex items-center justify-center ps-6">

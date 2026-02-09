@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-sky-50 ">
-    @livewire('secondary.seller-navbar')
+    @livewire('secondary.seller-navbar', [ 'showActions' => false, 'title' => 'Pendaftaran Akun Penjual'])
     <main>
         <form action="{{ route('seller.register.information') }}" method="POST">
             @csrf
@@ -319,7 +319,7 @@
                 });
         });
     </script>
-    
+
     <script>
         document.getElementById('storeDistrict').addEventListener('change', function() {
             const districtId = this.value;
