@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SellerController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -58,9 +59,16 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/voucher', function () {
             return view('member.voucher.index');
         })->name('member.voucher');
-        Route::get('/order', function () {
-            return view('member.order.index');
-        })->name('member.order');
+        Route::get('/order', [OrderController::class, 'showIndex'])->name('member.order');
+        Route::get('/order/waiting', [OrderController::class, 'showWaiting'])->name('member.order.waiting');
+        Route::get('/order/process', [OrderController::class, 'showProcess'])->name('member.order.process');
+        Route::get('/order/shipping', [OrderController::class, 'showShipping'])->name('member.order.shipping');
+        Route::get('/order/received', [OrderController::class, 'showReceived'])->name('member.order.received');
+        Route::get('/order/done', [OrderController::class, 'showDone'])->name('member.order.done');
+
+
+
+
         Route::get('/review', function () {
             return view('member.review.index');
         })->name('member.review');

@@ -75,7 +75,7 @@
         <a href="{{ route('member.order') }}">
             <div
                 class="w-full flex items-center px-1 font-medium text-xs h-8
-                {{ Route::is('member.order')
+                {{ Route::is('member.order*')
                     ? 'border-l-4 border-sky-500 text-sky-500 bg-gray-50 ps-2 transition rounded-sm'
                     : 'hover:bg-gray-50' }}">
                 Daftar Pesanan
