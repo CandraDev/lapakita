@@ -72,7 +72,7 @@
     </div>
 
     <div class="w-full rounded-lg mt-4 pb-5 mb-5 border-b border-gray-500/20">
-        <a href="{{ route('member.order') }}">
+        <a href="{{ route('member.order.index') }}">
             <div
                 class="w-full flex items-center px-1 font-medium text-xs h-8
                 {{ Route::is('member.order*')

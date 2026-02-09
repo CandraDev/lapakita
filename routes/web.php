@@ -55,33 +55,24 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/seller/register/information', [SellerController::class, 'registerStepOne'])->name('seller.register.information');
     Route::post('/seller/register/credentials', [SellerController::class, 'registerStepTwo'])->name('seller.register.credentials');
 
-    Route::prefix('member')->group(function () {
-        Route::get('/voucher', function () {
-            return view('member.voucher.index');
-        })->name('member.voucher');
-        Route::get('/order', [OrderController::class, 'showIndex'])->name('member.order');
-        Route::get('/order/waiting', [OrderController::class, 'showWaiting'])->name('member.order.waiting');
-        Route::get('/order/process', [OrderController::class, 'showProcess'])->name('member.order.process');
-        Route::get('/order/shipping', [OrderController::class, 'showShipping'])->name('member.order.shipping');
-        Route::get('/order/received', [OrderController::class, 'showReceived'])->name('member.order.received');
-        Route::get('/order/done', [OrderController::class, 'showDone'])->name('member.order.done');
+    Route::prefix('member')->name('member.')->group(function () {
 
+        Route::prefix('order')->name('order.')->group(function () {
+            Route::get('/', [OrderController::class, 'showIndex'])->name('index');
+            Route::get('/waiting', [OrderController::class, 'showWaiting'])->name('waiting');
+            Route::get('/process', [OrderController::class, 'showProcess'])->name('process');
+            Route::get('/shipping', [OrderController::class, 'showShipping'])->name('shipping');
+            Route::get('/received', [OrderController::class, 'showReceived'])->name('received');
+            Route::get('/done', [OrderController::class, 'showDone'])->name('done');
+        });
 
-
-
-        Route::get('/review', function () {
-            return view('member.review.index');
-        })->name('member.review');
-        Route::get('/wishlist', function () {
-            return view('member.wishlist.index');
-        })->name('member.wishlist');
-        Route::get('/address', function () {
-            return view('member.address.index');
-        })->name('member.address');
-        Route::get('/seller-favorites', function () {
-            return view('member.seller-favorites.index');
-        })->name('member.seller-favorites');
+        Route::get('/voucher', fn () => view('member.voucher.index'))->name('voucher');
+        Route::get('/review', fn () => view('member.review.index'))->name('review');
+        Route::get('/wishlist', fn () => view('member.wishlist.index'))->name('wishlist');
+        Route::get('/address', fn () => view('member.address.index'))->name('address');
+        Route::get('/seller-favorites', fn () => view('member.seller-favorites.index'))->name('seller-favorites');
     });
+
 });
 
 

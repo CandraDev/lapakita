@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <a href="{{ route('member.order') }}"
+            <a href="{{ route('member.order.index') }}"
                 class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                 <div class="flex items-center justify-center w-10">
                     <svg class="text-gray-400" width="24" height="24" aria-hidden="true" aria-hidden="true"

@@ -12,7 +12,7 @@
         'tabs' => [
             [
                 'label' => 'Semua Pesanan',
-                'route' => 'member.order',
+                'route' => 'member.order.index',
             ],
             [
                 'label' => 'Menunggu Konfirmasi',
