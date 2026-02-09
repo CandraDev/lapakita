@@ -110,6 +110,22 @@
                     </div>
                 </div>
             </div>
+            <a href="{{ route('member.order') }}"
+                class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
+                <div class="flex items-center justify-center w-10">
+                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true" aria-hidden="true"
+                        type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.5 2H4.5C3.12 2 2 3.12 2 4.5V7H22V4.5C22 3.12 20.88 2 19.5 2ZM21 8H15V9.25C15 9.94 14.44 10.5 13.75 10.5H10.25C9.56 10.5 9 9.94 9 9.25V8H3V18.6C3 19.93 4.08 21 5.4 21H14.03C14.86 21.62 15.88 22 17 22C19.76 22 22 19.76 22 17C22 15.88 21.62 14.86 21 14.03V8ZM17 21C14.79 21 13 19.21 13 17C13 14.79 14.79 13 17 13C19.21 13 21 14.79 21 17C21 19.21 19.21 21 17 21ZM18.5501 18.97C18.6301 19 18.7001 19.02 18.7801 19.02V19.01C18.9701 19.01 19.1401 18.91 19.2301 18.74C19.3501 18.5 19.2601 18.19 19.0101 18.07L17.3101 17.2V14.51C17.3101 14.23 17.0901 14.01 16.8101 14.01C16.5301 14.01 16.3101 14.23 16.3101 14.51V17.51C16.3101 17.7 16.4101 17.88 16.5801 17.96L18.5501 18.97Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="flex-1">
+                    <div class="text-xs">Daftar Pesanan
+                    </div>
+                </div>
+            </a>
             <a href="{{ route('member.voucher') }}"
                 class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
                 <div class="flex items-center justify-center w-10">
@@ -137,22 +153,6 @@
                 </div>
                 <div class="flex-1">
                     <div class="text-xs">Ulasan
-                    </div>
-                </div>
-            </a>
-            <a href="{{ route('member.order') }}"
-                class="h-8 rounded flex items-center hover:bg-gray-100 hover:rounded-xl">
-                <div class="flex items-center justify-center w-10">
-                    <svg class="text-gray-400" width="24" height="24" aria-hidden="true" aria-hidden="true"
-                        type="image/svg+xml" viewBox="0 0 24 24" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.5 2H4.5C3.12 2 2 3.12 2 4.5V7H22V4.5C22 3.12 20.88 2 19.5 2ZM21 8H15V9.25C15 9.94 14.44 10.5 13.75 10.5H10.25C9.56 10.5 9 9.94 9 9.25V8H3V18.6C3 19.93 4.08 21 5.4 21H14.03C14.86 21.62 15.88 22 17 22C19.76 22 22 19.76 22 17C22 15.88 21.62 14.86 21 14.03V8ZM17 21C14.79 21 13 19.21 13 17C13 14.79 14.79 13 17 13C19.21 13 21 14.79 21 17C21 19.21 19.21 21 17 21ZM18.5501 18.97C18.6301 19 18.7001 19.02 18.7801 19.02V19.01C18.9701 19.01 19.1401 18.91 19.2301 18.74C19.3501 18.5 19.2601 18.19 19.0101 18.07L17.3101 17.2V14.51C17.3101 14.23 17.0901 14.01 16.8101 14.01C16.5301 14.01 16.3101 14.23 16.3101 14.51V17.51C16.3101 17.7 16.4101 17.88 16.5801 17.96L18.5501 18.97Z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="flex-1">
-                    <div class="text-xs">Daftar Pesanan
                     </div>
                 </div>
             </a>
