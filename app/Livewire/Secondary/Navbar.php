@@ -10,9 +10,10 @@ class Navbar extends Component
     public $categories;       // All categories
     public $selectedCategory; // Selected category
     public $subCategories = []; // Subcategories for the selected category
+    public $titleNav;
 
     // Load categories and subcategories
-    public function mount()
+    public function mount($titleNav = '')
     {
         // Get all categories and eager load subcategories
         $this->categories = Category::with('subCategories')->get();
@@ -25,6 +26,7 @@ class Navbar extends Component
             $this->selectedCategory = $defaultCategory->id;
             $this->subCategories = $defaultCategory->subCategories;
         }
+        $this->titleNav = $titleNav;
     }
 
     // Handle category selection

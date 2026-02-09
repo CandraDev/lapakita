@@ -14,14 +14,14 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
-    @livewire('secondary.navbar')
+<body class="">
+    @yield('header')
 
-    <div class="max-w-6xl mx-auto flex flex-row lg:my-10 gap-6">
+    <div class="max-w-6xl mx-auto flex flex-row lg:my-14 gap-2 lg:pb-100">
         @livewire('member.sidebar')
-        <main class="w-full lg:w-8/10 bg-gray-200 p-4">
+        <section class="w-full lg:w-8/10 p-4 lg:pt-0 lg:px-4 bg-white ">
             @yield('content')
-        </main>
+        </section>
     </div>
 </body>
 

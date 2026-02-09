@@ -13,12 +13,12 @@
             </svg>
         </div>
         <div class="text-lg font-bold flex-1">
-            Pendaftaran Akun Penjual
+            {{ $titleNav }}
         </div>
     </nav>
     <!-- MAIN NAV (Sticky) -->
 
-    <nav class="fixed top-0 right-0 left-0 bg-sky-100 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] z-40  hidden lg:block"
+    <nav class="fixed top-0 right-0 left-0 bg-sky-100 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.01)] z-40  hidden lg:block"
         style="background-image: url('{{ asset('gui/header.png') }}');">
             @livewire('home.top-bar')
             <div class="w-full p-2 md:h-auto lg:max-w-6xl lg:mx-auto flex items-center gap-2 lg:p-4 justify-between">
@@ -223,5 +223,5 @@
                 </div>
             </div>
     </nav>
-    <div class="w-full bg-gray-500 h-14 lg:h-30 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]"></div>
+    <div class="w-full bg-gray-500 h-14 lg:h-30 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.01)]"></div>
 </header>
